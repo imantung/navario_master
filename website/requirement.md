@@ -3,7 +3,7 @@
 | | |
 | :-- | :-- |
 | **Product** | Navario.id marketing website (previously boffon.com) |
-| **Owner** | Navario *(new legal entity, PT Perorangan, to be registered; see [process_flow.md](../process_flow.md#open-decisions))* |
+| **Owner** | Navario *(new legal entity, PT Perorangan, to be registered; see [3_legal.md](../3_legal.md#open-decisions))* |
 | **Production URL** | https://navario.id |
 | **Status** | Target spec for the rebrand, October 2026. Based on the boffon.com implementation; section 0 lists what has to change. |
 

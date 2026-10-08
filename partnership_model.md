@@ -6,7 +6,7 @@ Internal. This is the basis for the partner agreement, which will be written in 
 
 - **Retail:** Commission on a low list price is small, so retail referrals are a bonus for partners, not a business.
 - **Enterprise:** This is where partners earn. **Navario builds and runs the platform (ERP, AI assistant, hosting, technical customization). The partner owns the client relationship and charges the client for consultancy.**
-- For Navario, partners provide what a solo founder lacks: sales reach, business process know-how, and capacity for training and first-line support.
+- For Navario, partners provide what a solo founder lacks ([C1, C2](0_business_constraint.md#1-founder-and-capacity)): sales reach, business process know-how, and capacity for training and first-line support.
 
 ## Partner types
 
@@ -74,7 +74,8 @@ Once Navario has direct clients (around 10 or more), refer clients who need book
 
 - [ ] **Partner summary.** Done when: a one-page partner summary exists, with BYOK explained for enterprise.
 - [ ] **Partner outreach.** Depends on: partner summary. Done when: 15 accountants, tax consultants or IT consultants in Jabodetabek have been contacted. Follow rule 0: sign before you teach.
-- [ ] **Partner agreement draft.** Depends on: commission decision. Done when: a Bahasa Indonesia draft with confidentiality and non-solicitation clauses exists, checked by a notary or lawyer.
+
+Partner agreement draft: see [3_legal.md](3_legal.md#tasks).
 
 ## Open decisions
 

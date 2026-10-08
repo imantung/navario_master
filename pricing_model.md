@@ -7,10 +7,10 @@ Internal. **Retail** means direct sales to SMEs at list price, per user. **Enter
 - **Fixed price.** Every quote is a fixed total agreed before work starts. No hourly billing. Ranges below are internal guides; the client only ever sees one number.
 - **Retail is priced per user** (minimum 3 users) and includes AI questions. **Enterprise is flat** (unlimited users), limited by server capacity only.
 - **BYOK (bring your own key) for enterprise and AI projects.** The client connects its own Gemini API key and pays Google directly for AI usage. Navario charges only for the platform, development and server maintenance. So AI price changes (e.g., the Jan 2027 Gemini increase) do not hit Navario's margin.
-- **No ERP-only deals.** Every package includes the AI Business Assistant.
+- **No ERP-only deals.** Every package includes the AI Business Assistant ([C3](0_business_constraint.md#2-offer)).
 - **One AI unit: "AI question".** One message a user sends to the assistant, however many tool steps it takes to answer. Use this term everywhere (not "token" or "query"), because it is what users see in their usage tracking.
 - **Scope matches the proposal.** Only list what the demo can show: Accounting, Buying, Selling, Stock, Asset Management, Indonesian chart of accounts, PPN and PPh setup, Bahasa Indonesia, local document formats, company branding.
-- **PPN:** Depends on whether the new entity is PKP (see [process_flow.md](process_flow.md#open-decisions)). If it is, prices exclude PPN.
+- **PPN:** Depends on whether the new entity is PKP (see [3_legal.md](3_legal.md#open-decisions)). If it is, prices exclude PPN.
 
 ## 1. Retail (direct)
 

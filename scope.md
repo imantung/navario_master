@@ -55,7 +55,7 @@ Confirm each one. If it is not built, every client who reads the proposal gets a
 
 Build only section 1, then stop and start demos. Build section 2 between demos. Build section 3 only when a real prospect asks for it. Section 4 waits for paying clients.
 
-Why: an engineer-founder's natural pull is to keep building instead of selling. The product will not fail for lack of features; it will fail for lack of demos.
+Why ([X4](1_challenges.md#2-founder-capacity)): an engineer-founder's natural pull is to keep building instead of selling. The product will not fail for lack of features; it will fail for lack of demos.
 
 ## Tasks
 

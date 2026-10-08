@@ -42,7 +42,7 @@ The demo is the main sales tool, so it is scripted and rehearsed.
   * A service agreement in Bahasa Indonesia.
   * An invoice for 100% of the setup fee + the first month (or year), minus any trial extension fee already paid.
 * **You receive:** The signed agreement and payment.
-* **Rule:** Work starts after payment clears. Anything outside the quote is a change request with its own fixed quote.
+* **Rule:** No quotation before the legal entity exists ([L1](3_legal.md#1-rules)). Work starts after payment clears. Anything outside the quote is a change request with its own fixed quote.
 
 ## Stage 4: Setup & Data Import
 
@@ -69,7 +69,7 @@ The demo is the main sales tool, so it is scripted and rehearsed.
 
 The SLA is a **first response** time (24 hours retail, 6 hours enterprise), not a fix time. A fix follows with an estimate.
 
-**While solo:**
+**While solo** ([C1](0_business_constraint.md#1-founder-and-capacity), [X6, X7](1_challenges.md#2-founder-capacity)):
 - One support channel: a WhatsApp Business number with an auto-reply stating support hours, and every request logged as a ticket (the Helpdesk/Issue doctype in our own ERP works).
 - Reduce "how do I" tickets: the video library, plus the assistant's **Learn** capability answering from the user guide.
 - Enterprise: partners take first-line support by contract.
@@ -83,14 +83,12 @@ The SLA is a **first response** time (24 hours retail, 6 hours enterprise), not 
 
 ## Tasks
 
-- [ ] **Legal entity.** Done when: the PT Perorangan is registered and has a business bank account.
-- [ ] **Sales documents.** Depends on: legal entity and final retail pricing. Done when: the quotation template, service agreement, and Terms/Privacy exist in Bahasa Indonesia and have been checked by a notary or lawyer.
+Legal entity and sales documents (quotation, service agreement): see [3_legal.md](3_legal.md#tasks).
+
+- [ ] **Backup developer.** Done when: a freelance ERPNext developer has server access and a runbook, before the first go-live.
 - [ ] **First delivery.** Done when: the first client is live (stages 4–6) and has signed the go-live sign-off.
 - [ ] **Proof.** Done when: you have a testimonial, logo permission and a short case study, one month after go-live.
 
 ## Open decisions
 
-- [ ] **Legal entity.** Register a *PT Perorangan* (a new entity, not PT Inovasi Teknologi Terintegrasi)? Recommendation: yes, before sending the first quotation.
-- [ ] **PKP (PPN registration).** Mandatory only above IDR 4.8 billion turnover per year **[unverified]**. Recommendation: stay non-PKP at first. Revisit when an enterprise client needs a *faktur pajak*.
-
-*Note: This must be validated with a certified Indonesian tax consultant or notary.*
+- [ ] **"Estimation" in the proposal vs fixed-price quote.** The proposal's "Let's Talk" ends with a "cost estimate"; the process sends one fixed total. Recommendation: keep the fixed-price quote, and change the proposal wording to "fixed-price quote" when it is next revised.

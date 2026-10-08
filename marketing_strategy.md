@@ -16,7 +16,7 @@ Internal. Goal for the first 90 days: **3 paying reference clients and 2 active 
 
 ## 2. The real problem: no portfolio yet
 
-An unknown solo vendor asking an SME to move its accounting is a trust problem first. Address it directly:
+An unknown solo vendor asking an SME to move its accounting is a trust problem first ([X2](1_challenges.md#1-sales-and-trust)). Address it directly:
 
 1. **Founding client program.** The first 3–5 clients get a clear benefit (for example 50% off setup, or the annual price at monthly terms) in exchange for a logo, a testimonial, a short case study and one reference call. Run it for a limited time.
 2. **The demo is the portfolio.** A polished demo dataset, a 3-minute demo video in Bahasa Indonesia, and the scripted live demo in [process_flow.md](process_flow.md).
@@ -55,7 +55,7 @@ Track every lead in one simple sheet: source, date, demo done, quote sent, won o
 
 ## Tasks
 
-In week order. Spend at most ~50% of each week on AI projects, so the product still moves.
+In week order. Spend at most ~50% of each week on AI projects, so the product still moves ([C1](0_business_constraint.md#1-founder-and-capacity)). No outreach until the demo features work ([X1](1_challenges.md#1-sales-and-trust)).
 
 - [ ] **Week 1 — Demo ready.** Done when: the demo dataset is loaded, the script in [process_flow.md](process_flow.md) has been rehearsed 5 times, and a 3-minute Bahasa Indonesia demo video is recorded.
 - [ ] **Week 1 — Lead sheet.** Done when: one sheet tracks source, date, offer (product or AI project), demo, quote, and won/lost with the reason.
