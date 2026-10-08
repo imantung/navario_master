@@ -167,13 +167,6 @@ h3.sub-h { font-size: 21px; font-weight: 700; margin: 48px 0 8px; display: flex;
 .step-body h4 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
 .step-body h4 small { color: var(--coral); font-weight: 800; font-size: 13px; margin-right: 8px; }
 .step-body p { margin: 0; color: var(--ink-soft); font-size: 15px; }
-.branch { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
-.branch div { border-radius: 10px; padding: 10px 14px; font-size: 13.5px; }
-.branch .yes { background: var(--teal-soft); border: 1px solid #bfe3dd; }
-.branch .no { background: var(--coral-soft); border: 1px solid #f6c9bc; }
-.branch b { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
-.branch .yes b { color: var(--teal); }
-.branch .no b { color: var(--coral-dark); }
 
 .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .compare .card { box-shadow: none; }
@@ -209,25 +202,17 @@ h3.sub-h { font-size: 21px; font-weight: 700; margin: 48px 0 8px; display: flex;
 .node small { display: block; font-weight: 500; font-size: 13px; color: var(--ink-soft); margin-top: 2px; }
 .node.start { background: var(--ink); color: #fff; border-color: var(--ink); }
 .node.end { background: var(--coral); color: #fff; border-color: var(--coral); }
-.node.tools { background: var(--ink); color: #fff; border-color: var(--ink); text-align: left; padding: 16px 22px; }
-.node.tools .checks { list-style: none; margin: 8px 0 0; padding: 0; font-weight: 500; font-size: 13.5px; color: #d9dae4; display: grid; gap: 4px; }
-.node.tools .checks li { display: flex; gap: 8px; align-items: center; }
-.node.tools .checks .icon { width: 16px; height: 16px; color: var(--coral); }
+.node.tools { background: var(--ink); color: #fff; border-color: var(--ink); }
 .down-arrow { width: 2px; height: 22px; background: #c9c7c0; position: relative; margin: 4px 0 8px; }
 .down-arrow::after { content: ""; position: absolute; left: -4px; bottom: -6px; border: 5px solid transparent; border-top: 6px solid #c9c7c0; }
-.paths { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 100%; max-width: 560px; position: relative; padding-top: 18px; }
-.paths::before { content: ""; position: absolute; top: 0; left: 25%; right: 25%; height: 2px; background: #c9c7c0; }
-.path { display: flex; flex-direction: column; align-items: center; position: relative; }
-.path::before { content: ""; position: absolute; top: -18px; left: 50%; width: 2px; height: 18px; background: #c9c7c0; }
-.path .tagline { font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 8px; }
-.path.routine .tagline { color: var(--teal); }
-.path.open .tagline { color: var(--coral-dark); }
-.path.routine .node { background: var(--teal-soft); border-color: #bfe3dd; }
-.path.open .node { background: var(--coral-soft); border-color: #f6c9bc; }
-.path .node { width: 100%; }
-.merge { width: 100%; max-width: 560px; height: 20px; position: relative; }
-.merge::before { content: ""; position: absolute; top: 0; left: 25%; right: 25%; height: 18px; border: 2px solid #c9c7c0; border-top: none; border-radius: 0 0 8px 8px; }
-.merge::after { content: ""; position: absolute; top: 18px; left: calc(50% - 1px); width: 2px; height: 2px; background: #c9c7c0; }
+.node.ai { background: var(--amber-soft); border-color: var(--amber-line); }
+.loop { position: relative; width: 100%; max-width: 560px; border: 2px dashed #d6d3cb; border-radius: 16px; padding: 20px 64px 20px 22px; display: flex; flex-direction: column; align-items: stretch; }
+.loop > .down-arrow { align-self: center; }
+.loop-back { position: absolute; right: 30px; top: 42px; bottom: 42px; width: 34px; border: 2px solid #c9c7c0; border-left: none; border-radius: 0 12px 12px 0; }
+.loop-back::after { content: ""; position: absolute; left: -2px; top: -6px; border: 5px solid transparent; border-right: 6px solid #c9c7c0; transform: translateX(-100%); }
+.loop-back span { position: absolute; right: -24px; top: 50%; transform: translateY(-50%) rotate(180deg); writing-mode: vertical-rl; font-size: 11px; font-weight: 700; color: var(--muted); white-space: nowrap; background: var(--card); padding: 6px 0; }
+.down-arrow.labeled span { position: absolute; left: 12px; top: 2px; font-size: 11px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+.agent-note { margin: 14px auto 0; max-width: 560px; font-size: 13.5px; color: var(--ink-soft); text-align: center; }
 
 .caps { display: grid; gap: 0; margin-top: 12px; }
 .cap { display: grid; grid-template-columns: 44px 1fr 1.1fr; gap: 16px; align-items: start; padding: 18px 0; border-bottom: 1px solid var(--line); }
@@ -263,10 +248,9 @@ h3.sub-h { font-size: 21px; font-weight: 700; margin: 48px 0 8px; display: flex;
   section { padding: 52px 0; }
   .sec-head { flex-direction: column; gap: 6px; }
   .sec-head h2 { font-size: 27px; }
-  .grid-2, .grid-3, .grid-4, .benefits, .features, .steps-cta, .branch, .compare, .demo-pick ul { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4, .benefits, .features, .steps-cta, .compare, .demo-pick ul { grid-template-columns: 1fr; }
   .cap { grid-template-columns: 44px 1fr; }
   .cap .ex { grid-column: 2; }
-  .paths { gap: 10px; }
   .msg { max-width: 94%; }
   .msg.a { max-width: 100%; padding: 12px; }
   .mini { font-size: 11.5px; }
@@ -291,7 +275,7 @@ h3.sub-h { font-size: 21px; font-weight: 700; margin: 48px 0 8px; display: flex;
   h3.sub-h { break-after: avoid; }
   .print-break { break-before: page; margin-top: 0 !important; }
   .card, .demo, .agent { box-shadow: none; }
-  .grid-2, .benefits, .features, .branch, .compare, .demo-pick ul { grid-template-columns: 1fr 1fr; }
+  .grid-2, .benefits, .features, .compare, .demo-pick ul { grid-template-columns: 1fr 1fr; }
   .grid-3, .steps-cta { grid-template-columns: repeat(3, 1fr); }
   .grid-4 { grid-template-columns: repeat(4, 1fr); }
   .cap { grid-template-columns: 44px 1fr 1.1fr; padding: 14px 0; }
@@ -534,7 +518,7 @@ h3.sub-h { font-size: 21px; font-weight: 700; margin: 48px 0 8px; display: flex;
         <h2>How It Works</h2>
       </div>
     </div>
-    <p class="lead" style="margin-bottom:36px">From question to answer in five steps, with an access check before any data is shown.</p>
+    <p class="lead" style="margin-bottom:36px">From question to answer in five steps, with access checked at every step.</p>
 
     <div class="flow">
       <div class="step">
@@ -547,14 +531,7 @@ h3.sub-h { font-size: 21px; font-weight: 700; margin: 48px 0 8px; display: flex;
       </div>
       <div class="step">
         <div class="n"><svg class="icon"><use href="#i-shield"/></svg></div>
-        <div class="step-body">
-          <h4><small>3</small>Check access</h4>
-          <p>Before showing anything, it checks that person's access rights, the same rights they have everywhere else in the system.</p>
-          <div class="branch">
-            <div class="yes"><b>Allowed</b>Finds the answer in your business data.</div>
-            <div class="no"><b>Not allowed</b>Explains politely that access isn't allowed.</div>
-          </div>
-        </div>
+        <div class="step-body"><h4><small>3</small>Check access</h4><p>At every step, it checks that person's access rights, the same rights they have everywhere else in the system.</p></div>
       </div>
       <div class="step">
         <div class="n"><svg class="icon"><use href="#i-reply"/></svg></div>
@@ -653,33 +630,19 @@ h3.sub-h { font-size: 21px; font-weight: 700; margin: 48px 0 8px; display: flex;
     <div class="agent">
       <div class="node start">Your question</div>
       <div class="down-arrow"></div>
-      <div class="node">Understands the request</div>
-      <div class="down-arrow" style="margin-bottom:0"></div>
-      <div class="paths">
-        <div class="path routine">
-          <div class="tagline">Routine request</div>
-          <div class="node">Open a screen, start a form</div>
-          <div class="down-arrow"></div>
-          <div class="node">Follows fixed, tested steps</div>
-        </div>
-        <div class="path open">
-          <div class="tagline">Open question</div>
-          <div class="node">Compare, analyse, investigate</div>
-          <div class="down-arrow"></div>
-          <div class="node">Plans the steps and works through them</div>
-        </div>
-      </div>
-      <div class="merge"></div>
+      <div class="node ai">AI works out what you need</div>
       <div class="down-arrow"></div>
-      <div class="node tools">
-        Uses only approved business tools
-        <ul class="checks">
-          <li><svg class="icon"><use href="#i-check"/></svg>Every step checked against your access</li>
-          <li><svg class="icon"><use href="#i-check"/></svg>Every step recorded in the activity log</li>
-        </ul>
+      <div class="loop">
+        <div class="node ai">AI picks a business tool</div>
+        <div class="down-arrow"></div>
+        <div class="node tools">System checks your access, runs the tool and records it</div>
+        <div class="down-arrow"></div>
+        <div class="node ai">AI reviews the result</div>
+        <div class="loop-back"><span>Needs more information</span></div>
       </div>
-      <div class="down-arrow"></div>
+      <div class="down-arrow labeled"><span>Has enough</span></div>
       <div class="node end">Answer: summary, table or link</div>
+      <p class="agent-note">The AI model never touches your data directly. It can only ask for a tool; the system checks access, runs it and hands back the result.</p>
     </div>
 
     <h3 class="sub-h why-h">Why this matters to you</h3>
@@ -735,7 +698,7 @@ h3.sub-h { font-size: 21px; font-weight: 700; margin: 48px 0 8px; display: flex;
 
     <div class="features" style="margin-top:8px">
       <div class="feat"><svg class="icon"><use href="#i-history"/></svg><div><h4>Conversation history</h4><p>Past conversations are saved and can be renamed or deleted.</p></div></div>
-      <div class="feat"><svg class="icon"><use href="#i-pulse"/></svg><div><h4>Live progress</h4><p>While it works, the assistant shows what it is doing, such as checking access or running a report.</p></div></div>
+      <div class="feat"><svg class="icon"><use href="#i-pulse"/></svg><div><h4>Live progress</h4><p>While it works, the assistant shows each step, such as checking access, looking up invoices or running a report.</p></div></div>
       <div class="feat"><svg class="icon"><use href="#i-stop"/></svg><div><h4>Stop and Retry</h4><p>Stop a reply at any time, or retry one that failed.</p></div></div>
       <div class="feat"><svg class="icon"><use href="#i-copy"/></svg><div><h4>Answers you can use</h4><p>Tables, summaries and direct links to documents, reports and forms, with one-click copy.</p></div></div>
       <div class="feat"><svg class="icon"><use href="#i-globe"/></svg><div><h4>Bahasa Indonesia and English</h4><p>Ask in either language.</p></div></div>

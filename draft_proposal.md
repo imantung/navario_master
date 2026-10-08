@@ -58,33 +58,9 @@ We provide an **AI Business Assistant** your team can talk to in plain Bahasa In
 
 ## 3. How It Works
 
-```
-   Staff member asks a question
-   ("which invoices are overdue?")
-                │
-                ▼
-   The assistant works out what is needed
-                │
-                ▼
-   It checks: is this person allowed to see this?
-          │                          │
-         Yes                         No
-          │                          │
-          ▼                          ▼
-   Finds the answer in your    Explains politely that
-   business data               access isn't allowed
-          │
-          ▼
-   Replies in the chat with a summary, table
-   or link to the actual document
-          │
-          ▼
-   The request is recorded in the activity log
-```
-
 1. **Ask.** A staff member opens the chat inside the system and types a question in everyday language.
 2. **Understand.** The assistant works out what the person wants: to find data, open a report, start a new document or check an approval.
-3. **Check access.** Before showing anything, it checks that person's access rights, the same rights they have everywhere else in the system.
+3. **Check access.** At every step, it checks that person's access rights, the same rights they have everywhere else in the system.
 4. **Answer.** It replies with a clear summary, a table or a direct link to the document, report or form.
 5. **Record.** Every request is logged so management keeps full oversight.
 
@@ -116,30 +92,26 @@ The AI Business Assistant comes with a complete ERP (Enterprise Resource Plannin
 Most AI chatbots send your question to an AI model once and hope the answer is right. Our assistant follows an **agentic workflow** we designed for business: like a trained staff member, it works out what you need, plans the steps, uses the right business tools and checks each step along the way.
 
 ```
-                 Your question
-                       │
-                       ▼
-            Understands the request
-                       │
-          ┌────────────┴────────────┐
-          ▼                         ▼
-   Routine request             Open question
-   (open a screen,             (compare, analyse,
-    start a form)               investigate)
-          │                         │
-          ▼                         ▼
-   Follows fixed,              Plans the steps
-   tested steps                and works through them
-          │                         │
-          └────────────┬────────────┘
-                       ▼
-        Uses only approved business tools
-        ✓ every step checked against your access
-        ✓ every step recorded in the activity log
-                       │
-                       ▼
-       Answer: summary, table or link
+                  Your question
+                        │
+                        ▼
+           AI works out what you need
+                        │
+                        ▼
+           AI picks a business tool  ◄──────┐
+                        │                   │
+                        ▼                   │
+          System checks your access,        │  Needs more
+          runs the tool and records it      │  information
+                        │                   │
+                        ▼                   │
+             AI reviews the result  ────────┘
+                        │
+                        ▼  Has enough
+          Answer: summary, table or link
 ```
+
+The AI model never touches your data directly. It can only ask for a tool; the system checks access, runs it and hands back the result.
 
 **Why this matters to you:**
 
@@ -162,7 +134,7 @@ It can help with a wide range of business needs:
 The chat opens as its own app next to the ERP, with the same login. It is built for work, not general conversation:
 
 - **Conversation history.** Past conversations are saved and can be renamed or deleted.
-- **Live progress.** While it works, the assistant shows what it is doing, such as checking access or running a report.
+- **Live progress.** While it works, the assistant shows each step, such as checking access, looking up invoices or running a report.
 - **Stop and Retry.** Stop a reply at any time, or retry one that failed.
 - **Answers you can use.** Tables, summaries and direct links to documents, reports and forms, with one-click copy.
 - **Bahasa Indonesia and English.** Ask in either language.
