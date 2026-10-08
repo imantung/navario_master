@@ -1,52 +1,82 @@
 # Process Flow
 
-## Stage 1: Pitch & Live Demo
+Internal. From first contact to ongoing support. The stages follow the "Let's Talk" section of the [proposal](../proposal/draft_oct_2026/draft_proposal.md): **live demo → needs discussion → fixed-price quote**.
 
-* **Primary Flow:** You deliver a tailored pitch and immediately spin up a **Free 7-Day Dedicated AI Trial** instance for the prospect.  
-* **Optional Alternative:** A shared read-only sandbox pre-loaded with sample Indonesian business data is available on your website for instant browsing if the prospect prefers to look around before creating an instance.  
-* **You Give to Client:** Direct credentials to their fresh, isolated trial site (`clientname.yourdomain.com`).  
-* **You Receive from Client:** Client company name and decision-maker contact details.
+For partner deals the stages are the same; who does what is defined in [partnership_model.md](../partnership_model/partnership_model.md). Prices are in [pricing_model.md](../pricing_model/pricing_model.md).
 
-## Stage 2: Free 7-Day Dedicated AI Trial & Self-Discovery
+```
+1 Live demo → 2 Needs discussion → 3 Quote & contract → 4 Setup & import → 5 Training & UAT → 6 Go-live → 7 Support
+                    └─ optional 7-day trial
+```
 
-* **You Give to Client:**  
-  * Full access to their dedicated environment for **7 days** with **unlimited AI query usage**.  
-  * The In-System AI guides them through natural self-discovery (COA mapping, PPN 11–12%, e-Faktur, stock workflows) and generates an **AI Discovery & Requirement Summary** inside the ERP.  
-* **End-of-Trial Options (Day 5–7 Decision Point):**  
-1. **Proceed to Implementation (Standard Path):** Sign the proposal, pay the onboarding fee \+ subscription, and convert the trial into a permanent production instance (extending system access indefinitely).  
-2. **Pay for Trial Extension (No Long-Term Commitment):** Pay a flat fee (**IDR 500,000 / 30 days**) to keep the dedicated AI trial active for an additional 30 days of testing without signing a full contract.  
-3. **Let Expire:** If no action is taken by Day 7, the instance automatically freezes and wipes after a 3-day grace period.  
-* **You Receive from Client:** Selected decision (Signed Contract, Trial Extension Payment, or Instance Expiration).
+## Stage 1: Live Demo (30–45 min, online or onsite)
 
-## Stage 3: Proposal, Contracting & Conversion
+The demo is the main sales tool, so it is scripted and rehearsed.
 
-* **You Give to Client:**  
-  * Formal **Sales Quotation & Service Agreement** (Starter / Pro / Enterprise) generated directly from their AI discovery summary.  
-  * Invoice for 100% Onboarding Fee \+ 1st Month / Annual SaaS Subscription (incorporating the 15% annual prepayment discount). *(Note: If they previously paid the IDR 500k extension fee, credit that amount toward their onboarding invoice).*  
-* **You Receive from Client:** Signed Service Agreement & Proof of Bank Transfer Payment.
+* **Before:** A demo company with realistic Indonesian trading data (customers, suppliers, items, 3 months of transactions, a few overdue invoices, low-stock items, pending approvals). A recorded backup video in case the AI or the internet fails.
+* **Script** (from the proposal; let the prospect pick what matters to them):
+  1. "Which customers are more than 60 days overdue?" and "Which items are below minimum stock?"
+  2. "Compare this month's sales with last month."
+  3. "Create a sales order for PT Maju Jaya": a pre-filled form, checked and saved by the user.
+  4. Log in as a sales staff member and ask for bank balances: the assistant declines.
+  5. A purchase request going from request to approval.
+* **You give:** The demo, and the proposal PDF afterwards.
+* **You receive:** Company name, decision maker, number of staff who would use the system, current tools (spreadsheets, Accurate, Jurnal, etc.), and their main pain.
 
-## Stage 4: Provisioning Clean-Up, Setup & Data Import
+## Stage 2: Needs Discussion (45–90 min, included in setup)
 
-* **You Give to Client:**  
-  * Trial dummy transaction wipe while retaining AI-configured master structures, tax settings, and COA.  
-  * Excel Import Templates (or hands-on execution via *Assisted Master Data Import*).  
-* **You Receive from Client:** Official master data records and signed Master Data Sign-off.
+* **You give:** A discovery checklist covering:
+  * Flow: buy → receive stock → sell → deliver → invoice → collect payment
+  * Number of companies, branches and warehouses
+  * Tax status (PKP or not), e-Faktur volume
+  * Documents they print (invoice, PO, delivery note) and the reports they rely on
+  * Users and roles, approval rules
+  * Data to bring in: customers, suppliers, items, opening balances
+* **You receive:** Answers, sample documents and a user list.
+* **Optional: 7-day trial.** Their own instance, pre-loaded with the trading template, capped at 200 AI questions. If they need more time, the 30-day extension fee is credited to setup. An instance with no decision is frozen on day 7 and deleted on day 10.
 
-## Stage 5: Enablement, Training & UAT
+## Stage 3: Fixed-Price Quote & Contract
 
-* **You Give to Client:**  
-  * Video portal access \+ Live Online Training session(s).  
-  * *User Acceptance Test (UAT) Checklist* conducted on the exact same dedicated instance.  
-* **You Receive from Client:** Signed UAT Acceptance Form.
+* **You give:**
+  * A quotation in Bahasa Indonesia: package, add-ons, **one fixed total**, what is included and excluded, and the target go-live date.
+  * A service agreement in Bahasa Indonesia.
+  * An invoice for 100% of the setup fee + the first month (or year), minus any trial extension fee already paid.
+* **You receive:** The signed agreement and payment.
+* **Rule:** Work starts after payment clears. Anything outside the quote is a change request with its own fixed quote.
 
-## Stage 6: Production Go-Live & Cutover
+## Stage 4: Setup & Data Import
 
-* **You Give to Client:** Final Opening Balance posting (Bank, Stock, AR/AP), production credentials, and Project Completion Certificate.  
-* **You Receive from Client:** Final Go-Live Sign-off document.
+* **You give:** A production instance configured from the needs discussion (trial instances are cleaned of test transactions), plus Excel import templates or the data migration add-on.
+* **You receive:** Master data (customers, suppliers, items, assets, chart of accounts mapping) and a signed master data sign-off.
 
-## Stage 7: Ongoing Managed SaaS & Standard AI Pool
+## Stage 5: Training & UAT
 
-* **You Give to Client:**  
-  * System transitions to standard production AI query caps (Starter: 500 / Pro: 2,000 / Enterprise: 5,000 queries/mo).  
-  * 24-hr Chat Support SLA \+ 24/7 automated server maintenance & backups.  
-* **You Receive from Client:** Recurring monthly/annual SaaS subscription payments.
+* **You give:** Video library access, the live training sessions in the package, and a UAT checklist based on their real flow.
+* **You receive:** A signed UAT acceptance.
+
+## Stage 6: Go-Live
+
+* **You give:** Opening balances posted (bank, stock, AR/AP), production access for all users, and a go-live confirmation.
+* **You receive:** A signed go-live sign-off.
+
+## Stage 7: Ongoing Support
+
+* **You give:** Hosting, backups, upgrades and chat support at the package level. The monthly AI question pool, with a heads-up when they reach 80%.
+* **You receive:** Monthly or annual subscription payments.
+* **One month after go-live:** Review AI usage together and offer a top-up if needed. **Ask for a testimonial, logo permission and a short case study.** Every early client is also portfolio.
+
+### Support coverage
+
+The SLA is a **first response** time (24 hours retail, 6 hours enterprise), not a fix time. A fix follows with an estimate.
+
+**While solo:**
+- One support channel: a WhatsApp Business number with an auto-reply stating support hours, and every request logged as a ticket (the Helpdesk/Issue doctype in our own ERP works).
+- Reduce "how do I" tickets: the video library, plus the assistant's **Learn** capability answering from the user guide.
+- Enterprise: partners take first-line support by contract.
+- Backup: a freelance ERPNext developer on a small monthly retainer, who has server access and a runbook, for when you are sick or away. One person running production for paying clients is the biggest operational risk.
+
+**Hire the first support person when** either is true for 3 months in a row:
+- Recurring revenue covers the hire at no more than ~30% of monthly recurring revenue. At roughly IDR 6–8M/month fully loaded (Jakarta UMP + BPJS; less outside Jakarta), that is **about IDR 25M monthly recurring revenue**, e.g. 2 enterprise clients, or ~60 retail users.
+- Support takes more than ~10 hours a week of your time.
+
+**Profile:** A functional support and implementation person with an accounting background (D3/S1 Akuntansi), not a developer. Most tickets will be accounting and process questions, and the same person can run training, data import and UAT, which frees you for product work. A cheaper first step is a part-time hire or an accounting student intern (*magang*) for data import and training.

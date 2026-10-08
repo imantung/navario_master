@@ -1,45 +1,76 @@
-# Detailed Tier Breakdown
+# Partnership Model
 
-## Tier 1: Referral Partner (Passive Income)
+Internal. This is the basis for the partner agreement, which will be written in Bahasa Indonesia when the first partner commits. No partner has committed yet.
 
-* **Target Profile:** Freelance accountants, solo bookkeepers, virtual assistants, or business consultants.  
-* **Partner Role:** Make a warm introduction via WhatsApp or email. You handle 100% of the pitching, demo, setup, UAT, and ongoing support.  
-* **Incentive Structure:**  
-* **10% Recurring SaaS Commission:** Paid for the lifetime of the active client contract.  
-* **IDR 500,000 One-Time Cash Bonus:** Paid upon the client settling their initial onboarding invoice.
+## Why partners
 
-## Tier 2: Co-Selling Cash Partner (Active Co-Sell)
+- **Retail:** Commission on a low list price is small, so retail referrals are a bonus for partners, not a business.
+- **Enterprise:** This is where partners earn. **Navario builds and runs the platform (ERP, AI assistant, hosting, technical customization). The partner owns the client relationship and charges the client for consultancy.**
+- For Navario, partners provide what a solo founder lacks: sales reach, business process know-how, and capacity for training and first-line support.
 
-* **Target Profile:** Boutique tax consulting practices (*KKP*) and accounting firms looking to monetize software recommendations and billable discovery hours.  
-* **Partner Role:** Co-host discovery/demo calls, validate client Chart of Accounts (COA), and review Indonesian PPN 11–12% / e-Faktur tax compliance settings during setup.  
-* **Incentive Structure:**  
-* **15% Recurring SaaS Commission (Year 1):** Drops to **10%** from Year 2 onwards.  
-* **20% Cut of Onboarding Setup Fee:** Paid for actively assisting during process discovery and accounting mapping (Applies to Standard IDR 8.5M & Custom IDR 18M setup tiers).  
-* *Fast-Track Safeguard:* For Fast-Track setups (IDR 3.5M), the partner setup share is capped at a flat **IDR 500,000 bonus** to protect your net implementation margin.
+## Partner types
 
-## Tier 3: Reciprocal Solutions Partner (Value-Swap)
+| | **Referral Partner** | **Implementation Partner** |
+| :-- | :-- | :-- |
+| **Deals** | Retail and enterprise | Enterprise (retail allowed) |
+| **Typical profile** | Accountants, tax consultants (*konsultan pajak*), bookkeepers, business consultants, IT freelancers | IT/ERP consulting firms, KAP/KKP firms with a consulting arm, system integrators, ERPNext implementers |
+| **Partner does** | Introduces the client | Sells, runs discovery, designs processes, configures, trains, first-line support |
+| **Navario does** | Demo, quote, setup, training, support | Platform, hosting, AI assistant, upgrades, custom code, second-line support, demo support for the first deals |
+| **Partner earns** | Commission (open decision, below) | Commission + **100% of their own consultancy fees** |
 
-* **Target Profile:** Established Accounting & Auditing Firms (*KAP/KKP*) focused on growing their monthly retainership client roster rather than small software commissions.  
-* **Partner Role:** Introduce their SME client base to your ERPNext SaaS platform and act as a trusted advisor during onboarding.  
-* **Incentive Structure:**  
-* **Zero Cash Changes Hands (1-for-1 Client Exchange):** You refer your direct ERP software clients who need outsourced bookkeeping, monthly tax filing, or auditing back to their firm.  
-* **Multi-Partner Routing:** Non-exclusive network. You route direct clients to partners based on geographic proximity, industry fit (e.g., retail vs. manufacturing), or referral balance.
+### Commission (open decision)
 
-## Master Comparison Table
+Decide before signing the first partner. Options so far:
 
-| Metric | Tier 1: Referral Partner | Tier 2: Co-Selling Cash Partner | Tier 3: Reciprocal Solutions Partner |
-| :---- | :---- | :---- | :---- |
-| **Target Profile** | Freelancers / Bookkeepers | Boutique Tax & KKP Firms | Established KAP / KKP Firms |
-| **Partner Involvement** | Introduction Only | Co-Demo \+ COA & Tax Setup | Introduction & Advisory |
-| **SaaS Commission** | **10% Lifetime** | **15% Y1 / 10% Y2+** | **0% Cash** |
-| **Setup Fee Share** | **IDR 500k Flat Bonus** | **20%** \*(Standard/Custom)\***IDR 500k Flat** *(Fast-Track)* | **0% Cash (1-for-1 Client Exchange)** |
-| **Payout Trigger** | Within 7 days of cleared payment | Within 7 days of cleared payment | Direct client intro upon contract |
-| **Technical Role** | None | Functional COA/Tax Review Only | None |
+| Option | Subscription commission | Setup fee share |
+| :-- | :-- | :-- |
+| A. Simple | 15% of subscription, as long as the client pays | None |
+| B. Old Tier 1 (Referral) | 10% of subscription, lifetime | IDR 500,000 flat bonus |
+| C. Old Tier 2 (Co-selling) | 15% in year 1, 10% from year 2 | 20% of Standard/Enterprise setup; IDR 500,000 flat for Fast-Track |
 
-## Operational Rules & Safeguards
+Whatever is chosen:
+- **Not included in the base:** add-ons, customization, trial extensions and PPN.
+- Paid within 7 days after the client's payment clears.
 
-1. **Lead Registration Lock:** Partners submit prospective leads via a quick WhatsApp message or web form to lock in attribution rights for **60 days** (preventing partner disputes).  
-2. **Success-Based Payouts:** All cash commissions are triggered strictly after funds clear in your bank account from the client.  
-3. **Trial Extension Deductible Rule:** If a prospect pays the IDR 500,000 Trial Extension fee during Stage 2 and later converts to a full contract, that IDR 500k is credited toward their onboarding invoice, and partner percentage commissions are calculated on the remaining net invoice amount.  
-4. **100% Technical Ownership:** You retain total ownership of system configuration, custom print formats, server maintenance, and ERPNext codebase modifications to safeguard system health and data integrity.  
-5. **Non-Solicitation Clause:** Partners agree not to alter core software code, and you agree never to offer direct bookkeeping or tax filing services that compete with your partners' core businesses.
+### Implementation Partner: who bills what
+
+| Item | Billed by | To |
+| :-- | :-- | :-- |
+| Platform subscription (ERP + AI + hosting) | Navario | Client |
+| Technical customization (code, integrations) | Navario, fixed quote | Client |
+| Consultancy, configuration, training, first-line support | Partner, at the partner's own rate | Client |
+
+Navario bills the platform directly so that the recurring revenue and the hosting responsibility stay with the party that runs the system, and so the client keeps the service if the partner leaves. Enterprise is a flat monthly fee with unlimited users (for example IDR 12,500,000), limited by server spec and AI questions; see [pricing_model.md](../pricing_model/pricing_model.md#2-enterprise-through-partners).
+
+### Implementation Partner: support split
+
+| Level | Who | Examples |
+| :-- | :-- | :-- |
+| First line | Partner | "How do I…?", configuration changes, user training, process questions |
+| Second line | Navario | Bugs, server, backups, upgrades, AI assistant behavior, custom code |
+
+### What Navario gives partners
+
+- The proposal (English, plus Bahasa Indonesia when ready) and a one-page partner summary
+- A demo instance with the trading company dataset and the demo script from [process_flow.md](../process_flow/process_flow.md)
+- A product training session (Implementation Partners: enough to configure and train clients)
+- The retail price list
+
+## Rules
+
+1. **Lead registration.** Partners register a lead (company name and contact) by WhatsApp or the web form. Attribution is locked for **60 days** and extended while a deal is active. The first registration wins.
+2. **Cash first.** Commissions are paid only after the client's money clears.
+3. **Technical ownership.** Navario owns the platform and code. Partners don't modify core code; custom code goes through Navario.
+4. **No competition on services.** Navario doesn't offer bookkeeping, tax filing, audit or business consultancy that competes with partners, and doesn't take over a partner's client for consulting.
+5. **Client data.** The client owns its data. Partners get system access only with the client's approval, under the client's data protection terms (UU PDP).
+6. **Commission ends** when the client stops paying, or when the partner is terminated for breach.
+
+## Later: reciprocal referrals
+
+Once Navario has direct clients (around 10 or more), refer clients who need bookkeeping, tax filing or audit to partner firms in exchange for referrals back. This isn't worth offering yet; there is nothing to swap.
+
+## Decide before signing the first partner
+
+- [ ] Commission option (A, B or C above), and whether it is lifetime or capped (for example 24 months).
+- [ ] Should Implementation Partners get a higher rate than Referral Partners on enterprise deals?
+- [ ] Minimum commitment for Implementation Partners (for example 1 deal per 6 months) to keep the "partner" status.
