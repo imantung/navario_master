@@ -1,6 +1,6 @@
 # AI Cost Simulation (CoGS)
 
-Internal. The cost of the AI Business Assistant per question and per user, used to set AI limits and prices in [pricing_model.md](../pricing_model/pricing_model.md). To change assumptions, edit [ai_cost_simulation.py](ai_cost_simulation.py) and re-run it.
+Internal. The cost of the AI Business Assistant per question and per user, used to set AI limits and prices in [pricing_model.md](pricing_model.md). To change assumptions, edit [ai_cost_simulation.py](script/ai_cost_simulation.py) and re-run it.
 
 **Status:** These are estimates; no real token data has been measured yet. Replace the assumptions with measured averages once the demo logs token counts (see "Next steps").
 
@@ -85,7 +85,7 @@ Our prices are in IDR. For comparison, USD 1 ≈ IDR 16,500.
    | C | USD 9.02 | 37% |
 
    Stack C leaves too little room for server, support and partner commission (15%).
-4. **Enterprise uses BYOK** (see [pricing_model.md](../pricing_model/pricing_model.md)), so this point now only matters as a budget estimate for the client. The earlier pool analysis, at IDR 12.5M (~USD 760) per month with AI capped at ~25% of the fee (~USD 190):
+4. **Enterprise uses BYOK** (see [pricing_model.md](pricing_model.md)), so this point now only matters as a budget estimate for the client. The earlier pool analysis, at IDR 12.5M (~USD 760) per month with AI capped at ~25% of the fee (~USD 190):
 
    | Stack | AI questions per month |
    | :-- | --: |
@@ -112,4 +112,4 @@ Our prices are in IDR. For comparison, USD 1 ≈ IDR 16,500.
 - [ ] Log per question: model, number of calls, input / cached / output tokens, and intent. Gemini returns these in `usage_metadata`.
 - [ ] Run 50 realistic questions on the demo data and replace the assumptions with measured averages.
 - [ ] Test answer quality on 2.5 Flash versus 3.8 Flash for the execution step.
-- [ ] Choose the stack, then update AI allowances and top-up prices in [pricing_model.md](../pricing_model/pricing_model.md).
+- [ ] Choose the stack, then update AI allowances and top-up prices in [pricing_model.md](pricing_model.md).

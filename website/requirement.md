@@ -3,7 +3,7 @@
 | | |
 | :-- | :-- |
 | **Product** | Navario.id marketing website (previously boffon.com) |
-| **Owner** | Navario *(new legal entity, PT Perorangan, to be registered; see [execution_plan.md](../execution_plan/execution_plan.md#3-open-business-decisions))* |
+| **Owner** | Navario *(new legal entity, PT Perorangan, to be registered; see [process_flow.md](../process_flow.md#open-decisions))* |
 | **Production URL** | https://navario.id |
 | **Status** | Target spec for the rebrand, October 2026. Based on the boffon.com implementation; section 0 lists what has to change. |
 
@@ -215,7 +215,7 @@ Workflows should only show steps the trading template actually uses (Lead/Opport
 
 ### P-5 Pricing (`/en/pricing`, `/id/harga`)
 - Breadcrumb, H1 "Pricing", one-line intro: "Fixed prices. Hosting, AI and support included."
-- A **Retail** card: price per user per month (minimum 3 users), annual discount, AI questions per user, and the two setup options (Fast-Track, Standard) with what each includes. The numbers come from [pricing_model.md](../pricing_model/pricing_model.md) and are stored in `siteContent.json`, not hardcoded.
+- A **Retail** card: price per user per month (minimum 3 users), annual discount, AI questions per user, and the two setup options (Fast-Track, Standard) with what each includes. The numbers come from [pricing_model.md](../pricing_model.md) and are stored in `siteContent.json`, not hardcoded.
 - An **Enterprise** card: "Unlimited users, dedicated server, delivered with our implementation partners." Show "from IDR 12.5M / month" or no price (decide). Button: *Talk to us*.
 - Add-ons summary (AI top-ups, data migration, training). Customization is shown as "quoted at a fixed price after review".
 - A note that prices exclude PPN.
@@ -225,7 +225,7 @@ Workflows should only show steps the trading template actually uses (Lead/Opport
 ### P-6 Partners (`/en/partners`, `/id/mitra`)
 - Breadcrumb, H1 "Partner with Navario".
 - Who it's for: accountants, tax consultants, business consultants, IT/ERP consulting firms.
-- The two partner types and what each earns, in plain terms. Commission rates are shown; internal rules stay in [partnership_model.md](../partnership_model/partnership_model.md).
+- The two partner types and what each earns, in plain terms. Commission rates are shown; internal rules stay in [partnership_model.md](../partnership_model.md).
 - What Navario provides to partners (demo instance, training, proposal).
 - Button opens the contact modal with the topic "Become a partner" preselected. No CTA banner on this page.
 
@@ -378,3 +378,16 @@ These were found while reverse-engineering the old site. Fix them as part of the
 | 4 | On the 404 page, the language picker label falls back to `EN` even though the page renders in Indonesian, and the page doesn't load analytics. | P-11, G-22 |
 | 5 | The header contact button is labeled and styled as "WhatsApp" but opens the contact form. | G-5 |
 | 6 | "Next Article" links to the next **newer** post; the new spec links to the next older post. | P-9 |
+
+---
+
+## Tasks
+
+- [ ] **Minimum website.** Depends on: final retail and AI project pricing. Done when: section 0 is done and home, pricing and contact are live on navario.id.
+- [ ] **Enterprise and AI project content.** Done when: the enterprise card mentions BYOK, and AI projects appear on the site.
+
+## Open decisions
+
+- [ ] **Scope for launch.** Recommendation: rebrand plus home, pricing and contact first. The rest of this spec waits.
+- [ ] **Enterprise price on the pricing page, or "Talk to us" only?** Recommendation: "Talk to us" only. Enterprise is sold through partners, who need room to add their consultancy.
+- [ ] **Logo.** Recommendation: later. Use a text logo for now.

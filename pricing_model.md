@@ -1,6 +1,6 @@
 # Pricing Model
 
-Internal. **Retail** means direct sales to SMEs at list price, per user. **Enterprise** means a flat monthly fee with unlimited users and the client's own AI key (BYOK), sold through partners (see [partnership_model.md](../partnership_model/partnership_model.md)).
+Internal. **Retail** means direct sales to SMEs at list price, per user. **Enterprise** means a flat monthly fee with unlimited users and the client's own AI key (BYOK), sold through partners (see [partnership_model.md](partnership_model.md)).
 
 ## Principles
 
@@ -10,7 +10,7 @@ Internal. **Retail** means direct sales to SMEs at list price, per user. **Enter
 - **No ERP-only deals.** Every package includes the AI Business Assistant.
 - **One AI unit: "AI question".** One message a user sends to the assistant, however many tool steps it takes to answer. Use this term everywhere (not "token" or "query"), because it is what users see in their usage tracking.
 - **Scope matches the proposal.** Only list what the demo can show: Accounting, Buying, Selling, Stock, Asset Management, Indonesian chart of accounts, PPN and PPh setup, Bahasa Indonesia, local document formats, company branding.
-- **PPN:** Depends on whether the new entity is PKP (see [execution_plan.md](../execution_plan/execution_plan.md#3-open-business-decisions)). If it is, prices exclude PPN.
+- **PPN:** Depends on whether the new entity is PKP (see [process_flow.md](process_flow.md#open-decisions)). If it is, prices exclude PPN.
 
 ## 1. Retail (direct)
 
@@ -46,7 +46,7 @@ Anything not in this table is an add-on (section 3) or a change request, quoted 
 | **Subscription** | Flat monthly fee, for example **IDR 12,500,000 / month** |
 | **Users** | Unlimited |
 | **Server** | Dedicated server, spec *TBD (vCPU / RAM / storage)* |
-| **AI Business Assistant** | Included, **BYOK**: the client's own Gemini API key, billed by Google to the client. No AI question limit from Navario. Give the client an estimated AI cost per month from [ai_cost_simulation.md](../cost_simulation/ai_cost_simulation.md) so they can budget. |
+| **AI Business Assistant** | Included, **BYOK**: the client's own Gemini API key, billed by Google to the client. No AI question limit from Navario. Give the client an estimated AI cost per month from [ai_cost_simulation.md](ai_cost_simulation.md) so they can budget. |
 | **Hosting** | Daily backups kept 30 days |
 | **Support** | Priority, first response within 6 hours. Partner handles first line, Navario second line. |
 | **Setup** | Navario's technical part from IDR 25,000,000 (multi-company, custom workflows, integrations). Partner consultancy is billed separately by the partner. |
@@ -57,7 +57,7 @@ When a client outgrows the server, move them to a larger server tier. Seats and 
 
 ### AI question top-ups (retail only; monthly, added to the company pool, unused questions don't roll over)
 
-> **Below cost on Gemini 3.8 Flash at 2027 prices** (~IDR 1,500 per question). Re-price at ≥ 2x the cost per question of the chosen model stack. See [ai_cost_simulation.md](../cost_simulation/ai_cost_simulation.md).
+> **Below cost on Gemini 3.8 Flash at 2027 prices** (~IDR 1,500 per question). Re-price at ≥ 2x the cost per question of the chosen model stack. See [ai_cost_simulation.md](ai_cost_simulation.md).
 
 | Pack | Price | Price per question |
 | :-- | :-- | :-- |
@@ -104,18 +104,7 @@ Odoo Indonesia list prices, from [odoo.com/id_ID/pricing](https://www.odoo.com/i
 - **The AI is no longer unique against Odoo** (Odoo Custom includes agentic AI). Our edge has to be: Bahasa Indonesia first, ERP data and access rules built in, simpler screens, and a local person who answers.
 - **Enterprise:** at 30+ users, Odoo Custom costs over Rp 7.6M per month in licences alone, before hosting and partner fees. A flat IDR 12.5M with unlimited users wins as headcount grows.
 
-To do:
-- [ ] Ask 2–3 Odoo partners in Jakarta for a quote for a 5-user and a 30-user trading company (licence + implementation), to get real first-year totals to compare against.
-- [ ] Try Odoo's AI on a trial database and note what our assistant does better in Bahasa Indonesia.
-
-## 5. Check before using these prices
-
-- [ ] **AI cost per question.** First estimate: IDR 350–1,500 per question depending on the Gemini model ([ai_cost_simulation.md](../cost_simulation/ai_cost_simulation.md)). Choose the model stack, then set allowances and top-up prices.
-- [ ] **Is 100 questions per user enough?** That is ~5 per user per working day. Track real usage of the first clients and adjust.
-- [ ] **Retail per-user price** versus Odoo (section 4) and versus Accurate Online and Jurnal (Mekari).
-- [ ] **Enterprise server spec** for IDR 12.5M.
-
-## 6. AI projects
+## 5. AI projects
 
 Custom AI work for any industry, built on the Navario assistant.
 
@@ -124,3 +113,22 @@ Custom AI work for any industry, built on the Navario assistant.
 | **Development** | Fixed price per project, quoted after a scoping call. *Price guide TBD.* |
 | **Server maintenance** | Monthly fee if Navario hosts and runs it. *Price TBD.* |
 | **AI usage** | BYOK: the client's own API key, billed by the provider to the client. Navario does not resell AI usage. |
+
+## Tasks
+
+- [ ] **Measure AI cost.** Done when: 50 realistic questions are logged with tokens, and the averages replace the assumptions in the script (see the cost simulation "Next steps").
+- [ ] **Choose the retail model stack.** Depends on: measure AI cost. Done when: the script is re-run and the tables in [ai_cost_simulation.md](ai_cost_simulation.md) match its output.
+- [ ] **Fix retail pricing.** Depends on: model stack. Done when: top-ups are priced at ≥ 2x cost per question and the retail price per user is final.
+- [ ] **Odoo first-year total.** Done when: 2–3 Odoo partners in Jakarta have quoted a 5-user and a 30-user trading company (licence + implementation).
+- [ ] **Odoo AI test.** Done when: you have tried Odoo's AI on a trial database and noted what our assistant does better in Bahasa Indonesia.
+- [ ] **Enterprise BYOK package.** Done when: the server spec is set and the per-company AI key setting works in a demo.
+- [ ] **AI project pricing.** Done when: section 5 has a development price guide and a monthly server maintenance fee.
+- [ ] **Validate the retail allowance.** After the first clients go live. Done when: real AI questions per user are measured (is 100 per user enough?), and the allowance is confirmed or changed.
+
+## Open decisions
+
+- [ ] **Retail price per user vs Odoo** (section 4), Accurate Online and Jurnal (Mekari). Recommendation: decide after the cost data. Compete on first-year total cost, not licence price.
+- [ ] **AI model stack for retail.** Recommendation: price on stack C until quality tests prove a cheaper stack.
+- [ ] **Enterprise server spec** (vCPU / RAM / storage) for the enterprise fee. Recommendation: set it from the load of a 30-user demo.
+- [ ] **AI project price guide** for development and monthly server maintenance. Recommendation: fixed price per project after a scoping call. Charge for scoping only if it includes a written design.
+- [ ] **BYOK providers, and does the product support a per-company key today?** Recommendation: Gemini only for now; the cost model and product are built on it. Do not quote BYOK until the key setting works in a demo.

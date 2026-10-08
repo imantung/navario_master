@@ -1,8 +1,8 @@
 # Process Flow
 
-Internal. From first contact to ongoing support. The stages follow the "Let's Talk" section of the [proposal](../proposal/draft_oct_2026/draft_proposal.md): **live demo → needs discussion → fixed-price quote**.
+Internal. From first contact to ongoing support. The stages follow the "Let's Talk" section of the [proposal](proposal/draft_oct_2026/draft_proposal.md): **live demo → needs discussion → fixed-price quote**.
 
-For partner deals the stages are the same; who does what is defined in [partnership_model.md](../partnership_model/partnership_model.md). Prices are in [pricing_model.md](../pricing_model/pricing_model.md).
+For partner deals the stages are the same; who does what is defined in [partnership_model.md](partnership_model.md). Prices are in [pricing_model.md](pricing_model.md).
 
 ```
 1 Live demo → 2 Needs discussion → 3 Quote & contract → 4 Setup & import → 5 Training & UAT → 6 Go-live → 7 Support
@@ -80,3 +80,17 @@ The SLA is a **first response** time (24 hours retail, 6 hours enterprise), not 
 - Support takes more than ~10 hours a week of your time.
 
 **Profile:** A functional support and implementation person with an accounting background (D3/S1 Akuntansi), not a developer. Most tickets will be accounting and process questions, and the same person can run training, data import and UAT, which frees you for product work. A cheaper first step is a part-time hire or an accounting student intern (*magang*) for data import and training.
+
+## Tasks
+
+- [ ] **Legal entity.** Done when: the PT Perorangan is registered and has a business bank account.
+- [ ] **Sales documents.** Depends on: legal entity and final retail pricing. Done when: the quotation template, service agreement, and Terms/Privacy exist in Bahasa Indonesia and have been checked by a notary or lawyer.
+- [ ] **First delivery.** Done when: the first client is live (stages 4–6) and has signed the go-live sign-off.
+- [ ] **Proof.** Done when: you have a testimonial, logo permission and a short case study, one month after go-live.
+
+## Open decisions
+
+- [ ] **Legal entity.** Register a *PT Perorangan* (a new entity, not PT Inovasi Teknologi Terintegrasi)? Recommendation: yes, before sending the first quotation.
+- [ ] **PKP (PPN registration).** Mandatory only above IDR 4.8 billion turnover per year **[unverified]**. Recommendation: stay non-PKP at first. Revisit when an enterprise client needs a *faktur pajak*.
+
+*Note: This must be validated with a certified Indonesian tax consultant or notary.*

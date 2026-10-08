@@ -40,7 +40,7 @@ Whatever is chosen:
 | Technical customization (code, integrations) | Navario, fixed quote | Client |
 | Consultancy, configuration, training, first-line support | Partner, at the partner's own rate | Client |
 
-Navario bills the platform directly so that the recurring revenue and the hosting responsibility stay with the party that runs the system, and so the client keeps the service if the partner leaves. Enterprise is a flat monthly fee with unlimited users, limited by server spec only. AI usage is BYOK: the client pays Google directly, so it is outside the commission base. See [pricing_model.md](../pricing_model/pricing_model.md#2-enterprise-through-partners).
+Navario bills the platform directly so that the recurring revenue and the hosting responsibility stay with the party that runs the system, and so the client keeps the service if the partner leaves. Enterprise is a flat monthly fee with unlimited users, limited by server spec only. AI usage is BYOK: the client pays Google directly, so it is outside the commission base. See [pricing_model.md](pricing_model.md#2-enterprise-through-partners).
 
 ### Implementation Partner: support split
 
@@ -52,7 +52,7 @@ Navario bills the platform directly so that the recurring revenue and the hostin
 ### What Navario gives partners
 
 - The proposal (English, plus Bahasa Indonesia when ready) and a one-page partner summary
-- A demo instance with the trading company dataset and the demo script from [process_flow.md](../process_flow/process_flow.md)
+- A demo instance with the trading company dataset and the demo script from [process_flow.md](process_flow.md)
 - A product training session (Implementation Partners: enough to configure and train clients), **only after the partner agreement is signed**
 - The retail price list
 
@@ -70,8 +70,17 @@ Navario bills the platform directly so that the recurring revenue and the hostin
 
 Once Navario has direct clients (around 10 or more), refer clients who need bookkeeping, tax filing or audit to partner firms in exchange for referrals back. This isn't worth offering yet; there is nothing to swap.
 
-## Decide before signing the first partner
+## Tasks
 
-- [ ] Commission option (A, B or C above), and whether it is lifetime or capped (for example 24 months).
-- [ ] Should Implementation Partners get a higher rate than Referral Partners on enterprise deals?
-- [ ] Minimum commitment for Implementation Partners (for example 1 deal per 6 months) to keep the "partner" status.
+- [ ] **Partner summary.** Done when: a one-page partner summary exists, with BYOK explained for enterprise.
+- [ ] **Partner outreach.** Depends on: partner summary. Done when: 15 accountants, tax consultants or IT consultants in Jabodetabek have been contacted. Follow rule 0: sign before you teach.
+- [ ] **Partner agreement draft.** Depends on: commission decision. Done when: a Bahasa Indonesia draft with confidentiality and non-solicitation clauses exists, checked by a notary or lawyer.
+
+## Open decisions
+
+Decide before signing the first partner.
+
+- [ ] **Commission option** (A, B or C above), lifetime or capped (for example 24 months). Recommendation: option A. BYOK AI usage is outside the commission base.
+- [ ] **Commission on AI projects** a partner refers. Recommendation: a one-time share of the development fee only.
+- [ ] **Higher rate for Implementation Partners** than Referral Partners on enterprise deals?
+- [ ] **Minimum commitment** for Implementation Partners (for example 1 deal per 6 months) to keep the "partner" status.
