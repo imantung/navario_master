@@ -8,6 +8,8 @@ Internal. Goal for the first 90 days: **3 paying reference clients and 2 active 
 - **Line:** *"Ask, don't search."* / *"Tanya, jangan cari."*
 - **Main competitor:** Spreadsheets, WhatsApp groups and paper. **Benchmark competitor:** Odoo, which prospects who already looked at ERP will compare us with.
 - **Against Odoo:** Odoo sells a licence and leaves implementation to a separate partner. We sell a finished, Indonesian-ready system with the AI assistant, hosting and a fixed-price setup in one quote. Compare first-year total cost, never licence price alone; Odoo's per-user licence is cheaper. Enterprise: unlimited users at a flat fee. See [pricing_model.md](../pricing_model/pricing_model.md#4-benchmark-odoo).
+- **AI projects:** open to any industry. Mention them to warm contacts and on LinkedIn ("we build AI on your business data"). Product messaging stays on trading companies.
+- **No ERP-only deals.** If a prospect wants ERP without AI, decline politely.
 - **Lead with the AI assistant.** It is what local competitors don't have, and what the demo shows best. Tax setup and Bahasa Indonesia are supporting proof, not the headline.
 - **Don't lead with "ERPNext"** in public copy or ads. The proposal says "built on a mature open-source platform"; name ERPNext when asked. "ERPNext" is a Frappe trademark, so avoid it in brand-like phrases such as "ERPNext Lokal Indonesia".
 - **Only trading companies** in messaging, for now. No manufacturing, retail chains or services examples.

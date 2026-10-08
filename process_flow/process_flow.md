@@ -47,7 +47,7 @@ The demo is the main sales tool, so it is scripted and rehearsed.
 ## Stage 4: Setup & Data Import
 
 * **You give:** A production instance configured from the needs discussion (trial instances are cleaned of test transactions), plus Excel import templates or the data migration add-on.
-* **You receive:** Master data (customers, suppliers, items, assets, chart of accounts mapping) and a signed master data sign-off.
+* **You receive:** Master data (customers, suppliers, items, assets, chart of accounts mapping) and a signed master data sign-off. Enterprise: the client's Gemini API key, from a Google Cloud billing account the client owns.
 
 ## Stage 5: Training & UAT
 
@@ -61,7 +61,7 @@ The demo is the main sales tool, so it is scripted and rehearsed.
 
 ## Stage 7: Ongoing Support
 
-* **You give:** Hosting, backups, upgrades and chat support at the package level. The monthly AI question pool, with a heads-up when they reach 80%.
+* **You give:** Hosting, backups, upgrades and chat support at the package level. Retail: the monthly AI question pool, with a heads-up when they reach 80%. Enterprise: AI runs on the client's own key (BYOK).
 * **You receive:** Monthly or annual subscription payments.
 * **One month after go-live:** Review AI usage together and offer a top-up if needed. **Ask for a testimonial, logo permission and a short case study.** Every early client is also portfolio.
 

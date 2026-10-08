@@ -40,7 +40,7 @@ Whatever is chosen:
 | Technical customization (code, integrations) | Navario, fixed quote | Client |
 | Consultancy, configuration, training, first-line support | Partner, at the partner's own rate | Client |
 
-Navario bills the platform directly so that the recurring revenue and the hosting responsibility stay with the party that runs the system, and so the client keeps the service if the partner leaves. Enterprise is a flat monthly fee with unlimited users (for example IDR 12,500,000), limited by server spec and AI questions; see [pricing_model.md](../pricing_model/pricing_model.md#2-enterprise-through-partners).
+Navario bills the platform directly so that the recurring revenue and the hosting responsibility stay with the party that runs the system, and so the client keeps the service if the partner leaves. Enterprise is a flat monthly fee with unlimited users, limited by server spec only. AI usage is BYOK: the client pays Google directly, so it is outside the commission base. See [pricing_model.md](../pricing_model/pricing_model.md#2-enterprise-through-partners).
 
 ### Implementation Partner: support split
 
@@ -53,11 +53,12 @@ Navario bills the platform directly so that the recurring revenue and the hostin
 
 - The proposal (English, plus Bahasa Indonesia when ready) and a one-page partner summary
 - A demo instance with the trading company dataset and the demo script from [process_flow.md](../process_flow/process_flow.md)
-- A product training session (Implementation Partners: enough to configure and train clients)
+- A product training session (Implementation Partners: enough to configure and train clients), **only after the partner agreement is signed**
 - The retail price list
 
 ## Rules
 
+0. **Sign before you teach.** Before signing, a prospective partner gets only the proposal, a live demo run by Navario, and the partner summary. No system access, no architecture or AI walkthroughs, no hands-on ERPNext training. Training starts after the agreement (with confidentiality and non-solicitation clauses) is signed. Lesson from Sep 2026: a prospective partner with ERP implementation experience learned ERPNext and the AI approach from the founder, then left without an agreement. *Note: The enforceability of confidentiality and non-solicitation clauses must be validated with a certified Indonesian tax consultant or notary.*
 1. **Lead registration.** Partners register a lead (company name and contact) by WhatsApp or the web form. Attribution is locked for **60 days** and extended while a deal is active. The first registration wins.
 2. **Cash first.** Commissions are paid only after the client's money clears.
 3. **Technical ownership.** Navario owns the platform and code. Partners don't modify core code; custom code goes through Navario.

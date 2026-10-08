@@ -85,7 +85,7 @@ Our prices are in IDR. For comparison, USD 1 ≈ IDR 16,500.
    | C | USD 9.02 | 37% |
 
    Stack C leaves too little room for server, support and partner commission (15%).
-4. **Enterprise at IDR 12.5M (~USD 760) per month.** If AI is capped at ~25% of the fee (~USD 190):
+4. **Enterprise uses BYOK** (see [pricing_model.md](../pricing_model/pricing_model.md)), so this point now only matters as a budget estimate for the client. The earlier pool analysis, at IDR 12.5M (~USD 760) per month with AI capped at ~25% of the fee (~USD 190):
 
    | Stack | AI questions per month |
    | :-- | --: |

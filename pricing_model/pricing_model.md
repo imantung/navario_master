@@ -1,14 +1,16 @@
 # Pricing Model
 
-Internal. **Retail** means direct sales to SMEs at list price, per user. **Enterprise** means a flat monthly fee with unlimited users, sold through partners (see [partnership_model.md](../partnership_model/partnership_model.md)).
+Internal. **Retail** means direct sales to SMEs at list price, per user. **Enterprise** means a flat monthly fee with unlimited users and the client's own AI key (BYOK), sold through partners (see [partnership_model.md](../partnership_model/partnership_model.md)).
 
 ## Principles
 
 - **Fixed price.** Every quote is a fixed total agreed before work starts. No hourly billing. Ranges below are internal guides; the client only ever sees one number.
-- **Retail is priced per user** (minimum 3 users). **Enterprise is flat** (unlimited users), limited by server capacity and AI questions instead of headcount.
+- **Retail is priced per user** (minimum 3 users) and includes AI questions. **Enterprise is flat** (unlimited users), limited by server capacity only.
+- **BYOK (bring your own key) for enterprise and AI projects.** The client connects its own Gemini API key and pays Google directly for AI usage. Navario charges only for the platform, development and server maintenance. So AI price changes (e.g., the Jan 2027 Gemini increase) do not hit Navario's margin.
+- **No ERP-only deals.** Every package includes the AI Business Assistant.
 - **One AI unit: "AI question".** One message a user sends to the assistant, however many tool steps it takes to answer. Use this term everywhere (not "token" or "query"), because it is what users see in their usage tracking.
 - **Scope matches the proposal.** Only list what the demo can show: Accounting, Buying, Selling, Stock, Asset Management, Indonesian chart of accounts, PPN and PPh setup, Bahasa Indonesia, local document formats, company branding.
-- **PPN:** Depends on whether the new entity is PKP (see [README](../README.md#open-business-decisions)). If it is, prices exclude PPN.
+- **PPN:** Depends on whether the new entity is PKP (see [execution_plan.md](../execution_plan/execution_plan.md#3-open-business-decisions)). If it is, prices exclude PPN.
 
 ## 1. Retail (direct)
 
@@ -44,16 +46,16 @@ Anything not in this table is an add-on (section 3) or a change request, quoted 
 | **Subscription** | Flat monthly fee, for example **IDR 12,500,000 / month** |
 | **Users** | Unlimited |
 | **Server** | Dedicated server, spec *TBD (vCPU / RAM / storage)* |
-| **AI Business Assistant** | *TBD* AI questions per month, company pool *(set after the cost simulation)* |
+| **AI Business Assistant** | Included, **BYOK**: the client's own Gemini API key, billed by Google to the client. No AI question limit from Navario. Give the client an estimated AI cost per month from [ai_cost_simulation.md](../cost_simulation/ai_cost_simulation.md) so they can budget. |
 | **Hosting** | Daily backups kept 30 days |
 | **Support** | Priority, first response within 6 hours. Partner handles first line, Navario second line. |
 | **Setup** | Navario's technical part from IDR 25,000,000 (multi-company, custom workflows, integrations). Partner consultancy is billed separately by the partner. |
 
-When a client outgrows the limits, move them to a larger server tier or add AI top-ups. Seats never trigger a price change.
+When a client outgrows the server, move them to a larger server tier. Seats and AI usage never trigger a price change.
 
-## 3. Add-ons (retail and enterprise)
+## 3. Add-ons
 
-### AI question top-ups (monthly, added to the company pool, unused questions don't roll over)
+### AI question top-ups (retail only; monthly, added to the company pool, unused questions don't roll over)
 
 > **Below cost on Gemini 3.8 Flash at 2027 prices** (~IDR 1,500 per question). Re-price at ≥ 2x the cost per question of the chosen model stack. See [ai_cost_simulation.md](../cost_simulation/ai_cost_simulation.md).
 
@@ -111,4 +113,14 @@ To do:
 - [ ] **AI cost per question.** First estimate: IDR 350–1,500 per question depending on the Gemini model ([ai_cost_simulation.md](../cost_simulation/ai_cost_simulation.md)). Choose the model stack, then set allowances and top-up prices.
 - [ ] **Is 100 questions per user enough?** That is ~5 per user per working day. Track real usage of the first clients and adjust.
 - [ ] **Retail per-user price** versus Odoo (section 4) and versus Accurate Online and Jurnal (Mekari).
-- [ ] **Enterprise server spec and AI pool** for IDR 12.5M.
+- [ ] **Enterprise server spec** for IDR 12.5M.
+
+## 6. AI projects
+
+Custom AI work for any industry, built on the Navario assistant.
+
+| | |
+| :-- | :-- |
+| **Development** | Fixed price per project, quoted after a scoping call. *Price guide TBD.* |
+| **Server maintenance** | Monthly fee if Navario hosts and runs it. *Price TBD.* |
+| **AI usage** | BYOK: the client's own API key, billed by the provider to the client. Navario does not resell AI usage. |
