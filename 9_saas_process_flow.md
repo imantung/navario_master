@@ -2,7 +2,7 @@
 
 Internal. A retail (SaaS) client from first contact to ongoing support. The stages follow the "Let's Talk" section of the [proposal](proposal/draft_oct_2026/draft_proposal.md): **live demo → needs discussion → fixed-price quote**.
 
-Enterprise is in [14_enterprise_process_flow.md](14_enterprise_process_flow.md). Prices are in [5_saas_pricing_model.md](5_saas_pricing_model.md). Pilot clients follow the same stages with the terms in [8_pilot_saas_model.md](8_pilot_saas_model.md). If a Referral Partner brought the lead, register it ([10_partnership_model.md](10_partnership_model.md#rules), rule 1); the commission is paid after the client's payment clears.
+Enterprise is in [11_enterprise_process_flow.md](11_enterprise_process_flow.md). Prices are in [5_saas_pricing_model.md](5_saas_pricing_model.md). Pilot clients follow the same stages with the terms in [5_saas_pricing_model.md](5_saas_pricing_model.md#5-pilot). If a Referral Partner brought the lead, register it ([8_partnership_model.md](8_partnership_model.md#rules), rule 1); the commission is paid after the client's payment clears.
 
 ```
 1 Live demo → 2 Needs discussion → 3 Quote & contract → 4 Setup & import → 5 Training & UAT → 6 Go-live → 7 Support
@@ -33,7 +33,7 @@ The demo is the main sales tool, so it is scripted and rehearsed.
   6. "Open the asset register."
 * **You give:** The demo, and the proposal PDF afterwards.
 * **You receive:** Company name, decision maker, number of staff who would use the system, current tools (spreadsheets, Accurate, Jurnal, etc.), and their main pain.
-* **Qualify:** SaaS fits roughly 3–30 users. Larger or multi-company prospects go to enterprise ([6_enterprise_pricing_model.md](6_enterprise_pricing_model.md)). During the pilot phase, check the pilot criteria ([8_pilot_saas_model.md](8_pilot_saas_model.md#2-who-qualifies)).
+* **Qualify:** SaaS fits roughly 3–30 users. Larger or multi-company prospects go to enterprise ([6_enterprise_pricing_model.md](6_enterprise_pricing_model.md)). During the pilot phase, check the pilot criteria ([5_saas_pricing_model.md](5_saas_pricing_model.md#who-qualifies)).
 
 ## Stage 2: Needs Discussion (included in setup)
 
@@ -81,12 +81,12 @@ The demo is the main sales tool, so it is scripted and rehearsed.
 
 ### Support coverage
 
-The SLA is a **first response** time, not a fix time. A fix follows with an estimate. Enterprise SLA and the partner support split are in [10_partnership_model.md](10_partnership_model.md#support-split-enterprise).
+The SLA is a **first response** time, not a fix time. A fix follows with an estimate. Enterprise SLA and the partner support split are in [8_partnership_model.md](8_partnership_model.md#support-split-enterprise).
 
 **While solo** ([C1](0_business_constraint.md#1-founder-and-capacity), [X6, X7](1_challenges.md#2-founder-capacity)):
 - One support channel: a WhatsApp Business number with an auto-reply stating support hours, and every request logged as a ticket (the Helpdesk/Issue doctype in our own ERP works).
 - Reduce "how do I" tickets: the video library, plus the assistant's **Learn** capability answering from the user guide.
-- Backup: a freelance ERPNext developer on a small monthly retainer, who has server access and a runbook, for when you are sick or away. One person running production for paying clients is the biggest operational risk.
+- Backup: a freelance ERPNext developer on a small monthly retainer, who has server access, for when you are sick or away. One person running production for paying clients is the biggest operational risk.
 
 **Hire the first support person when** either is true for 3 months in a row:
 - Recurring revenue covers the hire at no more than ~30% of monthly recurring revenue. At roughly IDR 6–8M/month fully loaded (Jakarta UMP + BPJS; less outside Jakarta), that is **about IDR 25M monthly recurring revenue**, e.g. 2 enterprise clients, or ~60 retail users.
@@ -100,7 +100,7 @@ Legal entity and sales documents (quotation, service agreement): see [2_legal.md
 
 - [ ] **Discovery checklist.** Done when: the stage 2 checklist exists as a one-page Bahasa Indonesia form.
 - [ ] **UAT checklist template.** Done when: a template covers the trading flow from stage 2.
-- [ ] **Backup developer.** Done when: a freelance ERPNext developer has server access and a runbook, before the first go-live.
+- [ ] **Backup developer.** Done when: a freelance ERPNext developer has server access, before the first go-live.
 - [ ] **First delivery.** Done when: the first client is live (stages 4–6) and has signed the go-live sign-off.
 - [ ] **Proof.** Done when: you have a testimonial, logo permission and a short case study, one month after go-live.
 

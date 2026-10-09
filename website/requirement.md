@@ -225,7 +225,7 @@ Workflows should only show steps the trading template actually uses (Lead/Opport
 ### P-6 Partners (`/en/partners`, `/id/mitra`)
 - Breadcrumb, H1 "Partner with Navario".
 - Who it's for: accountants, tax consultants, business consultants, IT/ERP consulting firms.
-- The two partner types and what each earns, in plain terms. Commission rates are shown; internal rules stay in [10_partnership_model.md](../10_partnership_model.md).
+- The two partner types and what each earns, in plain terms. Commission rates are shown; internal rules stay in [8_partnership_model.md](../8_partnership_model.md).
 - What Navario provides to partners (demo instance, training, proposal).
 - Button opens the contact modal with the topic "Become a partner" preselected. No CTA banner on this page.
 
@@ -389,6 +389,6 @@ These were found while reverse-engineering the old site. Fix them as part of the
 ## Open decisions
 
 - [ ] **Scope for launch.** Recommendation: rebrand plus home, pricing and contact first. The rest of this spec waits. If the retail price is not final at launch, launch home and contact only, and add pricing once [5_saas_pricing_model.md](../5_saas_pricing_model.md) is final.
-- [ ] **Commission rates on the Partners page.** The commission option is not decided ([10_partnership_model.md](../10_partnership_model.md#open-decisions)). Recommendation: no rates on the page until the first partner signs.
+- [ ] **Commission rates on the Partners page.** The commission option is not decided ([8_partnership_model.md](../8_partnership_model.md#open-decisions)). Recommendation: no rates on the page until the first partner signs.
 - [ ] **Enterprise price on the pricing page, or "Talk to us" only?** Recommendation: "Talk to us" only. Enterprise is sold through partners, who need room to add their consultancy.
 - [ ] **Logo.** Recommendation: later. Use a text logo for now.

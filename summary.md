@@ -18,7 +18,7 @@ Internal. How the Navario business model fits together. Start here. Prices are n
 | **Who pays for AI** | Navario (AI question pool with a hard limit) | Client (BYOK Gemini key) | Client (BYOK) |
 | **Hosting** | Shared cloud | Dedicated server | Navario, if maintained |
 | **Channel** | Direct, Referral Partners | Implementation Partners (model A or B), or direct | Founder's startup network |
-| **Docs** | [5](5_saas_pricing_model.md), [8](8_pilot_saas_model.md), [11](11_saas_process_flow.md) | [6](6_enterprise_pricing_model.md), [9](9_pilot_enterprise_model.md), [14](14_enterprise_process_flow.md) | [13](13_ai_project.md), [6 §4](6_enterprise_pricing_model.md#4-ai-projects) |
+| **Docs** | [5](5_saas_pricing_model.md) (incl. pilot), [9](9_saas_process_flow.md) | [6](6_enterprise_pricing_model.md) (incl. pilot), [11](11_enterprise_process_flow.md) | [12](12_ai_project.md), [6 §4](6_enterprise_pricing_model.md#4-ai-projects) |
 
 ### Where the money comes from
 
@@ -28,7 +28,7 @@ Internal. How the Navario business model fits together. Start here. Prices are n
 | **Enterprise** | Navario's share (model A) or the client price minus the partner share (model B) | Navario's technical setup and customization |
 | **AI projects** | Server maintenance | Development |
 
-In the short term, most cash comes from AI projects and setup fees. In the long term, the company's value is its recurring revenue. Whether the prices cover the costs is checked in the [financial model](financial_model.md).
+In the short term, most cash comes from AI projects and setup fees. In the long term, the company's value is its recurring revenue. Whether the prices cover the costs is checked in the financial model ([5 §6](5_saas_pricing_model.md#6-financial-model), [6 §6](6_enterprise_pricing_model.md#6-financial-model)).
 
 ### Why a client picks Navario
 
@@ -57,27 +57,27 @@ Status on 9 Oct 2026: the demo is in progress. The legal entity is still under d
 
 ## 2. Document order
 
-The current order mostly works. One weak spot: 7 (go-to-market) comes before the docs it depends on (8, 9, 10), and 6 depends on the split in 10.
+| # | Doc |
+| :-- | :-- |
+| 0–4 | Constraints, challenges, legal, brand, product scope |
+| 5 | SaaS pricing, incl. pilot and financial model |
+| 6 | Enterprise and AI project pricing, incl. pilot and financial model |
+| 7 | Go-to-market |
+| 8 | Partnership model |
+| 9 | SaaS process flow |
+| 10 | Partner onboarding process |
+| 11 | Enterprise process flow |
+| 12 | AI project |
 
-**Recommendation** (not applied): reorder so each doc depends only on earlier ones. The trade-off is renaming files and fixing every link.
+One weak spot: 7 (go-to-market) comes before the partnership model (8) it depends on, and 6 depends on the split in 8.
 
-| # | Now | Proposed |
-| :-- | :-- | :-- |
-| 0–6 | unchanged | unchanged |
-| 7 | Go-to-market | Pilot SaaS |
-| 8 | Pilot SaaS | Pilot enterprise |
-| 9 | Pilot enterprise | Partnership model |
-| 10 | Partnership model | Go-to-market |
-| 11–14 | unchanged | unchanged |
-
-Unnumbered references: [techstack.md](techstack.md), [ai_cost_simulation.md](ai_cost_simulation.md), [financial_model.md](financial_model.md).
+Unnumbered references: [techstack.md](techstack.md), [ai_cost_simulation.md](ai_cost_simulation.md), [financial_model.py](script/financial_model.py).
 
 ## 3. Missing documents
 
-- [x] **Financial model.** Structure written: [financial_model.md](financial_model.md). Inputs are mostly unknown.
-- [x] **Enterprise process flow.** [14_enterprise_process_flow.md](14_enterprise_process_flow.md).
-- [x] **AI projects.** [13_ai_project.md](13_ai_project.md). Scope catalogue still to define.
-- [ ] **Operations runbook.** For the founder and the backup developer, not for clients. Done when: backup restore, server provisioning, upgrade testing, incident response and data export are written as steps. Needed before the first go-live ([X6](1_challenges.md#2-founder-capacity)).
+- [x] **Financial model.** Profit per client in [5 §6](5_saas_pricing_model.md#6-financial-model) and [6 §6](6_enterprise_pricing_model.md#6-financial-model). Server, support and fixed costs are still unknown.
+- [x] **Enterprise process flow.** [11_enterprise_process_flow.md](11_enterprise_process_flow.md).
+- [x] **AI projects.** [12_ai_project.md](12_ai_project.md). Scope catalogue still to define.
 
 ## 4. Founder decisions, 9 Oct 2026
 
@@ -85,13 +85,13 @@ Applied in the docs:
 
 | Decision | Applied in |
 | :-- | :-- |
-| AI projects: any system, inside or outside Frappe/ERPNext, within a scope catalogue | [0](0_business_constraint.md) (C4), [13](13_ai_project.md), [1](1_challenges.md) (X5), [3](3_brand_identity.md), [4](4_product_scope.md) (4.1), [6](6_enterprise_pricing_model.md), [7](7_go_to_market.md), CLAUDE.md |
+| AI projects: any system, inside or outside Frappe/ERPNext, within a scope catalogue | [0](0_business_constraint.md) (C4), [12](12_ai_project.md), [1](1_challenges.md) (X5), [3](3_brand_identity.md), [4](4_product_scope.md) (4.1), [6](6_enterprise_pricing_model.md), [7](7_go_to_market.md), CLAUDE.md |
 | No cash, runway or geography constraint | [0](0_business_constraint.md#not-constraints) |
 | No Navario brand in the product, for retail too | [3](3_brand_identity.md) |
 | Separate Referral and Implementation Partner pitches | [3](3_brand_identity.md#partners) |
 | Name hosting and AI providers only when asked | [3](3_brand_identity.md#hard-questions), [2](2_legal.md) (L7), [techstack.md](techstack.md#3-hosting) |
 | DigitalOcean and Gemini are for now; a move to cheaper providers is planned | [techstack.md](techstack.md), [1](1_challenges.md) (X16) |
-| Product scope: data export, multiple warehouses/branches/companies, per-user daily cap, asset question in the demo | [4](4_product_scope.md), [11](11_saas_process_flow.md) |
+| Product scope: data export, multiple warehouses/branches/companies, per-user daily cap, asset question in the demo | [4](4_product_scope.md), [9](9_saas_process_flow.md) |
 | New risks X15–X17 | [1](1_challenges.md#6-product-and-technology) |
 
-Still open: legal entity timing (2), PKP (2, leaning non-PKP), pilot terms (8, 9), partner minimum commitment (10, 12).
+Still open: legal entity timing (2), PKP (2, leaning non-PKP), pilot terms (5, 6), partner minimum commitment (8, 10).

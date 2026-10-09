@@ -77,7 +77,7 @@ These keep the client free to leave, and keep Platform Core and Nava AI closed. 
 2. **Company_Custom depends only on Frappe and ERPNext,** never on Platform Core or Nava AI. Otherwise the client's own code breaks when they leave.
 3. **Configuration is stored as data.** Chart of accounts, tax templates, print formats and roles that Platform Core sets up are saved as records in the client's database, not only in Platform Core code. So they stay with the client.
 4. **Client data lives only in the client's database.** Nava AI keeps the request log and usage counts, not business data.
-5. **No source code leaves Navario** for Platform Core or Nava AI: not to partners, not to clients ([10_partnership_model.md](10_partnership_model.md#rules), rule 3).
+5. **No source code leaves Navario** for Platform Core or Nava AI: not to partners, not to clients ([8_partnership_model.md](8_partnership_model.md#rules), rule 3).
 
 ## 5. If a client leaves
 
@@ -97,7 +97,7 @@ The client can run its business on plain ERPNext with any other provider. That i
 
 ## Open decisions
 
-- [ ] **Server cost per retail client.** Unknown, but needed for the [financial model](financial_model.md). Recommendation: measure it on the demo server.
-- [ ] **Backup restore drill.** Backups are promised; a restore has never been tested. Recommendation: run one before the first go-live and write the steps in the runbook.
+- [ ] **Server cost per retail client.** Unknown, but needed for the financial model ([5 §6](5_saas_pricing_model.md#6-financial-model), [6 §6](6_enterprise_pricing_model.md#6-financial-model)). Recommendation: measure it on the demo server.
+- [ ] **Backup restore drill.** Backups are promised; a restore has never been tested. Recommendation: run one before the first go-live.
 - [ ] **What a "full data export" contains** ([4_product_scope.md](4_product_scope.md#2-first-paid-client), 2.9). Recommendation: a database backup plus files, tested once by restoring it on plain ERPNext.
 - [ ] **When to move host and AI provider.** Recommendation: after the first paying clients, when real usage data shows the saving. Re-run the cost simulation for the new provider first.

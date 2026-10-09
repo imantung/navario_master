@@ -75,14 +75,14 @@ Same in both:
 
 ## 3. Pilots
 
-Pilots referred by a partner ([8_pilot_saas_model.md](8_pilot_saas_model.md), [9_pilot_enterprise_model.md](9_pilot_enterprise_model.md)) follow the same split. If the pilot discounts stay on setup only (open decisions in 8 and 9), the subscription split does not change.
+Pilots referred by a partner ([5_saas_pricing_model.md](5_saas_pricing_model.md#5-pilot), [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#5-pilot)) follow the same split. If the pilot discounts stay on setup only (open decisions in 5 and 6), the subscription split does not change.
 
 ## 4. What Navario gives partners
 
-Step by step, from first contact to active partner: [12_partner_onboarding_process.md](12_partner_onboarding_process.md).
+Step by step, from first contact to active partner: [10_partner_onboarding_process.md](10_partner_onboarding_process.md).
 
 - The proposal (English, plus Bahasa Indonesia when ready) and a one-page partner summary
-- A demo instance with the trading company dataset and the demo script from [11_saas_process_flow.md](11_saas_process_flow.md)
+- A demo instance with the trading company dataset and the demo script from [9_saas_process_flow.md](9_saas_process_flow.md)
 - A product training session (Implementation Partners: enough to configure and train clients), **only after the partner agreement is signed**
 - The retail price list, and for Implementation Partners, the enterprise split
 

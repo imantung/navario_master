@@ -4,7 +4,7 @@ Internal. How Navario wins its first clients and partners. Positioning and wordi
 
 ## 1. Goal (first 90 days)
 
-- **Pilots:** either **3 SaaS pilots** ([8_pilot_saas_model.md](8_pilot_saas_model.md)) or **1–2 enterprise pilots** ([9_pilot_enterprise_model.md](9_pilot_enterprise_model.md)), depending on the opportunities that come up. All paid, all willing to become references.
+- **Pilots:** either **3 SaaS pilots** ([5_saas_pricing_model.md](5_saas_pricing_model.md#5-pilot)) or **1–2 enterprise pilots** ([6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#5-pilot)), depending on the opportunities that come up. All paid, all willing to become references.
 - **Partners:** 2 active partners.
 
 ## 2. Phases
@@ -20,7 +20,7 @@ Internal. How Navario wins its first clients and partners. Positioning and wordi
 An unknown solo vendor asking an SME to move its accounting is a trust problem first ([X2](1_challenges.md#1-sales-and-trust)). Address it directly:
 
 1. **Pilot programs.** A limited number of pilot clients get better terms in exchange for a logo, a testimonial, a short case study and one reference call. See section 4.
-2. **The demo is the portfolio.** A polished demo dataset, a 3-minute demo video in Bahasa Indonesia, and the scripted live demo in [11_saas_process_flow.md](11_saas_process_flow.md).
+2. **The demo is the portfolio.** A polished demo dataset, a 3-minute demo video in Bahasa Indonesia, and the scripted live demo in [9_saas_process_flow.md](9_saas_process_flow.md).
 3. **Honest founder credibility.** 15+ years building software, shown as founder experience. Only show company logos as "clients" once they are Navario clients.
 4. **Public fixed prices.** A pricing page removes the fear of hidden costs, which is a big objection to ERP vendors, and against Odoo partners' open-ended implementation quotes.
 5. **Low-risk start.** Monthly plan, no long contract, data export anytime, no vendor lock-in ([techstack.md](techstack.md#5-if-a-client-leaves)).
@@ -41,7 +41,7 @@ First qualified opportunity sets the track. Close the pilot window after 90 days
 | # | Channel | When | Action |
 | :-- | :-- | :-- | :-- |
 | 1 | **Warm network** | Now | List 30 people (ex-colleagues, friends, family businesses) who own or work at trading companies, or know someone who does. Ask for a 30-min demo by WhatsApp. This is the fastest path to the first pilots. |
-| 2 | **Partners** | Now | Referral: accountants and tax consultants, whose SME clients hand them messy spreadsheets. Enterprise: IT/ERP consulting firms. See [10_partnership_model.md](10_partnership_model.md). |
+| 2 | **Partners** | Now | Referral: accountants and tax consultants, whose SME clients hand them messy spreadsheets. Enterprise: IT/ERP consulting firms. See [8_partnership_model.md](8_partnership_model.md). |
 | 3 | **Short demo videos** | Now | 30–90 seconds, in Bahasa Indonesia, each showing one question to the assistant on realistic trading data. Post on LinkedIn, Instagram, TikTok and YouTube, and embed them on the website. |
 | 4 | **Founder LinkedIn** | Ongoing | 2 posts a week: demo clips, building in public, lessons from client work. |
 | 5 | **Website + blog SEO** | Ongoing, slow | Bilingual articles for trading SMEs (stock, receivables, month-end closing, AI for business). See [website/requirement.md](website/requirement.md). |
@@ -72,11 +72,11 @@ Track every lead in one simple sheet: source, date, demo done, pilot or list, qu
 
 In week order. Spend at most ~50% of each week on AI projects, so the product still moves ([C1](0_business_constraint.md#1-founder-and-capacity)). No outreach until the demo features work ([X1](1_challenges.md#1-sales-and-trust)).
 
-- [ ] **Week 1 — Demo ready.** Done when: the demo dataset is loaded, the script in [11_saas_process_flow.md](11_saas_process_flow.md) has been rehearsed 5 times, and a 3-minute Bahasa Indonesia demo video is recorded.
+- [ ] **Week 1 — Demo ready.** Done when: the demo dataset is loaded, the script in [9_saas_process_flow.md](9_saas_process_flow.md) has been rehearsed 5 times, and a 3-minute Bahasa Indonesia demo video is recorded.
 - [ ] **Week 1 — Lead sheet.** Done when: one sheet tracks source, date, offer (SaaS, enterprise or AI project), pilot or list, demo, quote, and won/lost with the reason.
 - [ ] **Week 2 — Warm network.** Depends on: demo ready. Done when: 30 contacts have been messaged and ≥ 5 demos are booked. Pitch AI projects to your startup network, and the product to trading companies.
-- [ ] **Week 2 — Pilot offers.** Depends on: pilot terms in [8_pilot_saas_model.md](8_pilot_saas_model.md#open-decisions) and [9_pilot_enterprise_model.md](9_pilot_enterprise_model.md#open-decisions). Done when: a one-page offer for each exists in Bahasa Indonesia, with the slot limit and the deadline.
-- [ ] **Week 2 — AI project offer.** Depends on: AI project pricing. Done when: a one-page offer exists: the project types from [13_ai_project.md](13_ai_project.md#1-scope-catalogue), how scoping works, BYOK, and one example per type.
+- [ ] **Week 2 — Pilot offers.** Depends on: pilot terms in [5_saas_pricing_model.md](5_saas_pricing_model.md#open-decisions) and [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#open-decisions). Done when: a one-page offer for each exists in Bahasa Indonesia, with the slot limit and the deadline.
+- [ ] **Week 2 — AI project offer.** Depends on: AI project pricing. Done when: a one-page offer exists: the project types from [12_ai_project.md](12_ai_project.md#1-scope-catalogue), how scoping works, BYOK, and one example per type.
 - [ ] **Week 4 — Content.** Done when: 4 short demo videos are published (section 5).
 - [ ] **Every Friday — Review.** Update the lead sheet and these tasks.
 
@@ -89,7 +89,7 @@ In week order. Spend at most ~50% of each week on AI projects, so the product st
 
 - [ ] **Week plan start date.** "Week 1 — Demo ready" assumes the demo works, but every status in [4_product_scope.md](4_product_scope.md) is still **?**. Recommendation: date week 1 from the day the section 1 statuses are filled in.
 - [ ] **"2 active partners in 90 days."** It needs the legal entity and a lawyer-checked agreement. Recommendation: make the goal 5 partner conversations, with 2 signed as a stretch.
-- [ ] **90-day revenue target.** Recommendation: set it from the [financial model](financial_model.md).
+- [ ] **90-day revenue target.** Recommendation: set it from the financial model ([5 §6](5_saas_pricing_model.md#6-financial-model), [6 §6](6_enterprise_pricing_model.md#6-financial-model)).
 - [ ] **When to write the Bahasa Indonesia proposal.** Recommendation: after section 1 of [4_product_scope.md](4_product_scope.md) is confirmed, so it claims only what works.
 - [ ] **Mixing pilot types.** If one enterprise and one SaaS opportunity come up at the same time. Recommendation: allow at most 1 enterprise + 1 SaaS pilot. More than that breaks the support promise.
 - [ ] **Retail per-user pricing vs the proposal.** The proposal says "no per-user licence fees", which is true for enterprise only. Recommendation: soften those lines in the retail (Bahasa Indonesia) version before showing it to retail prospects.

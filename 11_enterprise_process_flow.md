@@ -1,6 +1,6 @@
 # Enterprise Process Flow
 
-Internal. An enterprise client from first contact to ongoing support. Retail is in [11_saas_process_flow.md](11_saas_process_flow.md); stages that work the same way link there. Prices are in [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md). Partner models A and B are in [10_partnership_model.md](10_partnership_model.md#2-enterprise-partner-share). Pilot clients follow the same stages with the terms in [9_pilot_enterprise_model.md](9_pilot_enterprise_model.md).
+Internal. An enterprise client from first contact to ongoing support. Retail is in [9_saas_process_flow.md](9_saas_process_flow.md); stages that work the same way link there. Prices are in [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md). Partner models A and B are in [8_partnership_model.md](8_partnership_model.md#2-enterprise-partner-share). Pilot clients follow the same stages with the terms in [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#5-pilot).
 
 ```
 1 Live demo → 2 Discovery → 3 Quote & contract → 4 Server & AI key → 5 Setup & migration → 6 Training & UAT → 7 Go-live → 8 Support
@@ -23,13 +23,13 @@ Stage durations: unknown. Measure them on the first enterprise pilot.
 
 ## Stage 1: Live Demo
 
-Same script as retail ([11_saas_process_flow.md](11_saas_process_flow.md#stage-1-live-demo-3045-min-online-or-onsite)). Also show multiple branches or companies, if they are **Works** in [4_product_scope.md](4_product_scope.md).
+Same script as retail ([9_saas_process_flow.md](9_saas_process_flow.md#stage-1-live-demo-3045-min-online-or-onsite)). Also show multiple branches or companies, if they are **Works** in [4_product_scope.md](4_product_scope.md).
 
-* **Qualify:** above the retail user range, multiple branches or companies, a budget, a decision maker in the demo ([9_pilot_enterprise_model.md](9_pilot_enterprise_model.md#2-who-qualifies)).
+* **Qualify:** above the retail user range, multiple branches or companies, a budget, a decision maker in the demo ([6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#who-qualifies)).
 
 ## Stage 2: Discovery
 
-* **You give:** The retail discovery checklist ([11](11_saas_process_flow.md#stage-2-needs-discussion-included-in-setup)), plus:
+* **You give:** The retail discovery checklist ([9](9_saas_process_flow.md#stage-2-needs-discussion-included-in-setup)), plus:
   * Companies, branches and warehouses, and the transactions between them
   * Integrations with other systems
   * Custom workflows and approval rules
@@ -37,7 +37,7 @@ Same script as retail ([11_saas_process_flow.md](11_saas_process_flow.md#stage-1
   * Data location requirements ([L7](2_legal.md#1-rules))
   * Whether the client has a Google Cloud billing account
 * **You receive:** Answers, sample documents and a user list.
-* **Decide:** model A or B, principal or subcon ([10](10_partnership_model.md#principal-or-subcon-model-a)), and server size.
+* **Decide:** model A or B, principal or subcon ([8](8_partnership_model.md#principal-or-subcon-model-a)), and server size.
 
 ## Stage 3: Quote & Contract
 
@@ -52,24 +52,23 @@ Same script as retail ([11_saas_process_flow.md](11_saas_process_flow.md#stage-1
 
 ## Stages 5–7: Setup, Training, Go-Live
 
-Same as retail stages 4–6 ([11](11_saas_process_flow.md#stage-4-setup--data-import)), with the partner doing configuration and training where there is one. Navario reviews the partner's setup before go-live.
+Same as retail stages 4–6 ([9](9_saas_process_flow.md#stage-4-setup--data-import)), with the partner doing configuration and training where there is one. Navario reviews the partner's setup before go-live.
 
 ## Stage 8: Support
 
-* Support split: [10_partnership_model.md](10_partnership_model.md#support-split-enterprise). Response time: [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#1-enterprise-subscription).
+* Support split: [8_partnership_model.md](8_partnership_model.md#support-split-enterprise). Response time: [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#1-enterprise-subscription).
 * **Every month:** check server load. Move the client to a larger server tier when needed.
-* **One month after go-live:** ask for a testimonial, logo permission and a case study. In white-label deals, see the reference rights decision in [10](10_partnership_model.md#open-decisions).
+* **One month after go-live:** ask for a testimonial, logo permission and a case study. In white-label deals, see the reference rights decision in [8](8_partnership_model.md#open-decisions).
 
 ## Assumptions
 
 - The client can create and pay for its own Gemini key.
-- A partner can run discovery, training and first-line support after the training in [12_partner_onboarding_process.md](12_partner_onboarding_process.md#stage-5-onboarding).
+- A partner can run discovery, training and first-line support after the training in [10_partner_onboarding_process.md](10_partner_onboarding_process.md#stage-5-onboarding).
 
 ## Tasks
 
 - [ ] **Enterprise discovery checklist.** Done when: the stage 2 additions exist as a one-page Bahasa Indonesia form.
 - [ ] **AI key guide.** Depends on: BYOK is **Works**. Done when: a one-page Bahasa Indonesia guide walks a client through creating a paid Gemini API key.
-- [ ] **Server provisioning.** Done when: a dedicated server can be set up from a written runbook.
 
 ## Open decisions
 

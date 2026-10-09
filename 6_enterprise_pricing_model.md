@@ -1,6 +1,6 @@
 # Enterprise Pricing Model
 
-Internal. Two offers where the client brings its own AI key (BYOK): **Enterprise** (flat fee, unlimited users, sold through partners, see [10_partnership_model.md](10_partnership_model.md)) and **AI projects** (custom AI work, any industry). Retail is in [5_saas_pricing_model.md](5_saas_pricing_model.md).
+Internal. Two offers where the client brings its own AI key (BYOK): **Enterprise** (flat fee, unlimited users, sold through partners, see [8_partnership_model.md](8_partnership_model.md)) and **AI projects** (custom AI work, any industry). Also the enterprise pilot offer (section 5) and the potential profit per client (section 6). Retail is in [5_saas_pricing_model.md](5_saas_pricing_model.md).
 
 ## Principles
 
@@ -15,7 +15,7 @@ Internal. Two offers where the client brings its own AI key (BYOK): **Enterprise
 | | |
 | :-- | :-- |
 | **Subscription (client price)** | Flat monthly fee, for example **IDR 12,500,000 / month**. List price for clients who contract with Navario. |
-| **Navario's share** | **IDR 7,500,000 / month**, fixed, for the dedicated server and maintenance (hosting, backups, upgrades, second-line support). If the client contracts with the partner, the partner pays this share and sets its own client price. If the client contracts with Navario, the rest of the client price is the partner's share. See [10_partnership_model.md](10_partnership_model.md#2-enterprise-partner-share). Direct deals with no partner: Navario keeps the full client price. |
+| **Navario's share** | **IDR 7,500,000 / month**, fixed, for the dedicated server and maintenance (hosting, backups, upgrades, second-line support). If the client contracts with the partner, the partner pays this share and sets its own client price. If the client contracts with Navario, the rest of the client price is the partner's share. See [8_partnership_model.md](8_partnership_model.md#2-enterprise-partner-share). Direct deals with no partner: Navario keeps the full client price. |
 | **Users** | Unlimited |
 | **Server** | Dedicated server, spec *TBD (vCPU / RAM / storage)* |
 | **AI Business Assistant** | Included, **BYOK**: the client's own Gemini API key, billed by Google to the client. No AI question limit from Navario. Give the client an estimated AI cost per month from [ai_cost_simulation.md](ai_cost_simulation.md) so they can budget. |
@@ -38,7 +38,7 @@ At 30+ users, Odoo Custom costs over Rp 7.6M per month in licences alone, before
 
 ## 4. AI projects
 
-Custom AI work for any industry, on any system ([C4](0_business_constraint.md#2-offer)). Scope and process: [13_ai_project.md](13_ai_project.md).
+Custom AI work for any industry, on any system ([C4](0_business_constraint.md#2-offer)). Scope and process: [12_ai_project.md](12_ai_project.md).
 
 | | |
 | :-- | :-- |
@@ -46,21 +46,91 @@ Custom AI work for any industry, on any system ([C4](0_business_constraint.md#2-
 | **Server maintenance** | Monthly fee if Navario hosts and runs it. *Price TBD.* |
 | **AI usage** | BYOK: the client's own API key, billed by the provider to the client. Navario does not resell AI usage. |
 
+## 5. Pilot
+
+A limited offer for the first enterprise clients: **1–2 slots**, open for 90 days. Pilots run instead of SaaS pilots, not next to them ([7_go_to_market.md](7_go_to_market.md#4-pilot-capacity-saas-or-enterprise)).
+
+### Why pilots
+
+- **Proof:** an enterprise reference is what partners and larger prospects ask for first ([X2](1_challenges.md#1-sales-and-trust)).
+- **Server spec:** real load sets the dedicated server spec and the enterprise fee (open decision below).
+- **Partner model:** the first deal shows partners how the split works in practice.
+
+### Who qualifies
+
+- [ ] Trading company ([C4](0_business_constraint.md#2-offer)), with enough users or branches that a flat fee makes sense.
+- [ ] A decision maker attended the demo and has a budget.
+- [ ] Can set up its own Gemini API key on a Google Cloud billing account it owns (BYOK, [C7](0_business_constraint.md#2-offer)).
+- [ ] Pilot scope fits the five modules and the features marked **Works** ([C5, C6](0_business_constraint.md#2-offer)). Integrations and custom workflows are quoted separately, after the pilot.
+- [ ] Agrees in writing to the pilot commitments (pilot terms below).
+
+### Pilot terms
+
+| | Navario gives | Client gives |
+| :-- | :-- | :-- |
+| **Price** | Pilot discount (open decision below), on top of the list offer | Pays upfront ([C8](0_business_constraint.md#3-commercial-rules)). No free pilots. |
+| **Scope** | List offer: unlimited users, dedicated server, priority support | A fixed pilot scope agreed before work starts. Anything extra is a change request. |
+| **Attention** | Direct founder access and a weekly check-in during setup | A project owner on their side, and 30 minutes a week for feedback |
+| **AI** | Monthly AI cost estimate from [ai_cost_simulation.md](ai_cost_simulation.md) | Its own Gemini key, paid to Google directly |
+| **Proof** | — | Logo, testimonial, short case study and one reference call, one month after go-live |
+
+**Pilot period:** 3 months from go-live. After that, the client continues on the list offer or leaves with its data.
+
+All terms go into the Bahasa Indonesia service agreement ([L2](2_legal.md#1-rules)). No pilot before the legal entity exists ([L1](2_legal.md#1-rules)).
+
+### Before the first enterprise pilot
+
+- [ ] Per-company AI key (BYOK) is **Works** ([4_product_scope.md](4_product_scope.md#2-first-paid-client), 2.2).
+- [ ] A backup developer with server access is in place ([X6](1_challenges.md#2-founder-capacity)).
+
+### Success criteria (measured at the end of the pilot)
+
+- [ ] **Live.** All pilot users enter daily transactions in Navario.
+- [ ] **Used.** The assistant is used every week across the departments in the pilot.
+- [ ] **Measured.** Server load and monthly AI cost on the client's key are recorded, and the server spec is set.
+- [ ] **Proof.** Testimonial, logo permission and case study are received.
+- [ ] **Converted.** The client continues on the list offer.
+
+## 6. Financial model
+
+Potential profit per enterprise client, from [financial_model.py](script/financial_model.py). It uses the draft prices above. To change assumptions, edit the script and re-run it. Never calculate by hand. Company costs and break-even are in [5_saas_pricing_model.md](5_saas_pricing_model.md#company-costs-and-break-even).
+
+**Status:** Before dedicated server cost, which is unknown (open decision below). AI cost is zero for Navario (BYOK). Setup uses the "from" price, so year 1 is the minimum.
+
+| Deal | Profit / month | Year 1, incl. setup |
+| :-- | --: | --: |
+| Through a partner (Navario's share) | 7.50M | 115.00M |
+| Direct, no partner | 12.50M | 175.00M |
+
+**What this means:**
+- **One enterprise client through a partner earns about as much a month as a 30-user retail client on stack C**, with no AI cost risk. Enterprise is the better use of founder time once a partner sells it.
+- **The server spec sets the margin.** Every rupiah of dedicated server cost comes out of the profit above.
+- **AI projects are not modelled yet.** Profit per project = development price − founder days × a target day rate. Both are open decisions below.
+
 ## Tasks
 
 - [ ] **Enterprise BYOK package.** Done when: the server spec is set and the per-company AI key setting works in a demo.
-- [ ] **AI project pricing.** Done when: section 4 has a development price guide and a monthly server maintenance fee.
+- [ ] **AI project pricing.** Done when: section 4 has a development price guide and a monthly server maintenance fee, and the script computes profit per project.
+- [ ] **Pilot offer page.** Depends on: the pilot open decisions below. Done when: a one-page Bahasa Indonesia offer exists with the slot limit and the deadline.
+- [ ] **Pilot scope template.** Done when: a one-page template lists what is in and out of the pilot scope, to attach to the quotation.
 
 ## Assumptions
 
 - Navario's share covers the dedicated server, maintenance and second-line support.
 - Partners can add a markup that clients will pay.
+- A direct enterprise pilot (no partner) can be run solo.
 
 ## Open decisions
 
 - [ ] **Minimum term.** A dedicated server and a large setup on a monthly plan is risky. Recommendation: 12-month minimum term for enterprise. Retail stays monthly.
 - [ ] **BYOK on a free Gemini tier.** Google may use free-tier data for training, which breaks the proposal's "your data isn't used to train AI". Recommendation: the agreement requires a paid Google Cloud billing account.
 - [ ] **Who picks the model stack under BYOK?** Recommendation: Navario sets it and gives the client the cost estimate.
-- [ ] **Enterprise server spec** (vCPU / RAM / storage) for the enterprise fee. Recommendation: set it from the load of a 30-user demo.
+- [ ] **Enterprise server spec** (vCPU / RAM / storage) and its monthly cost, for the enterprise fee and section 6. Recommendation: set it from the load of a 30-user demo.
 - [ ] **AI project price guide** for development and monthly server maintenance. Recommendation: fixed price per project after a scoping call. Charge for scoping only if it includes a written design.
+- [ ] **Target day rate for AI projects.** Needed to check profit per project. Recommendation: set it with the price guide, and quote no project below it.
 - [ ] **BYOK providers, and does the product support a per-company key today?** Recommendation: Gemini only for now; the cost model and product are built on it. Do not quote BYOK until the key setting works in a demo.
+- [ ] **Pilot: slots before a partner is signed.** With no partner, the founder also does first-line support. Recommendation: only 1 enterprise pilot until a partner is signed.
+- [ ] **Pilot: discount.** Recommendation: 50% off Navario's setup part, full monthly fee. The monthly fee is the recurring revenue and sets the price after the pilot.
+- [ ] **Pilot: direct or through a partner.** Recommendation: take the first enterprise pilot direct if it comes from the warm network, and bring in a signed partner only for consultancy and training. Before any partner is signed, there is no one to share it with ([C9](0_business_constraint.md#3-commercial-rules)).
+- [ ] **Pilot: period.** Recommendation: 3 months from go-live, the same as the SaaS pilot.
+- [ ] **Pilot: no testimonial or case study.** Recommendation: the setup discount is paid back, written in the agreement.

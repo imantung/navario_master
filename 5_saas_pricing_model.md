@@ -1,6 +1,6 @@
 # SaaS Pricing Model (Retail)
 
-Internal. The retail channel: direct sales to SMEs, list price per user, AI questions included, shared cloud. Enterprise and AI projects are in [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md).
+Internal. The retail channel: direct sales to SMEs, list price per user, AI questions included, shared cloud. Also the retail pilot offer (section 5) and the potential profit per client (section 6). Enterprise and AI projects are in [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md).
 
 ## Principles
 
@@ -89,6 +89,97 @@ Odoo Indonesia list prices, from [odoo.com/id_ID/pricing](https://www.odoo.com/i
 - **Compete on total cost and "done for you".** An Odoo licence comes without implementation; Indonesian SMEs usually hire an Odoo partner separately, at variable cost. Our price includes hosting, the Indonesian setup, the AI assistant and a fixed-price setup. Compare **first-year total cost**, not monthly licence.
 - **The AI is no longer unique against Odoo** (Odoo Custom includes agentic AI). Our edge has to be: Bahasa Indonesia first, ERP data and access rules built in, simpler screens, and a local person who answers.
 
+## 5. Pilot
+
+A limited offer for the first retail clients: **3 slots**, open for 90 days. Pilots run instead of enterprise pilots, not next to them ([7_go_to_market.md](7_go_to_market.md#4-pilot-capacity-saas-or-enterprise)).
+
+### Why pilots
+
+- **Proof:** each pilot becomes a logo, a testimonial, a case study and a reference call ([X2](1_challenges.md#1-sales-and-trust)).
+- **Cost data:** real AI questions per user, to fix the retail price and allowance ([X8](1_challenges.md#3-margin)).
+- **Product feedback:** what trading companies actually ask the assistant.
+
+### Who qualifies
+
+- [ ] Trading company (distributor, wholesaler, trader) ([C4](0_business_constraint.md#2-offer)).
+- [ ] Fits the Fast-Track or Standard setup (section 2). No customization or historical ledger migration during the pilot.
+- [ ] The owner or a director attended the demo and will sponsor the pilot.
+- [ ] Can provide master data (customers, suppliers, items, opening balances) in the Excel templates within 2 weeks.
+- [ ] Agrees in writing to the pilot commitments (pilot terms below).
+
+### Pilot terms
+
+| | Navario gives | Client gives |
+| :-- | :-- | :-- |
+| **Price** | Pilot discount (open decision below), on top of the list offer | Pays upfront, like any client ([C8](0_business_constraint.md#3-commercial-rules)). No free pilots. |
+| **Scope** | List offer: modules, AI questions, hosting, support | Uses only what the demo showed ([C6](0_business_constraint.md#2-offer)) |
+| **Attention** | Direct founder access and a fortnightly check-in | 30 minutes every 2 weeks for feedback |
+| **Data** | Data export anytime | Permission to log AI usage per question (for cost, not content) |
+| **Proof** | — | Logo, testimonial, short case study and one reference call, one month after go-live |
+
+**Pilot period:** 3 months from go-live. After that, the client continues on the list offer or leaves with its data.
+
+All terms go into the Bahasa Indonesia service agreement ([L2](2_legal.md#1-rules)). No pilot before the legal entity exists ([L1](2_legal.md#1-rules)).
+
+### Success criteria (measured at the end of the pilot)
+
+- [ ] **Live.** Daily transactions (sales, purchases, stock) are entered in Navario, not in spreadsheets.
+- [ ] **Used.** The assistant is used every week by at least half of the users.
+- [ ] **Measured.** AI questions per user are logged and fed into [ai_cost_simulation.md](ai_cost_simulation.md).
+- [ ] **Proof.** Testimonial, logo permission and case study are received.
+- [ ] **Converted.** The client continues on the list offer.
+
+## 6. Financial model
+
+Potential profit per retail client, from [financial_model.py](script/financial_model.py). It uses the draft prices above and the AI cost from [ai_cost_simulation.py](script/ai_cost_simulation.py). To change assumptions, edit the script and re-run it. Never calculate by hand.
+
+**Status:** Before server, support and fixed costs, which are unknown. Assumes every client uses its full AI question allowance, so AI cost is the worst case.
+
+### AI cost per user per month (IDR, 100 questions)
+
+| Stack | AI cost | Share of price |
+| :-- | --: | --: |
+| A. Budget (2.5 Lite + 2.5 Flash) | 34,763 | 9% |
+| B. Current 2026 (3.1 Lite + 3.8 Flash) | 75,232 | 19% |
+| C. Current 2027 (3.1 Lite + 3.8 Flash) | 148,839 | 37% |
+
+### Profit per client (IDR)
+
+"Referred" pays the partner 15% of the subscription (option A in [8_partnership_model.md](8_partnership_model.md#1-saas-commission), not decided).
+
+| Stack | Client | Revenue / month | Profit / month, direct | Profit / month, referred | Year 1, direct, incl. setup | Year 1, annual prepaid, incl. setup |
+| :-- | :-- | --: | --: | --: | --: | --: |
+| A | 3 users, Fast-Track | 1.20M | 1.10M | 0.92M | 16.65M | 14.49M |
+| A | 10 users, Fast-Track | 4.00M | 3.65M | 3.05M | 47.33M | 40.13M |
+| A | 30 users, Standard | 12.00M | 10.96M | 9.16M | 139.99M | 118.39M |
+| B | 3 users, Fast-Track | 1.20M | 0.97M | 0.79M | 15.19M | 13.03M |
+| B | 10 users, Fast-Track | 4.00M | 3.25M | 2.65M | 42.47M | 35.27M |
+| B | 30 users, Standard | 12.00M | 9.74M | 7.94M | 125.42M | 103.82M |
+| C | 3 users, Fast-Track | 1.20M | 0.75M | 0.57M | 12.54M | 10.38M |
+| C | 10 users, Fast-Track | 4.00M | 2.51M | 1.91M | 33.64M | 26.44M |
+| C | 30 users, Standard | 12.00M | 7.53M | 5.73M | 98.92M | 77.32M |
+
+**What this means:**
+- **On stack C, AI takes 37% of the price** before server and support. Plan prices on stack C until a cheaper stack passes quality tests.
+- **A 3-user referred client on stack C leaves about 0.57M a month** to cover its share of the server, support and fixed costs. Small referred clients are the thinnest margin.
+- **Annual prepaid costs a lot of year-1 profit** (the 15% discount comes out of the profit, not the AI cost). Offer it for cash flow, not by default.
+
+### Company costs and break-even
+
+Shared by retail, enterprise and AI projects.
+
+| Input | Source | Value |
+| :-- | :-- | :-- |
+| Server cost per retail client (shared cloud) | [techstack.md](techstack.md#open-decisions) | Unknown |
+| Dedicated server cost per enterprise client | [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#open-decisions) | Unknown |
+| Support hire cost | [9_saas_process_flow.md](9_saas_process_flow.md#support-coverage) | Estimate |
+| Payment processing and bank fees | — | Unknown |
+| Fixed costs: tools, domain, backup developer retainer, notary and lawyer, bookkeeping | — | Unknown |
+
+- **Break-even:** monthly fixed costs ÷ average profit per client.
+- **Support hire trigger:** check against [9_saas_process_flow.md](9_saas_process_flow.md#support-coverage).
+- Founder time is not a cost line. It is limited by [C1](0_business_constraint.md#1-founder-and-capacity), not by money.
+
 ## Tasks
 
 - [ ] **Measure AI cost.** Done when: 50 realistic questions are logged with tokens, and the averages replace the assumptions in the script (see the cost simulation "Next steps").
@@ -98,14 +189,28 @@ Odoo Indonesia list prices, from [odoo.com/id_ID/pricing](https://www.odoo.com/i
 - [ ] **Odoo AI test.** Done when: you have tried Odoo's AI on a trial database and noted what our assistant does better in Bahasa Indonesia.
 - [ ] **Validate the allowance.** After the first clients go live. Done when: real AI questions per user are measured (is 100 per user enough?), and the allowance is confirmed or changed.
 
+- [ ] **Pilot offer page.** Depends on: the pilot open decisions below. Done when: a one-page Bahasa Indonesia offer exists with the 3-slot limit and the deadline.
+- [ ] **Pilot clause in the service agreement.** Depends on: [2_legal.md](2_legal.md#tasks) sales documents. Done when: the pilot terms in section 5 are in the agreement.
+- [ ] **Fixed costs.** Done when: every monthly fixed cost is listed with its real amount, and the script computes break-even.
+- [ ] **Server cost.** Done when: the cost per retail client and per enterprise server is measured ([techstack.md](techstack.md#open-decisions)) and added to the script.
+
 ## Assumptions
 
 - SMEs accept a per-user price above Odoo because the setup is "done for you".
 - A 3-user minimum fits small traders.
+- Pilot clients pay the full subscription, use the system daily, and give a case study.
+- One shared server holds many retail clients.
 
 ## Open decisions
 
-- [ ] **Full margin check.** The price is checked against AI cost only. Recommendation: check price − AI − server − partner commission − support in the [financial model](financial_model.md) before fixing the price.
+- [ ] **Full margin check.** Section 6 checks the price against AI cost and partner commission only. Recommendation: add server and support cost to the script before fixing the price.
+- [ ] **Target profit per retail user.** Recommendation: set it once server and support cost are measured, before the retail price is final.
+- [ ] **12-month revenue target.** Recommendation: set it from break-even (section 6), and use it in [7_go_to_market.md](7_go_to_market.md).
 - [ ] **Price changes for existing clients.** Recommendation: the service agreement allows one price review a year, with 30 days' notice.
 - [ ] **Price per user vs Odoo** (section 4), Accurate Online and Jurnal (Mekari). Recommendation: decide after the cost data. Compete on first-year total cost, not licence price.
 - [ ] **AI model stack.** Recommendation: price on stack C until quality tests prove a cheaper stack.
+- [ ] **Pilot: trial and pilot together?** Recommendation: pilots skip the 7-day trial. The pilot is the trial.
+- [ ] **Pilot: AI limit.** A hard limit hides the real usage you want to measure. Recommendation: a higher limit during the pilot, with full logging.
+- [ ] **Pilot: discount.** Recommendation: 50% off setup, list subscription. Don't discount the subscription: it sets the price clients expect after the pilot, and the retail price may still rise after cost data.
+- [ ] **Pilot: period.** Recommendation: 3 months from go-live. Long enough for one month-end closing and the case study.
+- [ ] **Pilot: no testimonial or case study.** Recommendation: the setup discount is paid back, written in the agreement.

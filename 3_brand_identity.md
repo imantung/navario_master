@@ -9,11 +9,11 @@ Internal. Who Navario is, how it is positioned, and how to introduce it. Website
 | **Name** | Navario |
 | **Domain** | [navario.id](https://navario.id) |
 | **Company** | *PT Upaya Teknologi Sejahtera* (name reserved, not registered yet, [L1](2_legal.md#1-rules)). Don't use it in client material until registered. |
-| **In the product** | No Navario brand inside the ERP, for retail and partner clients alike. One codebase for everyone, and partners can white-label it ([10_partnership_model.md](10_partnership_model.md#principal-or-subcon-model-a)). Navario is the company and marketing brand. |
+| **In the product** | No Navario brand inside the ERP, for retail and partner clients alike. One codebase for everyone, and partners can white-label it ([8_partnership_model.md](8_partnership_model.md#principal-or-subcon-model-a)). Navario is the company and marketing brand. |
 | **Assistant component** | Nava AI (internal name). Client-facing name: "AI Business Assistant". |
 | **Tagline** | *"Ask, don't search."* / *"Tanya, jangan cari."* |
 | **What we sell** | An AI Business Assistant for Indonesian trading companies, with a complete ERP included. |
-| **Second offer** | AI projects: custom AI work for any industry, on any system ([13_ai_project.md](13_ai_project.md)). |
+| **Second offer** | AI projects: custom AI work for any industry, on any system ([12_ai_project.md](12_ai_project.md)). |
 | **Mission** | Help companies navigate their business with AI. |
 | **Why it matters** | Your team should spend its time running the business, not searching for information. |
 
@@ -86,7 +86,7 @@ Rules: claim software and AI experience only. Don't claim ERP, accounting or imp
 
 ### Partners
 
-Two pitches, one per partner type ([10_partnership_model.md](10_partnership_model.md#partner-types)).
+Two pitches, one per partner type ([8_partnership_model.md](8_partnership_model.md#partner-types)).
 
 **Referral Partner** (accountants, tax consultants, bookkeepers):
 - **EN:** "Introduce trading companies that struggle with spreadsheets. Navario runs the demo, setup and support. You earn a commission on the subscription for as long as the client pays."
@@ -115,4 +115,4 @@ Two pitches, one per partner type ([10_partnership_model.md](10_partnership_mode
 
 - [ ] **"We" or "I" in written material.** Recommendation: "we" for Navario in proposals and the website, "I" in personal WhatsApp and LinkedIn messages. Answer team-size questions plainly (above).
 - [ ] **Bahasa Indonesia wording.** The ID versions above are drafts. Recommendation: have a native-speaking trading company owner read them before first use.
-- [ ] **Pilot offer in introductions.** Depends on the pilot terms in [8_pilot_saas_model.md](8_pilot_saas_model.md#open-decisions) and [9_pilot_enterprise_model.md](9_pilot_enterprise_model.md#open-decisions). Recommendation: mention it only after the demo, not in the first message.
+- [ ] **Pilot offer in introductions.** Depends on the pilot terms in [5_saas_pricing_model.md](5_saas_pricing_model.md#open-decisions) and [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#open-decisions). Recommendation: mention it only after the demo, not in the first message.

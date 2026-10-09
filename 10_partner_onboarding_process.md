@@ -1,6 +1,6 @@
 # Partner Onboarding Process
 
-Internal. A partner from first contact to active partner. The model, split and rules are in [10_partnership_model.md](10_partnership_model.md). The key rule: **sign before you teach** ([C9](0_business_constraint.md#3-commercial-rules)).
+Internal. A partner from first contact to active partner. The model, split and rules are in [8_partnership_model.md](8_partnership_model.md). The key rule: **sign before you teach** ([C9](0_business_constraint.md#3-commercial-rules)).
 
 ```
 1 Outreach → 2 Intro & demo → 3 Fit check → 4 Agreement → 5 Onboarding → 6 First deal → 7 Active partner
@@ -25,9 +25,9 @@ Internal. A partner from first contact to active partner. The model, split and r
 
 ## Stage 2: Intro & Demo (45–60 min)
 
-* **You give:** The live demo run by Navario ([11_saas_process_flow.md](11_saas_process_flow.md#stage-1-live-demo-3045-min-online-or-onsite)), the proposal and the one-page partner summary.
+* **You give:** The live demo run by Navario ([9_saas_process_flow.md](9_saas_process_flow.md#stage-1-live-demo-3045-min-online-or-onsite)), the proposal and the one-page partner summary.
 * **You receive:** Their client base (industries, company sizes, how many trading companies), their services, and what they want: referral income or implementation work.
-* **Do not give:** System access, architecture or AI walkthroughs, hands-on training, or the enterprise split details beyond the partner summary ([10_partnership_model.md](10_partnership_model.md#rules), rule 0).
+* **Do not give:** System access, architecture or AI walkthroughs, hands-on training, or the enterprise split details beyond the partner summary ([8_partnership_model.md](8_partnership_model.md#rules), rule 0).
 
 ## Stage 3: Fit Check
 
@@ -39,7 +39,7 @@ Internal. A partner from first contact to active partner. The model, split and r
 | Has a legal entity that can sign and invoice (needed for model A) | — | ✓ |
 | Has a real prospect in mind | Nice to have | ✓ |
 
-* **Decide with the partner:** partner type; for Implementation Partners, model A or B, and principal or subcon ([10_partnership_model.md](10_partnership_model.md#2-enterprise-partner-share)).
+* **Decide with the partner:** partner type; for Implementation Partners, model A or B, and principal or subcon ([8_partnership_model.md](8_partnership_model.md#2-enterprise-partner-share)).
 * **Stop here** if the fit is weak. Keep them as an informal referrer with no training.
 
 ## Stage 4: Agreement
@@ -52,7 +52,7 @@ Internal. A partner from first contact to active partner. The model, split and r
 
 | | Referral Partner | Implementation Partner |
 | :-- | :-- | :-- |
-| **Materials** | Partner summary, retail price list, pilot offers ([8](8_pilot_saas_model.md), [9](9_pilot_enterprise_model.md)), the brand wording ([3_brand_identity.md](3_brand_identity.md)) | Same, plus the enterprise split |
+| **Materials** | Partner summary, retail price list, pilot offers ([5 §5](5_saas_pricing_model.md#5-pilot), [6 §5](6_enterprise_pricing_model.md#5-pilot)), the brand wording ([3_brand_identity.md](3_brand_identity.md)) | Same, plus the enterprise split |
 | **Lead registration** | How to register a lead by WhatsApp or web form | Same |
 | **Demo** | None; Navario runs demos | Own demo instance with the trading dataset, and the demo script |
 | **Training** | 30-min product overview | Product training: configuration, user training, first-line support. Enough to run stages 2, 5 and 7 of the client process. |
@@ -71,11 +71,11 @@ Internal. A partner from first contact to active partner. The model, split and r
 
 * **Every month:** Pay commission or partner share after the client's payment clears (model B), or invoice Navario's share in advance (model A).
 * **Every quarter:** 30-min review: leads registered, deals closed, support issues, product feedback.
-* **Status (proposed, not decided):** A partner with no registered lead in 6 months goes back to informal referrer ([open decision](10_partnership_model.md#open-decisions) on minimum commitment).
+* **Status (proposed, not decided):** A partner with no registered lead in 6 months goes back to informal referrer ([open decision](8_partnership_model.md#open-decisions) on minimum commitment).
 
 ## Tasks
 
-- [ ] **Partner summary.** Done when: a one-page partner summary exists ([10_partnership_model.md](10_partnership_model.md#tasks)).
+- [ ] **Partner summary.** Done when: a one-page partner summary exists ([8_partnership_model.md](8_partnership_model.md#tasks)).
 - [ ] **Fit check form.** Done when: the stage 3 checklist exists as a one-page form.
 - [ ] **Partner agreement.** Done when: the draft in [2_legal.md](2_legal.md#tasks) is checked by a notary or lawyer.
 - [ ] **Implementation training kit.** Depends on: a signed Implementation Partner. Done when: a training agenda, a configuration guide and a first-line support guide exist. Don't build it before the first partner signs.

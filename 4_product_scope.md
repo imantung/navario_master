@@ -1,6 +1,6 @@
 # Product Scope
 
-What the product must do, and when. Sales material may only claim features marked **Works** here. Claims come from the [proposal](proposal/draft_oct_2026/draft_proposal.md) and the demo script in [11_saas_process_flow.md](11_saas_process_flow.md).
+What the product must do, and when. Sales material may only claim features marked **Works** here. Claims come from the [proposal](proposal/draft_oct_2026/draft_proposal.md) and the demo script in [9_saas_process_flow.md](9_saas_process_flow.md).
 
 **Status** values: **Works** (shown in a demo today), **Partly**, **Not built**, **?** (not confirmed yet).
 
@@ -50,7 +50,7 @@ Confirm each one. If it is not built, every client who reads the proposal gets a
 
 | # | Feature | Why it serves the strategy |
 | :-- | :-- | :-- |
-| 4.1 | Assistant works on data outside ERPNext | Lets the assistant answer from a client's other systems. Could share code with AI projects such as MCP servers ([13_ai_project.md](13_ai_project.md)). |
+| 4.1 | Assistant works on data outside ERPNext | Lets the assistant answer from a client's other systems. Could share code with AI projects such as MCP servers ([12_ai_project.md](12_ai_project.md)). |
 | 4.2 | Proactive alerts (daily WhatsApp or email summary: overdue invoices, low stock) | Trading company owners want to be told, not to ask. Strong demo. |
 | 4.3 | e-Faktur export | The most common Indonesian tax request. Until built, say plainly it is not included. |
 
