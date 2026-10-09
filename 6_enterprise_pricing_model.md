@@ -18,7 +18,7 @@ Internal. Two offers where the client brings its own AI key (BYOK): **Enterprise
 | **Navario's share** | **IDR 7,500,000 / month**, fixed, for the dedicated server and maintenance (hosting, backups, upgrades, second-line support). If the client contracts with the partner, the partner pays this share and sets its own client price. If the client contracts with Navario, the rest of the client price is the partner's share. See [8_partnership_model.md](8_partnership_model.md#2-enterprise-partner-share). Direct deals with no partner: Navario keeps the full client price. |
 | **Users** | Unlimited |
 | **Server** | Dedicated server, spec *TBD (vCPU / RAM / storage)* |
-| **AI Business Assistant** | Included, **BYOK**: the client's own AI key, billed by the provider to the client. No AI question limit from Navario. Give the client an estimated AI cost per month from [ai_cost_simulation.md](ai_cost_simulation.md) so they can budget. |
+| **AI Business Assistant** | Included, **BYOK**: the client's own AI key, billed by the provider to the client. No AI Quota from Navario. Give the client an estimated AI cost per month from [ai_cost_simulation.md](ai_cost_simulation.md) so they can budget. |
 | **Hosting** | Daily backups kept 30 days |
 | **Support** | Priority, first response within 6 hours. Partner handles first line, Navario second line. |
 

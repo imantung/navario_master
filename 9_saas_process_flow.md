@@ -46,7 +46,7 @@ The demo is the main sales tool, so it is scripted and rehearsed.
   * Data to bring in: customers, suppliers, items, opening balances
 * **You receive:** Answers, sample documents and a user list.
 * **Decide:** Fast-Track or Standard setup, and any add-ons.
-* **Optional: 7-day trial.** Their own instance, pre-loaded with the trading template, capped at 200 AI questions. If they need more time, the 30-day extension fee is credited to setup. An instance with no decision is frozen on day 7 and deleted on day 10.
+* **Optional: 7-day trial.** Their own instance, pre-loaded with the trading template, with an AI Quota of 1,400 credits (about 200 average questions). If they need more time, the 30-day extension fee is credited to setup. An instance with no decision is frozen on day 7 and deleted on day 10.
 
 ## Stage 3: Fixed-Price Quote & Contract
 
@@ -69,12 +69,12 @@ The demo is the main sales tool, so it is scripted and rehearsed.
 
 ## Stage 6: Go-Live
 
-* **You give:** Opening balances posted (bank, stock, AR/AP), production access for all users, the AI question pool switched on, and a go-live confirmation.
+* **You give:** Opening balances posted (bank, stock, AR/AP), production access for all users, the AI Quota switched on, and a go-live confirmation.
 * **You receive:** A signed go-live sign-off.
 
 ## Stage 7: Ongoing Support
 
-* **You give:** Hosting, backups, upgrades and chat support (first response within 24 hours). The monthly AI question pool, with a heads-up when they reach 80%.
+* **You give:** Hosting, backups, upgrades and chat support (first response within 24 hours). The monthly AI Quota, with a heads-up when they reach 80%.
 * **You receive:** Monthly or annual subscription payments.
 * **One month after go-live:** Review AI usage together and offer a top-up if needed. **Ask for a testimonial, logo permission and a short case study.** Every early client is also portfolio.
 * **If the client leaves:** Give a full data export. They keep their data and configuration ([techstack.md](techstack.md#5-if-a-client-leaves)).

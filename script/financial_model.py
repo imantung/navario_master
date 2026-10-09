@@ -5,18 +5,17 @@ Edit the ASSUMPTIONS section and re-run. Results are copied into the
 Prices here must match those two docs; they are the source of truth.
 """
 
-from ai_cost_simulation import QUESTION_MIX, STACKS, question_cost_usd, total_usd
+from ai_cost_simulation import QUOTA_CREDITS, STACKS, USD_IDR, cost_per_credit_usd
 
 # ---------------------------------------------------------------- ASSUMPTIONS
-
-USD_IDR = 16_500  # same rate as ai_cost_simulation.md
 
 # Retail, from 5_saas_pricing_model.md (draft)
 PRICE_PER_USER = 400_000  # IDR / user / month
 ANNUAL_DISCOUNT = 0.15
 SETUP = {"Fast-Track": 3_500_000, "Standard": 8_500_000}
-ALLOWANCE = 100  # AI questions / user / month, assume the pool is fully used
+QUOTA = QUOTA_CREDITS  # AI Quota, credits / user / month, assume the pool is fully used
 RETAIL_CLIENTS = {"3 users": (3, "Fast-Track"), "10 users": (10, "Fast-Track"), "30 users": (30, "Standard")}
+TOPUPS = {3_500: 250_000, 7_000: 450_000, 17_500: 1_000_000}  # credits: IDR / month
 PARTNER_COMMISSION = 0.15  # option A in 8_partnership_model.md, only if a partner referred the client
 
 # Enterprise, from 6_enterprise_pricing_model.md (draft)
@@ -36,9 +35,8 @@ CLIENT_SCENARIOS = [10, 30, 100, 300]  # paying retail clients
 # ---------------------------------------------------------------- MODEL
 
 
-def ai_cost_per_question_idr(stack):
-    usd = sum(share * total_usd(question_cost_usd(stack, steps)) for share, steps in QUESTION_MIX.values())
-    return usd * USD_IDR
+def ai_cost_per_credit_idr(stack):
+    return cost_per_credit_usd(stack) * USD_IDR
 
 
 def idr(x):
@@ -46,11 +44,11 @@ def idr(x):
 
 
 def retail():
-    print("Retail AI cost per user per month, IDR, full allowance used\n")
+    print("Retail AI cost per user per month, IDR, full AI Quota used\n")
     print("| Stack | AI cost | Share of price |")
     print("| :-- | --: | --: |")
     for stack_name, stack in STACKS.items():
-        ai_user = ai_cost_per_question_idr(stack) * ALLOWANCE
+        ai_user = ai_cost_per_credit_idr(stack) * QUOTA
         print(f"| {stack_name} | {ai_user:,.0f} | {ai_user / PRICE_PER_USER:.0%} |")
 
     print("\nRetail profit per client, IDR, before server, support and fixed costs\n")
@@ -58,7 +56,7 @@ def retail():
           "| Year 1, direct, incl. setup | Year 1, annual prepaid, incl. setup |")
     print("| :-- | :-- | --: | --: | --: | --: | --: |")
     for stack_name, stack in STACKS.items():
-        ai_user = ai_cost_per_question_idr(stack) * ALLOWANCE
+        ai_user = ai_cost_per_credit_idr(stack) * QUOTA
         for name, (users, setup) in RETAIL_CLIENTS.items():
             revenue = PRICE_PER_USER * users
             ai = ai_user * users
@@ -68,6 +66,16 @@ def retail():
             year1_annual = (revenue * (1 - ANNUAL_DISCOUNT) - ai) * 12 + SETUP[setup]
             print(f"| {stack_name[:1]} | {name}, {setup} | {idr(revenue)} | {idr(direct)} | {idr(referred)} "
                   f"| {idr(year1)} | {idr(year1_annual)} |")
+
+
+def topups():
+    print("\nAI Quota top-ups: price per credit vs AI cost per credit, IDR\n")
+    print("| Pack | Price | Price / credit | " + " | ".join(f"Margin, stack {n[:1]}" for n in STACKS) + " |")
+    print("| :-- | --: | --: | " + " | ".join("--:" for _ in STACKS) + " |")
+    for credits, price in TOPUPS.items():
+        ppc = price / credits
+        margins = " | ".join(f"{1 - ai_cost_per_credit_idr(st) / ppc:.0%}" for st in STACKS.values())
+        print(f"| +{credits:,} credits | {price:,} | {ppc:,.0f} | {margins} |")
 
 
 def enterprise():
@@ -85,7 +93,7 @@ def idr_b(x):
 def market():
     firms = SMALL_MEDIUM_FIRMS * TRADE_SHARE
     revenue_client = PRICE_PER_USER * USERS_PER_CLIENT * 12
-    ai_client = ai_cost_per_question_idr(STACKS[list(STACKS)[-1]]) * ALLOWANCE * USERS_PER_CLIENT * 12
+    ai_client = ai_cost_per_credit_idr(STACKS[list(STACKS)[-1]]) * QUOTA * USERS_PER_CLIENT * 12
     print(f"\nRetail market potential, {USERS_PER_CLIENT} users per client, list price, stack C, direct\n")
     print(f"Trading small + medium firms (estimate): {firms:,.0f}")
     print(f"If every one were a client: {idr_b(firms * revenue_client)} subscription revenue / year\n")
@@ -97,5 +105,6 @@ def market():
 
 if __name__ == "__main__":
     retail()
+    topups()
     enterprise()
     market()

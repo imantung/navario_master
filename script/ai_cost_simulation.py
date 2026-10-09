@@ -1,8 +1,14 @@
 """AI cost (CoGS) simulation for the Navario AI Business Assistant.
 
+Cost is computed from tokens the way the provider bills them:
+uncached input x input price + cached input x cached price + output x output price.
+Clients see an AI Quota measured in credits; tokens are never client-facing.
+
 Run: python3 ai_cost_simulation.py
 Edit the ASSUMPTIONS section and re-run. Results are explained in ai_cost_simulation.md.
 """
+
+import math
 
 # ---------------------------------------------------------------- ASSUMPTIONS
 
@@ -46,30 +52,62 @@ QUESTION_MIX = {
     "complex (6 tools)": (0.15, 6),
 }
 
+# Credits (the unit of the client's AI Quota)
+# credits per message = token cost at the REFERENCE price list / CREDIT_USD, rounded up, minimum 1.
+# The reference is frozen, so a question costs the same credits whichever model actually runs it.
+CREDIT_USD = 0.01
+REFERENCE = "C. Current 2027 (3.1 Lite + 3.8 Flash)"
+QUOTA_CREDITS = 700        # retail AI Quota per user per month (draft, 5_saas_pricing_model.md)
+USD_IDR = 18_500         # planning rate with a buffer; market ~18,000 (Oct 2026)
+
 WORKING_DAYS = 22
 USAGE_PROFILES = {"light": 3, "normal": 6, "heavy": 15}   # questions per user per working day
 
 # ---------------------------------------------------------------- MODEL
 
 
-def call_cost(model, static_in, dynamic_in, out):
-    price_in, price_cached, price_out = MODELS[model]
-    cached = static_in * CACHE_HIT_RATE
-    uncached = static_in - cached + dynamic_in
-    return (uncached * price_in + cached * price_cached + out * price_out) / 1e6
-
-
-def question_cost_usd(stack, steps):
+def question_calls(stack, steps):
+    """Token usage per call: (model, uncached input, cached input, output)."""
     classifier, reasoning, execution = stack
     static = SYSTEM_PROMPT + TOOL_DEFINITIONS
-    cost = call_cost(classifier, CLASSIFIER_PROMPT, HISTORY + USER_MESSAGE, CLASSIFIER_OUTPUT)
-    cost += call_cost(reasoning, static, HISTORY + USER_MESSAGE, REASONING_OUTPUT)
+
+    def call(model, static_in, dynamic_in, out):
+        cached = static_in * CACHE_HIT_RATE
+        return model, static_in - cached + dynamic_in, cached, out
+
+    calls = [call(classifier, CLASSIFIER_PROMPT, HISTORY + USER_MESSAGE, CLASSIFIER_OUTPUT),
+             call(reasoning, static, HISTORY + USER_MESSAGE, REASONING_OUTPUT)]
     # execution loop: one call per tool step plus the final answer; tool results accumulate
     for i in range(steps + 1):
         dynamic = HISTORY + USER_MESSAGE + REASONING_OUTPUT + i * (TOOL_RESULT + STEP_OUTPUT)
-        out = ANSWER_OUTPUT if i == steps else STEP_OUTPUT
-        cost += call_cost(execution, static, dynamic, out)
+        calls.append(call(execution, static, dynamic, ANSWER_OUTPUT if i == steps else STEP_OUTPUT))
+    return calls
+
+
+def tokens_cost_usd(calls):
+    cost = 0
+    for model, uncached, cached, out in calls:
+        price_in, price_cached, price_out = MODELS[model]
+        cost += (uncached * price_in + cached * price_cached + out * price_out) / 1e6
     return cost
+
+
+def question_cost_usd(stack, steps):
+    return tokens_cost_usd(question_calls(stack, steps))
+
+
+def question_credits(steps):
+    return max(1, math.ceil(round(question_cost_usd(STACKS[REFERENCE], steps) / CREDIT_USD, 6)))
+
+
+def average_credits():
+    return sum(share * question_credits(steps) for share, steps in QUESTION_MIX.values())
+
+
+def cost_per_credit_usd(stack):
+    """Navario's real AI cost per credit on a stack, incl. overhead and PPN."""
+    avg_cost = sum(share * total_usd(question_cost_usd(stack, steps)) for share, steps in QUESTION_MIX.values())
+    return avg_cost / average_credits()
 
 
 def total_usd(usd):
@@ -77,18 +115,42 @@ def total_usd(usd):
 
 
 def main():
+    ref_in, ref_cached, ref_out = MODELS[STACKS[REFERENCE][2]]
+    print(f"Credit: USD {CREDIT_USD} of token cost at the reference price list ({REFERENCE})")
+    print(f"  = {CREDIT_USD / ref_in * 1e6:,.0f} input, {CREDIT_USD / ref_cached * 1e6:,.0f} cached input "
+          f"or {CREDIT_USD / ref_out * 1e6:,.0f} output tokens on the reference execution model\n")
+
+    print("| Question | Calls | Uncached input | Cached input | Output | Credits |")
+    print("| :-- | --: | --: | --: | --: | --: |")
+    for q, (share, steps) in QUESTION_MIX.items():
+        calls = question_calls(STACKS[REFERENCE], steps)
+        unc, cac, out = (sum(c[i] for c in calls) for i in (1, 2, 3))
+        print(f"| {q} | {len(calls)} | {unc:,.0f} | {cac:,.0f} | {out:,.0f} | {question_credits(steps)} |")
+    avg = average_credits()
+    print(f"| **Average (question mix)** | | | | | **{avg:.2f}** |")
+
+    print("\n| Stack | Simple | Normal | Complex | Average / question | Cost / credit (USD) | Cost / credit (IDR) |")
+    print("| :-- | --: | --: | --: | --: | --: | --: |")
     for name, stack in STACKS.items():
-        print(f"\n{name}")
-        avg = 0
-        for q, (share, steps) in QUESTION_MIX.items():
-            c = total_usd(question_cost_usd(stack, steps))
-            avg += share * c
-            print(f"  {q:<18} USD {c:>7.4f} / question")
-        print(f"  {'weighted average':<18} USD {avg:>7.4f} / question")
-        for p, per_day in USAGE_PROFILES.items():
-            n = per_day * WORKING_DAYS
-            print(f"  {p:<6} user ({n:>3} q/mo)   USD {avg * n:>6.2f} / user / month")
-        print(f"  100 questions (retail allowance)  USD {avg * 100:>6.2f}")
+        costs = [total_usd(question_cost_usd(stack, steps)) for _, steps in QUESTION_MIX.values()]
+        mean = sum(share * c for (share, _), c in zip(QUESTION_MIX.values(), costs))
+        cpc = cost_per_credit_usd(stack)
+        print(f"| {name} | {costs[0]:.3f} | {costs[1]:.3f} | {costs[2]:.3f} | {mean:.3f} | {cpc:.4f} | {cpc * USD_IDR:,.0f} |")
+
+    print("\n| Stack | AI Quota "
+          f"({QUOTA_CREDITS} credits) | "
+          + " | ".join(f"{p.capitalize()} ({n * WORKING_DAYS * avg:,.0f} cr)" for p, n in USAGE_PROFILES.items()) + " |")
+    print("| :-- | --: | --: | --: | --: |")
+    for name, stack in STACKS.items():
+        cpc = cost_per_credit_usd(stack)
+        usage = " | ".join(f"{n * WORKING_DAYS * avg * cpc:.2f}" for n in USAGE_PROFILES.values())
+        print(f"| {name[:1]} | {QUOTA_CREDITS * cpc:.2f} | {usage} |")
+
+    print(f"\n100 average questions = {100 * avg:,.0f} credits. AI Quota of {QUOTA_CREDITS} credits "
+          f"= about {QUOTA_CREDITS / avg:.0f} average questions.")
+    print("Questions to credits: " + ", ".join(f"{q:,} = {q * avg:,.0f}" for q in (30, 200, 500, 1_000, 2_500)))
+    print("Top-up floor (2x cost per credit): " + ", ".join(
+        f"{n[:1]} IDR {2 * cost_per_credit_usd(st) * USD_IDR:,.0f}" for n, st in STACKS.items()) + " per credit")
 
 
 if __name__ == "__main__":

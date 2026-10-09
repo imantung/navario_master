@@ -24,13 +24,13 @@ Not needed to demo, but already promised in the proposal or the pricing.
 
 | # | Feature | Why | Status |
 | :-- | :-- | :-- | :-- |
-| 2.1 | AI question pool per company, per-user daily cap, usage tracking, 80% warning, hard limit | Retail pricing depends on it. Without the limit, AI cost has no ceiling. | ? |
+| 2.1 | AI Quota per company in credits: credits per message, per-user daily cap, usage screen, 80% warning, hard limit | Retail pricing depends on it. Without the limit, AI cost has no ceiling. | ? |
 | 2.2 | Per-company AI key (BYOK) | Enterprise pricing depends on it | ? |
 | 2.3 | Request log | Proposal: "Every request is recorded" | ? |
 | 2.4 | Indonesian setup: chart of accounts, PPN/PPh, print formats | Proposal: "Built for Indonesian companies" | ? |
 | 2.5 | Instance provisioning and backups | The 7-day trial and every go-live need it | ? |
 | 2.6 | Excel import templates | Retail setup is "self-service import" | ? |
-| 2.7 | Token logging per question (internal) | Needed to finalise pricing ([ai_cost_simulation.md](ai_cost_simulation.md)) | ? |
+| 2.7 | Token and credit logging per message (internal) | Needed to finalise pricing ([ai_cost_simulation.md](ai_cost_simulation.md)) | ? |
 | 2.8 | Multiple warehouses, branches and companies | Standard setup and enterprise depend on it | ? |
 | 2.9 | Full data export that restores on plain ERPNext | Promised as "no vendor lock-in" ([techstack.md](techstack.md#5-if-a-client-leaves)) | ? |
 

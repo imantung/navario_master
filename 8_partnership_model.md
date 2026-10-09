@@ -29,7 +29,7 @@ Based on the retail subscription in [5_saas_pricing_model.md](5_saas_pricing_mod
 | C. Old Tier 2 (Co-selling) | 15% in year 1, 10% from year 2 | 20% of Standard setup; IDR 500,000 flat for Fast-Track |
 
 Whatever is chosen:
-- **Not included in the base:** AI question top-ups, other add-ons, customization, trial extensions and PPN.
+- **Not included in the base:** AI Quota top-ups, other add-ons, customization, trial extensions and PPN.
 - Paid within 7 days after the client's payment clears.
 
 ## 2. Enterprise partner share

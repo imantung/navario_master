@@ -79,7 +79,7 @@ The one list of what Navario claims over competitors. Other docs link here. Comp
 | Use | Don't use | Why |
 | :-- | :-- | :-- |
 | AI Business Assistant | chatbot, AI agent | The proposal's term. "More than a chatbot" is a selling point. |
-| AI questions | tokens, requests, queries | What users see in their usage tracking |
+| AI Quota / *Kuota AI*, measured in credits / *kredit* | tokens, AI questions, requests, queries | What users see in their usage screen. *Kuota* and *isi ulang* (top up) are familiar from mobile data. In Bahasa Indonesia, use *kredit* only with a number ("1.000 kredit"): on its own it also means a loan or instalments. In sales, translate: "about N questions a month". |
 | A mature open-source business platform | ERPNext (in public copy, ads, brand-like phrases) | Frappe trademark ([L4](2_legal.md#1-rules)). Name ERPNext only when asked. |
 | Business system / *sistem bisnis*; or name the jobs: *pembukuan, stok, pembelian, penjualan* | "ERP" with SME owners and their staff | Owners don't know the term, and in Indonesia "ERP" sounds like expensive software for big companies (founder's conversations with business-owner friends, Oct 2026). Say "ERP" only with enterprise prospects, IT/ERP partners, and in SEO articles for people who already search for it. |
 | Fixed price, one quote | estimate, hourly | [C8](0_business_constraint.md#3-commercial-rules) |
@@ -132,7 +132,7 @@ Two pitches, one per partner type ([8_partnership_model.md](8_partnership_model.
 | "Who are your clients?" | "We are new. That's why we're working closely with our first clients, and I'll show you everything live in the demo." Do not name companies that are not clients. |
 | "How big is your team?" | "Founder-led, with implementation partners for larger clients." Don't imply a bigger team. |
 | "Is this just Odoo / ERPNext?" | "It is built on a mature open-source platform, so there is no vendor lock-in. What we add is the AI assistant, Indonesian setup and simpler screens, at a fixed price." Name ERPNext if they ask directly. |
-| "Where is our data stored?" | Don't raise it yourself; answer only when asked. "Your data is stored with a major cloud provider in Singapore, and AI questions are processed by a business-grade AI service that doesn't use your data for training. The details are in the service agreement." Name the providers if asked directly. Providers may change later ([X16](1_challenges.md#6-product-and-technology)), so don't name them in marketing. The agreement must still state them ([L7](2_legal.md#1-rules)). |
+| "Where is our data stored?" | Don't raise it yourself; answer only when asked. "Your data is stored with a major cloud provider in Singapore, and the assistant's AI processing is done by a business-grade AI service that doesn't use your data for training. The details are in the service agreement." Name the providers if asked directly. Providers may change later ([X16](1_challenges.md#6-product-and-technology)), so don't name them in marketing. The agreement must still state them ([L7](2_legal.md#1-rules)). |
 | "What if you disappear?" | "Your data and your customization are yours. The ERP is open source, so it keeps running with another provider. You would lose only our improved screens, translation and the AI assistant." See [techstack.md](techstack.md#5-if-a-client-leaves). |
 
 ## Assumptions

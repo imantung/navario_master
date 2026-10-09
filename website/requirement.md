@@ -188,7 +188,7 @@ The home page is the only page allowed to use full-width bands. All other pages 
 - Breadcrumb, H1 "AI Business Assistant".
 - Content from proposal sections 3, 5 and 6: how it works (5 steps), the agentic workflow diagram (server-rendered SVG or HTML, not an image of text), the capability table, and the chat features.
 - 3–5 short demo clips, one per capability, each with a caption and transcript.
-- An FAQ block with `FAQPage` JSON-LD. Questions to cover: Is my data used to train AI? Can staff see data they shouldn't? Can it change data by itself? Which languages? What is an "AI question" and how many do we get?
+- An FAQ block with `FAQPage` JSON-LD. Questions to cover: Is my data used to train AI? Can staff see data they shouldn't? Can it change data by itself? Which languages? What is the AI Quota, what is a credit, and how many do we get?
 
 ### P-4 Product / module pages (×5)
 All five are built from one shared template. Each page has:
@@ -215,11 +215,11 @@ Workflows should only show steps the trading template actually uses (Lead/Opport
 
 ### P-5 Pricing (`/en/pricing`, `/id/harga`)
 - Breadcrumb, H1 "Pricing", one-line intro: "Fixed prices. Hosting, AI and support included."
-- A **Retail** card: price per user per month (minimum 3 users), annual discount, AI questions per user, and the two setup options (Fast-Track, Standard) with what each includes. The numbers come from [5_saas_pricing_model.md](../5_saas_pricing_model.md) and are stored in `siteContent.json`, not hardcoded.
+- A **Retail** card: price per user per month (minimum 3 users), annual discount, AI Quota per user (in credits, with "about N questions"), and the two setup options (Fast-Track, Standard) with what each includes. The numbers come from [5_saas_pricing_model.md](../5_saas_pricing_model.md) and are stored in `siteContent.json`, not hardcoded.
 - An **Enterprise** card: "Unlimited users, dedicated server, delivered with our implementation partners." Show the starting price from [6_enterprise_pricing_model.md](../6_enterprise_pricing_model.md) or no price (decide). Button: *Talk to us*.
 - Add-ons summary (AI top-ups, data migration, training). Customization is shown as "quoted at a fixed price after review".
 - A PPN note that follows the PKP decision in [2_legal.md](../2_legal.md#open-decisions). If Navario is non-PKP, no PPN is charged and there is no note.
-- FAQ with `FAQPage` JSON-LD: What is an AI question? What happens when we run out? Can we add users later? How do we compare with Odoo? Can we export our data?
+- FAQ with `FAQPage` JSON-LD: What is the AI Quota and a credit? What happens when we run out? Can we add users later? How do we compare with Odoo? Can we export our data?
 - Each package button opens the contact modal with the topic "Ask about pricing" preselected.
 
 ### P-6 Partners (`/en/partners`, `/id/mitra`)

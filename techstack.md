@@ -53,7 +53,7 @@ Answer: summary, table, or link to a document, report or pre-filled form
 - **No write without the user.** New documents open as pre-filled forms the user saves. Actions and setup changes show a preview and need Apply.
 - **Request log:** who asked what and whether it was allowed. Field values are never logged.
 - **AI provider:** any model is allowed, but the product stays on one, Google Gemini, until a client opportunity needs another. A move to a cheaper provider of the same quality is planned, so all model calls go through one internal interface ([X16](1_challenges.md#6-product-and-technology)). Model stack and cost: [ai_cost_simulation.md](ai_cost_simulation.md).
-- **AI key:** retail uses Navario's key with a question pool per company. Enterprise and AI projects use the client's own key (BYOK).
+- **AI key:** retail uses Navario's key with an AI Quota (credits) per company. Enterprise and AI projects use the client's own key (BYOK).
 
 ## 3. Hosting
 
@@ -67,7 +67,7 @@ Answer: summary, table, or link to a document, report or pre-filled form
 
 DigitalOcean is the fastest route for now. A move to a cheaper host of the same quality is planned ([X16](1_challenges.md#6-product-and-technology)).
 
-Client data is stored outside Indonesia, and AI questions are processed by Google. Both must be disclosed in the service agreement and Privacy Policy ([L7](2_legal.md#1-rules)), not in marketing.
+Client data is stored outside Indonesia, and AI processing is done by Google. Both must be disclosed in the service agreement and Privacy Policy ([L7](2_legal.md#1-rules)), not in marketing.
 
 ## 4. Design rules
 

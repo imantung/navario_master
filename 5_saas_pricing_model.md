@@ -1,13 +1,13 @@
 # SaaS Pricing Model (Retail)
 
-Internal. The retail channel: direct sales to SMEs, list price per user, AI questions included, shared cloud. Also the retail pilot offer (section 5) and the potential profit per client (section 6). Enterprise and AI projects are in [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md).
+Internal. The retail channel: direct sales to SMEs, list price per user, AI Quota included, shared cloud. Also the retail pilot offer (section 5) and the potential profit per client (section 6). Enterprise and AI projects are in [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md).
 
 ## Principles
 
 - **Fixed price** ([C8](0_business_constraint.md#3-commercial-rules)). Every quote is a fixed total agreed before work starts. No hourly billing. Ranges below are internal guides; the client only ever sees one number.
 - **No ERP-only deals** ([C3](0_business_constraint.md#2-offer)). Every package includes the AI Business Assistant.
-- **Priced per user** (minimum 3 users), AI questions included.
-- **One AI unit: "AI question".** One message a user sends to the assistant, however many tool steps it takes to answer. Use this term everywhere (not "token" or "query"), because it is what users see in their usage tracking.
+- **Priced per user** (minimum 3 users), AI Quota included.
+- **AI Quota, measured in credits.** Each company has a monthly AI Quota (*Kuota AI*). Each message to the assistant uses credits for the work it takes: a simple question about 4, a complex one about 15. Credits come from the tokens used, at a fixed reference price list ([ai_cost_simulation.md](ai_cost_simulation.md#credits)). Clients see "AI Quota" and "credits", never tokens.
 - **Navario carries the AI cost.** So the price must cover AI at 2027 Gemini rates, and the product must enforce a hard limit ([X9, X10](1_challenges.md#3-margin)).
 - **Scope matches the proposal.** Only list what the demo can show: Accounting, Buying, Selling, Stock, Asset Management, Indonesian chart of accounts, PPN and PPh setup, Bahasa Indonesia, local document formats, company branding.
 - **PPN:** Depends on whether the new entity is PKP (see [2_legal.md](2_legal.md#open-decisions)). If it is, prices exclude PPN.
@@ -20,7 +20,7 @@ Internal. The retail channel: direct sales to SMEs, list price per user, AI ques
 | **Minimum** | 3 users (IDR 1,200,000 / month) |
 | **Annual** | 15% off (12 months prepaid) |
 | **Modules** | Accounting, Buying, Selling, Stock, Asset Management |
-| **AI Business Assistant** | 100 AI questions per user per month, pooled across the company |
+| **AI Business Assistant** | AI Quota of 700 credits per user per month (about 100 average questions), pooled across the company |
 | **Hosting** | Shared cloud, daily backups kept 14 days |
 | **Support** | Chat, first response within 24 hours |
 
@@ -41,15 +41,15 @@ Anything not in this table is an add-on (section 3) or a change request, quoted 
 
 ## 3. Add-ons
 
-### AI question top-ups (monthly, added to the company pool, unused questions don't roll over)
+### AI Quota top-ups (monthly, added to the company pool, unused credits don't roll over)
 
-> **Below cost on Gemini 3.8 Flash at 2027 prices** (~IDR 1,500 per question). Re-price at ≥ 2x the cost per question of the chosen model stack. See [ai_cost_simulation.md](ai_cost_simulation.md).
+> **Below cost on stacks B and C; thin on stack A** (margins in section 6). Re-price at ≥ 2x the cost per credit of the chosen model stack ([ai_cost_simulation.md](ai_cost_simulation.md#results)). Pack sizes match the old 500 / 1,000 / 2,500 questions at the same prices.
 
-| Pack | Price | Price per question |
+| Pack | Price | Price per credit |
 | :-- | :-- | :-- |
-| +500 questions | IDR 250,000 / month | IDR 500 |
-| +1,000 questions | IDR 450,000 / month | IDR 450 |
-| +2,500 questions | IDR 1,000,000 / month | IDR 400 |
+| +3,500 credits | IDR 250,000 / month | IDR 71 |
+| +7,000 credits | IDR 450,000 / month | IDR 64 |
+| +17,500 credits | IDR 1,000,000 / month | IDR 57 |
 
 ### Trial extension
 
@@ -109,7 +109,7 @@ A limited offer for the first retail clients: **3 slots**, open for 90 days. Pil
 ### Why pilots
 
 - **Proof:** each pilot becomes a logo, a testimonial, a case study and a reference call ([X2](1_challenges.md#1-sales-and-trust)).
-- **Cost data:** real AI questions per user, to fix the retail price and allowance ([X8](1_challenges.md#3-margin)).
+- **Cost data:** real credits used per user, to fix the retail price and the AI Quota ([X8](1_challenges.md#3-margin)).
 - **Product feedback:** what trading companies actually ask the assistant.
 
 ### Who qualifies
@@ -125,9 +125,9 @@ A limited offer for the first retail clients: **3 slots**, open for 90 days. Pil
 | | Navario gives | Client gives |
 | :-- | :-- | :-- |
 | **Price** | Pilot discount (open decision below), on top of the list offer | Pays upfront, like any client ([C8](0_business_constraint.md#3-commercial-rules)). No free pilots. |
-| **Scope** | List offer: modules, AI questions, hosting, support | Uses only what the demo showed, plus any planned feature with a delivery date in the quote |
+| **Scope** | List offer: modules, AI Quota, hosting, support | Uses only what the demo showed, plus any planned feature with a delivery date in the quote |
 | **Attention** | Direct founder access and a fortnightly check-in | 30 minutes every 2 weeks for feedback |
-| **Data** | Data export anytime | Permission to log AI usage per question (for cost, not content) |
+| **Data** | Data export anytime | Permission to log AI usage per message: tokens and credits (for cost, not content) |
 | **Proof** | — | Logo, testimonial, short case study and one reference call, one month after go-live |
 
 **Pilot period:** 3 months from go-live. After that, the client continues on the list offer or leaves with its data.
@@ -138,7 +138,7 @@ All terms go into the Bahasa Indonesia service agreement ([L2](2_legal.md#1-rule
 
 - [ ] **Live.** Daily transactions (sales, purchases, stock) are entered in Navario, not in spreadsheets.
 - [ ] **Used.** The assistant is used every week by at least half of the users.
-- [ ] **Measured.** AI questions per user are logged and fed into [ai_cost_simulation.md](ai_cost_simulation.md).
+- [ ] **Measured.** Tokens and credits per user are logged and fed into [ai_cost_simulation.md](ai_cost_simulation.md).
 - [ ] **Proof.** Testimonial, logo permission and case study are received.
 - [ ] **Converted.** The client continues on the list offer.
 
@@ -146,15 +146,15 @@ All terms go into the Bahasa Indonesia service agreement ([L2](2_legal.md#1-rule
 
 Potential profit per retail client, from [financial_model.py](script/financial_model.py). It uses the draft prices above and the AI cost from [ai_cost_simulation.py](script/ai_cost_simulation.py). To change assumptions, edit the script and re-run it. Never calculate by hand.
 
-**Status:** Before server, support and fixed costs, which are unknown. Assumes every client uses its full AI question allowance, so AI cost is the worst case.
+**Status:** Before server, support and fixed costs, which are unknown. Assumes every client uses its full AI Quota, so AI cost is the worst case.
 
-### AI cost per user per month (IDR, 100 questions)
+### AI cost per user per month (IDR, full AI Quota of 700 credits)
 
 | Stack | AI cost | Share of price |
 | :-- | --: | --: |
-| A. Budget (2.5 Lite + 2.5 Flash) | 34,763 | 9% |
-| B. Current 2026 (3.1 Lite + 3.8 Flash) | 75,232 | 19% |
-| C. Current 2027 (3.1 Lite + 3.8 Flash) | 148,839 | 37% |
+| A. Budget (2.5 Lite + 2.5 Flash) | 38,700 | 10% |
+| B. Current 2026 (3.1 Lite + 3.8 Flash) | 83,752 | 21% |
+| C. Current 2027 (3.1 Lite + 3.8 Flash) | 165,697 | 41% |
 
 ### Profit per client (IDR)
 
@@ -162,35 +162,45 @@ Potential profit per retail client, from [financial_model.py](script/financial_m
 
 | Stack | Client | Revenue / month | Profit / month, direct | Profit / month, referred | Year 1, direct, incl. setup | Year 1, annual prepaid, incl. setup |
 | :-- | :-- | --: | --: | --: | --: | --: |
-| A | 3 users, Fast-Track | 1.20M | 1.10M | 0.92M | 16.65M | 14.49M |
-| A | 10 users, Fast-Track | 4.00M | 3.65M | 3.05M | 47.33M | 40.13M |
-| A | 30 users, Standard | 12.00M | 10.96M | 9.16M | 139.99M | 118.39M |
-| B | 3 users, Fast-Track | 1.20M | 0.97M | 0.79M | 15.19M | 13.03M |
-| B | 10 users, Fast-Track | 4.00M | 3.25M | 2.65M | 42.47M | 35.27M |
-| B | 30 users, Standard | 12.00M | 9.74M | 7.94M | 125.42M | 103.82M |
-| C | 3 users, Fast-Track | 1.20M | 0.75M | 0.57M | 12.54M | 10.38M |
-| C | 10 users, Fast-Track | 4.00M | 2.51M | 1.91M | 33.64M | 26.44M |
-| C | 30 users, Standard | 12.00M | 7.53M | 5.73M | 98.92M | 77.32M |
+| A | 3 users, Fast-Track | 1.20M | 1.08M | 0.90M | 16.51M | 14.35M |
+| A | 10 users, Fast-Track | 4.00M | 3.61M | 3.01M | 46.86M | 39.66M |
+| A | 30 users, Standard | 12.00M | 10.84M | 9.04M | 138.57M | 116.97M |
+| B | 3 users, Fast-Track | 1.20M | 0.95M | 0.77M | 14.88M | 12.72M |
+| B | 10 users, Fast-Track | 4.00M | 3.16M | 2.56M | 41.45M | 34.25M |
+| B | 30 users, Standard | 12.00M | 9.49M | 7.69M | 122.35M | 100.75M |
+| C | 3 users, Fast-Track | 1.20M | 0.70M | 0.52M | 11.93M | 9.77M |
+| C | 10 users, Fast-Track | 4.00M | 2.34M | 1.74M | 31.62M | 24.42M |
+| C | 30 users, Standard | 12.00M | 7.03M | 5.23M | 92.85M | 71.25M |
 
 **What this means:**
-- **On stack C, AI takes 37% of the price** before server and support. Plan prices on stack C until a cheaper stack passes quality tests.
-- **A 3-user referred client on stack C leaves about 0.57M a month** to cover its share of the server, support and fixed costs. Small referred clients are the thinnest margin.
+- **On stack C, AI takes 41% of the price** before server and support. Plan prices on stack C until a cheaper stack passes quality tests.
+- **A 3-user referred client on stack C leaves about 0.52M a month** to cover its share of the server, support and fixed costs. Small referred clients are the thinnest margin.
 - **Annual prepaid costs a lot of year-1 profit** (the 15% discount comes out of the profit, not the AI cost). Offer it for cash flow, not by default.
+
+### AI Quota top-ups (IDR)
+
+| Pack | Price | Price / credit | Margin, stack A | Margin, stack B | Margin, stack C |
+| :-- | --: | --: | --: | --: | --: |
+| +3,500 credits | 250,000 | 71 | 23% | -68% | -231% |
+| +7,000 credits | 450,000 | 64 | 14% | -86% | -268% |
+| +17,500 credits | 1,000,000 | 57 | 3% | -109% | -314% |
+
+**What this means:** every pack loses money on stacks B and C. Re-price before the first client can buy one.
 
 ### Market potential
 
 Market size from [market_analysis.md](market_analysis.md#1-market-size): about 42,600 trading small and medium firms (estimate). Assumes 10 users per client at list price, stack C, direct sales.
 
-| Paying clients | Share of trading firms | Subscription revenue / year (IDR) | Profit / year, before server, support, fixed (IDR) |
+| Paying clients | Share of trading firms | Subscription revenue / year | Profit / year, before server, support, fixed |
 | --: | --: | --: | --: |
 | 10 | 0.02% | 0.5B | 0.3B |
-| 30 | 0.07% | 1.4B | 0.9B |
-| 100 | 0.23% | 4.8B | 3.0B |
-| 300 | 0.70% | 14.4B | 9.0B |
+| 30 | 0.07% | 1.4B | 0.8B |
+| 100 | 0.23% | 4.8B | 2.8B |
+| 300 | 0.70% | 14.4B | 8.4B |
 
 If every trading small and medium firm were a client: about IDR 2,045B subscription revenue a year. This is a ceiling, not a target.
 
-**What this means:** 100 clients is a 3B-a-year business and needs under a quarter of one percent of the market. Growth is limited by sales and support capacity, not by market size.
+**What this means:** 100 clients is a 2.8B-a-year profit business and needs under a quarter of one percent of the market. Growth is limited by sales and support capacity, not by market size.
 
 ### Company costs and break-even
 
@@ -212,10 +222,10 @@ Shared by retail, enterprise and AI projects.
 
 - [ ] **Measure AI cost.** Done when: 50 realistic questions are logged with tokens, and the averages replace the assumptions in the script (see the cost simulation "Next steps").
 - [ ] **Choose the model stack.** Depends on: measure AI cost. Done when: the script is re-run and the tables in [ai_cost_simulation.md](ai_cost_simulation.md) match its output.
-- [ ] **Fix the price.** Depends on: model stack. Done when: top-ups are priced at ≥ 2x cost per question and the price per user is final.
+- [ ] **Fix the price.** Depends on: model stack. Done when: top-ups are priced at ≥ 2x cost per credit and the price per user is final.
 - [ ] **Odoo first-year total.** Done when: 2–3 Odoo partners in Jakarta have quoted a 5-user and a 30-user trading company (licence + implementation).
 - [ ] **Odoo AI test.** Done when: you have tried Odoo's AI on a trial database and noted what our assistant does better in Bahasa Indonesia.
-- [ ] **Validate the allowance.** After the first clients go live. Done when: real AI questions per user are measured (is 100 per user enough?), and the allowance is confirmed or changed.
+- [ ] **Validate the AI Quota.** After the first clients go live. Done when: real credits per user are measured (is 700 per user enough?), and the AI Quota is confirmed or changed.
 
 - [ ] **Pilot offer page.** Depends on: the pilot open decisions below. Done when: a one-page Bahasa Indonesia offer exists with the 3-slot limit and the deadline.
 - [ ] **Pilot clause in the service agreement.** Depends on: [2_legal.md](2_legal.md#tasks) sales documents. Done when: the pilot terms in section 5 are in the agreement.
