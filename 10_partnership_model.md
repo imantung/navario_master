@@ -79,8 +79,10 @@ Pilots referred by a partner ([8_pilot_saas_model.md](8_pilot_saas_model.md), [9
 
 ## 4. What Navario gives partners
 
+Step by step, from first contact to active partner: [12_partner_onboarding_process.md](12_partner_onboarding_process.md).
+
 - The proposal (English, plus Bahasa Indonesia when ready) and a one-page partner summary
-- A demo instance with the trading company dataset and the demo script from [process_flow.md](process_flow.md)
+- A demo instance with the trading company dataset and the demo script from [11_saas_process_flow.md](11_saas_process_flow.md)
 - A product training session (Implementation Partners: enough to configure and train clients), **only after the partner agreement is signed**
 - The retail price list, and for Implementation Partners, the enterprise split
 

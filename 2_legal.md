@@ -6,7 +6,7 @@ Internal. Legal entity, tax registration, contracts, data protection, trademark 
 
 | # | Rule | What it forces | Applied in |
 | :-- | :-- | :-- | :-- |
-| L1 | **No legal entity yet.** The name *PT Upaya Teknologi Sejahtera* is reserved, not registered. | No quotation or agreement until the entity is registered. Until then, no document uses the company name as if it exists. | [process_flow.md](process_flow.md#stage-3-fixed-price-quote--contract), [website/requirement.md](website/requirement.md) |
+| L1 | **No legal entity yet.** The name *PT Upaya Teknologi Sejahtera* is reserved, not registered. | No quotation or agreement until the entity is registered. Until then, no document uses the company name as if it exists. | [11_saas_process_flow.md](11_saas_process_flow.md#stage-3-fixed-price-quote--contract), [website/requirement.md](website/requirement.md) |
 | L2 | **Agreements with Indonesian parties must be in Bahasa Indonesia** (Law No. 24/2009, Art. 31). | Quotations, service and partner agreements, Terms and Privacy Policy in Bahasa Indonesia (bilingual is fine). | Section 2 below |
 | L3 | **Client data protection (UU PDP No. 27/2022).** The client owns its data. | Partners get system access only with the client's approval. Client data inside the product, including AI processing, is covered by the service agreement. | [10_partnership_model.md](10_partnership_model.md#rules) (rule 5) |
 | L4 | **"ERPNext" is a Frappe trademark.** | Don't use it in brand-like phrases. Name it only when asked. | [3_brand_identity.md](3_brand_identity.md#3-words) |
@@ -20,8 +20,8 @@ All in Bahasa Indonesia (L2), checked by a notary or lawyer before first use.
 
 | Document | Used in | Status |
 | :-- | :-- | :-- |
-| Quotation template | [process_flow.md](process_flow.md#stage-3-fixed-price-quote--contract), stage 3 | Not drafted |
-| Service agreement (including client data and AI processing) | [process_flow.md](process_flow.md#stage-3-fixed-price-quote--contract), stage 3 | Not drafted |
+| Quotation template | [11_saas_process_flow.md](11_saas_process_flow.md#stage-3-fixed-price-quote--contract), stage 3 | Not drafted |
+| Service agreement (including client data and AI processing) | [11_saas_process_flow.md](11_saas_process_flow.md#stage-3-fixed-price-quote--contract), stage 3 | Not drafted |
 | Partner agreement: model A (client contracts with the partner; Navario supplies the partner, as principal or subcon; no source code to the partner; client gets 30 days' notice and a data export if the partner stops paying) and model B (client contracts with Navario; Navario pays the partner share) | [10_partnership_model.md](10_partnership_model.md#2-enterprise-partner-share) | Not drafted |
 | Terms of Service and Privacy Policy (website) | [website/requirement.md](website/requirement.md) (P-10) | Boffon version exists; needs Navario update |
 

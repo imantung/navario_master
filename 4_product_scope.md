@@ -1,6 +1,6 @@
 # Product Scope
 
-What the product must do, and when. Sales material may only claim features marked **Works** here. Claims come from the [proposal](proposal/draft_oct_2026/draft_proposal.md) and the demo script in [process_flow.md](process_flow.md).
+What the product must do, and when. Sales material may only claim features marked **Works** here. Claims come from the [proposal](proposal/draft_oct_2026/draft_proposal.md) and the demo script in [11_saas_process_flow.md](11_saas_process_flow.md).
 
 **Status** values: **Works** (shown in a demo today), **Partly**, **Not built**, **?** (not confirmed yet).
 

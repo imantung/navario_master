@@ -9,7 +9,7 @@ When a constraint changes, update this file first, then the docs in the "Handled
 | # | Constraint | What it forces | Handled in |
 | :-- | :-- | :-- | :-- |
 | C1 | **Solo founder.** One person sells, builds, implements and supports. | Build only the demo features, then sell. At most ~50% of each week on AI projects. Partners bring reach and first-line support. | [4_product_scope.md](4_product_scope.md#build-rule), [7_go_to_market.md](7_go_to_market.md#tasks), [10_partnership_model.md](10_partnership_model.md) |
-| C2 | **No ERP or accounting background.** | Business process know-how comes from partners, a fixed discovery checklist, and later an accounting-background support hire. | [10_partnership_model.md](10_partnership_model.md#why-partners), [process_flow.md](process_flow.md#stage-2-needs-discussion-4590-min-included-in-setup) |
+| C2 | **No ERP or accounting background.** | Business process know-how comes from partners, a fixed discovery checklist, and later an accounting-background support hire. | [10_partnership_model.md](10_partnership_model.md#why-partners), [11_saas_process_flow.md](11_saas_process_flow.md#stage-2-needs-discussion-included-in-setup) |
 
 ## 2. Offer
 
@@ -25,6 +25,6 @@ When a constraint changes, update this file first, then the docs in the "Handled
 
 | # | Constraint | What it forces | Handled in |
 | :-- | :-- | :-- | :-- |
-| C8 | **Fixed price, cash first.** | One fixed total per quote. Work starts after payment clears. Anything extra is a change request with its own fixed quote. Commissions are paid only after the client pays. | [process_flow.md](process_flow.md#stage-3-fixed-price-quote--contract), [10_partnership_model.md](10_partnership_model.md#rules) |
+| C8 | **Fixed price, cash first.** | One fixed total per quote. Work starts after payment clears. Anything extra is a change request with its own fixed quote. Commissions are paid only after the client pays. | [11_saas_process_flow.md](11_saas_process_flow.md#stage-3-fixed-price-quote--contract), [10_partnership_model.md](10_partnership_model.md#rules) |
 | C9 | **Sign before you teach.** | Before signing, a prospective partner gets only the proposal, a live demo and the partner summary. No system access or training. | [10_partnership_model.md](10_partnership_model.md#rules) (rule 0) |
 | C10 | **Navario owns Platform Core and Nava AI, keeps them closed source, and hosts them itself** ([L6](2_legal.md#1-rules)). No services that compete with partners (bookkeeping, tax filing, audit, consultancy). | Partners never modify core code. Billing depends on who signs with the client: the partner (partner sets the price, pays Navario's share) or Navario (Navario bills, pays the partner share). | [10_partnership_model.md](10_partnership_model.md#2-enterprise-partner-share) |

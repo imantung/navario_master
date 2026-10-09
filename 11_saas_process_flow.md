@@ -1,13 +1,23 @@
-# Process Flow
+# SaaS Process Flow
 
-Internal. From first contact to ongoing support. The stages follow the "Let's Talk" section of the [proposal](proposal/draft_oct_2026/draft_proposal.md): **live demo → needs discussion → fixed-price quote**.
+Internal. A retail (SaaS) client from first contact to ongoing support. The stages follow the "Let's Talk" section of the [proposal](proposal/draft_oct_2026/draft_proposal.md): **live demo → needs discussion → fixed-price quote**.
 
-For partner deals the stages are the same; who does what is defined in [10_partnership_model.md](10_partnership_model.md). Prices are in [5_saas_pricing_model.md](5_saas_pricing_model.md) (retail) and [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md) (enterprise).
+Prices are in [5_saas_pricing_model.md](5_saas_pricing_model.md). Pilot clients follow the same stages with the terms in [8_pilot_saas_model.md](8_pilot_saas_model.md). If a Referral Partner brought the lead, register it ([10_partnership_model.md](10_partnership_model.md#rules), rule 1); the commission is paid after the client's payment clears.
 
 ```
 1 Live demo → 2 Needs discussion → 3 Quote & contract → 4 Setup & import → 5 Training & UAT → 6 Go-live → 7 Support
                     └─ optional 7-day trial
 ```
+
+| Stage | Owner | Time | Exit document |
+| :-- | :-- | :-- | :-- |
+| 1. Live demo | Founder | 30–45 min | Lead sheet updated |
+| 2. Needs discussion | Founder | 45 min (Fast-Track) or 90 min (Standard) | Discovery checklist filled in |
+| 3. Quote & contract | Founder | 1–3 days | Signed agreement, payment cleared |
+| 4. Setup & import | Founder | ~1–2 weeks **[estimate]** | Master data sign-off |
+| 5. Training & UAT | Founder | ~1 week **[estimate]** | UAT acceptance |
+| 6. Go-live | Founder | 1 day | Go-live sign-off |
+| 7. Support | Founder, later a support hire | Ongoing | — |
 
 ## Stage 1: Live Demo (30–45 min, online or onsite)
 
@@ -22,32 +32,34 @@ The demo is the main sales tool, so it is scripted and rehearsed.
   5. A purchase request going from request to approval.
 * **You give:** The demo, and the proposal PDF afterwards.
 * **You receive:** Company name, decision maker, number of staff who would use the system, current tools (spreadsheets, Accurate, Jurnal, etc.), and their main pain.
+* **Qualify:** SaaS fits roughly 3–30 users. Larger or multi-company prospects go to enterprise ([6_enterprise_pricing_model.md](6_enterprise_pricing_model.md)). During the pilot phase, check the pilot criteria ([8_pilot_saas_model.md](8_pilot_saas_model.md#2-who-qualifies)).
 
-## Stage 2: Needs Discussion (45–90 min, included in setup)
+## Stage 2: Needs Discussion (included in setup)
 
 * **You give:** A discovery checklist covering:
   * Flow: buy → receive stock → sell → deliver → invoice → collect payment
-  * Number of companies, branches and warehouses
-  * Tax status (PKP or not), e-Faktur volume
+  * Number of branches and warehouses
+  * Tax status (PKP or not), e-Faktur volume. e-Faktur export is not included ([C6](0_business_constraint.md#2-offer)); say so plainly.
   * Documents they print (invoice, PO, delivery note) and the reports they rely on
   * Users and roles, approval rules
   * Data to bring in: customers, suppliers, items, opening balances
 * **You receive:** Answers, sample documents and a user list.
+* **Decide:** Fast-Track or Standard setup, and any add-ons.
 * **Optional: 7-day trial.** Their own instance, pre-loaded with the trading template, capped at 200 AI questions. If they need more time, the 30-day extension fee is credited to setup. An instance with no decision is frozen on day 7 and deleted on day 10.
 
 ## Stage 3: Fixed-Price Quote & Contract
 
 * **You give:**
   * A quotation in Bahasa Indonesia: package, add-ons, **one fixed total**, what is included and excluded, and the target go-live date.
-  * A service agreement in Bahasa Indonesia.
+  * A service agreement in Bahasa Indonesia, including the server location and AI processing ([L7](2_legal.md#1-rules)).
   * An invoice for 100% of the setup fee + the first month (or year), minus any trial extension fee already paid.
 * **You receive:** The signed agreement and payment.
-* **Rule:** No quotation before the legal entity exists ([L1](2_legal.md#1-rules)). Work starts after payment clears. Anything outside the quote is a change request with its own fixed quote.
+* **Rule:** No quotation before the legal entity exists ([L1](2_legal.md#1-rules)). Work starts after payment clears. Anything outside the quote is a change request with its own fixed quote ([C8](0_business_constraint.md#3-commercial-rules)).
 
 ## Stage 4: Setup & Data Import
 
-* **You give:** A production instance configured from the needs discussion (trial instances are cleaned of test transactions), plus Excel import templates or the data migration add-on.
-* **You receive:** Master data (customers, suppliers, items, assets, chart of accounts mapping) and a signed master data sign-off. Enterprise: the client's Gemini API key, from a Google Cloud billing account the client owns.
+* **You give:** A production instance on the shared cloud, configured from the needs discussion (trial instances are cleaned of test transactions), plus Excel import templates or the data migration add-on. Configuration is stored as data ([techstack.md](techstack.md#4-design-rules), rule 3).
+* **You receive:** Master data (customers, suppliers, items, assets, chart of accounts mapping) and a signed master data sign-off.
 
 ## Stage 5: Training & UAT
 
@@ -56,23 +68,23 @@ The demo is the main sales tool, so it is scripted and rehearsed.
 
 ## Stage 6: Go-Live
 
-* **You give:** Opening balances posted (bank, stock, AR/AP), production access for all users, and a go-live confirmation.
+* **You give:** Opening balances posted (bank, stock, AR/AP), production access for all users, the AI question pool switched on, and a go-live confirmation.
 * **You receive:** A signed go-live sign-off.
 
 ## Stage 7: Ongoing Support
 
-* **You give:** Hosting, backups, upgrades and chat support at the package level. Retail: the monthly AI question pool, with a heads-up when they reach 80%. Enterprise: AI runs on the client's own key (BYOK).
+* **You give:** Hosting, backups, upgrades and chat support (first response within 24 hours). The monthly AI question pool, with a heads-up when they reach 80%.
 * **You receive:** Monthly or annual subscription payments.
 * **One month after go-live:** Review AI usage together and offer a top-up if needed. **Ask for a testimonial, logo permission and a short case study.** Every early client is also portfolio.
+* **If the client leaves:** Give a full data export. They keep their data and configuration ([techstack.md](techstack.md#5-if-a-client-leaves)).
 
 ### Support coverage
 
-The SLA is a **first response** time (24 hours retail, 6 hours enterprise), not a fix time. A fix follows with an estimate.
+The SLA is a **first response** time, not a fix time. A fix follows with an estimate. Enterprise SLA and the partner support split are in [10_partnership_model.md](10_partnership_model.md#support-split-enterprise).
 
 **While solo** ([C1](0_business_constraint.md#1-founder-and-capacity), [X6, X7](1_challenges.md#2-founder-capacity)):
 - One support channel: a WhatsApp Business number with an auto-reply stating support hours, and every request logged as a ticket (the Helpdesk/Issue doctype in our own ERP works).
 - Reduce "how do I" tickets: the video library, plus the assistant's **Learn** capability answering from the user guide.
-- Enterprise: partners take first-line support by contract.
 - Backup: a freelance ERPNext developer on a small monthly retainer, who has server access and a runbook, for when you are sick or away. One person running production for paying clients is the biggest operational risk.
 
 **Hire the first support person when** either is true for 3 months in a row:
@@ -85,6 +97,8 @@ The SLA is a **first response** time (24 hours retail, 6 hours enterprise), not 
 
 Legal entity and sales documents (quotation, service agreement): see [2_legal.md](2_legal.md#tasks).
 
+- [ ] **Discovery checklist.** Done when: the stage 2 checklist exists as a one-page Bahasa Indonesia form.
+- [ ] **UAT checklist template.** Done when: a template covers the trading flow from stage 2.
 - [ ] **Backup developer.** Done when: a freelance ERPNext developer has server access and a runbook, before the first go-live.
 - [ ] **First delivery.** Done when: the first client is live (stages 4–6) and has signed the go-live sign-off.
 - [ ] **Proof.** Done when: you have a testimonial, logo permission and a short case study, one month after go-live.
@@ -92,3 +106,5 @@ Legal entity and sales documents (quotation, service agreement): see [2_legal.md
 ## Open decisions
 
 - [ ] **"Estimation" in the proposal vs fixed-price quote.** The proposal's "Let's Talk" ends with a "cost estimate"; the process sends one fixed total. Recommendation: keep the fixed-price quote, and change the proposal wording to "fixed-price quote" when it is next revised.
+- [ ] **Stage durations** (stages 4–5 are estimates). Recommendation: measure them on the first pilot and replace the estimates.
+- [ ] **Enterprise process flow.** Enterprise has a dedicated server, the client's own AI key, a partner and model A or B. Recommendation: write it as a separate doc after the first enterprise opportunity, not before.

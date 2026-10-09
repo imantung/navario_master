@@ -20,7 +20,7 @@ Internal. How Navario wins its first clients and partners. Positioning and wordi
 An unknown solo vendor asking an SME to move its accounting is a trust problem first ([X2](1_challenges.md#1-sales-and-trust)). Address it directly:
 
 1. **Pilot programs.** A limited number of pilot clients get better terms in exchange for a logo, a testimonial, a short case study and one reference call. See section 4.
-2. **The demo is the portfolio.** A polished demo dataset, a 3-minute demo video in Bahasa Indonesia, and the scripted live demo in [process_flow.md](process_flow.md).
+2. **The demo is the portfolio.** A polished demo dataset, a 3-minute demo video in Bahasa Indonesia, and the scripted live demo in [11_saas_process_flow.md](11_saas_process_flow.md).
 3. **Honest founder credibility.** 15+ years building software, shown as founder experience. Only show company logos as "clients" once they are Navario clients.
 4. **Public fixed prices.** A pricing page removes the fear of hidden costs, which is a big objection to ERP vendors, and against Odoo partners' open-ended implementation quotes.
 5. **Low-risk start.** Monthly plan, no long contract, data export anytime, no vendor lock-in ([techstack.md](techstack.md#5-if-a-client-leaves)).
@@ -72,7 +72,7 @@ Track every lead in one simple sheet: source, date, demo done, pilot or list, qu
 
 In week order. Spend at most ~50% of each week on AI projects, so the product still moves ([C1](0_business_constraint.md#1-founder-and-capacity)). No outreach until the demo features work ([X1](1_challenges.md#1-sales-and-trust)).
 
-- [ ] **Week 1 — Demo ready.** Done when: the demo dataset is loaded, the script in [process_flow.md](process_flow.md) has been rehearsed 5 times, and a 3-minute Bahasa Indonesia demo video is recorded.
+- [ ] **Week 1 — Demo ready.** Done when: the demo dataset is loaded, the script in [11_saas_process_flow.md](11_saas_process_flow.md) has been rehearsed 5 times, and a 3-minute Bahasa Indonesia demo video is recorded.
 - [ ] **Week 1 — Lead sheet.** Done when: one sheet tracks source, date, offer (SaaS, enterprise or AI project), pilot or list, demo, quote, and won/lost with the reason.
 - [ ] **Week 2 — Warm network.** Depends on: demo ready. Done when: 30 contacts have been messaged and ≥ 5 demos are booked. Pitch AI projects to your startup network, and the product to trading companies.
 - [ ] **Week 2 — Pilot offers.** Depends on: pilot terms in [8_pilot_saas_model.md](8_pilot_saas_model.md#open-decisions) and [9_pilot_enterprise_model.md](9_pilot_enterprise_model.md#open-decisions). Done when: a one-page offer for each exists in Bahasa Indonesia, with the slot limit and the deadline.
