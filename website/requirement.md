@@ -215,8 +215,8 @@ Workflows should only show steps the trading template actually uses (Lead/Opport
 
 ### P-5 Pricing (`/en/pricing`, `/id/harga`)
 - Breadcrumb, H1 "Pricing", one-line intro: "Fixed prices. Hosting, AI and support included."
-- A **Retail** card: price per user per month (minimum 3 users), annual discount, AI questions per user, and the two setup options (Fast-Track, Standard) with what each includes. The numbers come from [pricing_model.md](../pricing_model.md) and are stored in `siteContent.json`, not hardcoded.
-- An **Enterprise** card: "Unlimited users, dedicated server, delivered with our implementation partners." Show "from IDR 12.5M / month" or no price (decide). Button: *Talk to us*.
+- A **Retail** card: price per user per month (minimum 3 users), annual discount, AI questions per user, and the two setup options (Fast-Track, Standard) with what each includes. The numbers come from [5_saas_pricing_model.md](../5_saas_pricing_model.md) and are stored in `siteContent.json`, not hardcoded.
+- An **Enterprise** card: "Unlimited users, dedicated server, delivered with our implementation partners." Show the starting price from [6_enterprise_pricing_model.md](../6_enterprise_pricing_model.md) or no price (decide). Button: *Talk to us*.
 - Add-ons summary (AI top-ups, data migration, training). Customization is shown as "quoted at a fixed price after review".
 - A note that prices exclude PPN.
 - FAQ with `FAQPage` JSON-LD: What is an AI question? What happens when we run out? Can we add users later? How do we compare with Odoo? Can we export our data?
@@ -225,7 +225,7 @@ Workflows should only show steps the trading template actually uses (Lead/Opport
 ### P-6 Partners (`/en/partners`, `/id/mitra`)
 - Breadcrumb, H1 "Partner with Navario".
 - Who it's for: accountants, tax consultants, business consultants, IT/ERP consulting firms.
-- The two partner types and what each earns, in plain terms. Commission rates are shown; internal rules stay in [partnership_model.md](../partnership_model.md).
+- The two partner types and what each earns, in plain terms. Commission rates are shown; internal rules stay in [10_partnership_model.md](../10_partnership_model.md).
 - What Navario provides to partners (demo instance, training, proposal).
 - Button opens the contact modal with the topic "Become a partner" preselected. No CTA banner on this page.
 

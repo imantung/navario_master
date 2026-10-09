@@ -8,6 +8,9 @@ Internal. Who Navario is, how it is positioned, and how to introduce it. Website
 | :-- | :-- |
 | **Name** | Navario |
 | **Domain** | [navario.id](https://navario.id) |
+| **Company** | *PT Upaya Teknologi Sejahtera* (name reserved, not registered yet, [L1](2_legal.md#1-rules)). Don't use it in client material until registered. |
+| **In the product** | No Navario brand inside the ERP, so partners can white-label it ([10_partnership_model.md](10_partnership_model.md#principal-or-subcon-model-a)). Navario is the company and marketing brand. |
+| **Assistant component** | Nava AI (internal name). Client-facing name: "AI Business Assistant". |
 | **Tagline** | *"Ask, don't search."* / *"Tanya, jangan cari."* |
 | **What we sell** | An AI Business Assistant for Indonesian trading companies, with a complete ERP included. |
 | **Second offer** | AI projects: custom AI on a company's own business data, any industry, built on the Navario assistant. |
@@ -37,7 +40,7 @@ The name **Navario** comes from *navigate* (*navigasi*). The AI is the navigator
 | | |
 | :-- | :-- |
 | **Main competitor** | Spreadsheets, WhatsApp groups and paper |
-| **Benchmark competitor** | Odoo. Prospects who already looked at ERP compare us with it. Compare first-year total cost, never licence price; Odoo's licence is cheaper per user. See [pricing_model.md](pricing_model.md#4-benchmark-odoo). |
+| **Benchmark competitor** | Odoo. Prospects who already looked at ERP compare us with it. Compare first-year total cost, never licence price; Odoo's licence is cheaper per user. See [5_saas_pricing_model.md](5_saas_pricing_model.md#4-benchmark-odoo). |
 | **Lead with** | The AI assistant. It is what local competitors don't have, and what the demo shows best. |
 | **Supporting proof** | Bahasa Indonesia first, Indonesian tax and documents, access rules built in, simpler screens, fixed public prices, no vendor lock-in, a local person who answers. |
 | **Market in messaging** | Trading companies only ([C4](0_business_constraint.md#2-offer)). No manufacturing, retail chain or services examples. AI projects are the only place other industries appear. |
@@ -93,10 +96,10 @@ Rules: claim software and AI experience only. Don't claim ERP, accounting or imp
 | "Who are your clients?" | "We are new. That's why we're working closely with our first clients, and I'll show you everything live in the demo." Do not name companies that are not clients. |
 | "How big is your team?" | "Founder-led, with implementation partners for larger clients." Don't imply a bigger team. |
 | "Is this just Odoo / ERPNext?" | "It is built on a mature open-source platform, so there is no vendor lock-in. What we add is the AI assistant, Indonesian setup and simpler screens, at a fixed price." Name ERPNext if they ask directly. |
-| "What if you disappear?" | "Your data is yours, and the system is open source, so it keeps running with another provider." |
+| "What if you disappear?" | "Your data and your customization are yours. The ERP is open source, so it keeps running with another provider. You would lose only our improved screens, translation and the AI assistant." See [techstack.md](techstack.md#5-if-a-client-leaves). |
 
 ## Open decisions
 
 - [ ] **"We" or "I" in written material.** Recommendation: "we" for Navario in proposals and the website, "I" in personal WhatsApp and LinkedIn messages. Answer team-size questions plainly (above).
 - [ ] **Bahasa Indonesia wording.** The ID versions above are drafts. Recommendation: have a native-speaking trading company owner read them before first use.
-- [ ] **Founding client offer in introductions.** Depends on the decision in [marketing_strategy.md](marketing_strategy.md#open-decisions). Recommendation: mention it only after the demo, not in the first message.
+- [ ] **Pilot offer in introductions.** Depends on the pilot terms in [8_pilot_saas_model.md](8_pilot_saas_model.md#open-decisions) and [9_pilot_enterprise_model.md](9_pilot_enterprise_model.md#open-decisions). Recommendation: mention it only after the demo, not in the first message.

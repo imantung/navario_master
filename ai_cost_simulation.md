@@ -1,6 +1,6 @@
 # AI Cost Simulation (CoGS)
 
-Internal. The cost of the AI Business Assistant per question and per user, used to set AI limits and prices in [pricing_model.md](pricing_model.md). To change assumptions, edit [ai_cost_simulation.py](script/ai_cost_simulation.py) and re-run it.
+Internal. The cost of the AI Business Assistant per question and per user, used to set AI limits and prices in [5_saas_pricing_model.md](5_saas_pricing_model.md). To change assumptions, edit [ai_cost_simulation.py](script/ai_cost_simulation.py) and re-run it.
 
 **Status:** These are estimates; no real token data has been measured yet. Replace the assumptions with measured averages once the demo logs token counts (see "Next steps").
 
@@ -76,23 +76,9 @@ All costs in USD, including the 20% overhead and 11% PPN.
 Our prices are in IDR. For comparison, USD 1 ≈ IDR 16,500.
 
 1. **AI cost per user ranges from USD 2 to 9 for 100 questions, depending on the model.** Model choice changes CoGS by more than 4x, so it is the biggest pricing decision.
-2. **Current top-up prices lose money on stack C.** Top-ups sell at IDR 400–500 (USD 0.024–0.030) per question; stack C costs ~USD 0.09. Even on stack A the margin is thin once you take the server into account.
-3. **Retail at IDR 400k (~USD 24) per user with 100 questions:**
-
-   | Stack | AI cost | AI as % of price |
-   | :-- | --: | --: |
-   | A | USD 2.11 | 9% |
-   | C | USD 9.02 | 37% |
-
-   Stack C leaves too little room for server, support and partner commission (15%).
-4. **Enterprise uses BYOK** (see [pricing_model.md](pricing_model.md)), so this point now only matters as a budget estimate for the client. The earlier pool analysis, at IDR 12.5M (~USD 760) per month with AI capped at ~25% of the fee (~USD 190):
-
-   | Stack | AI questions per month |
-   | :-- | --: |
-   | A | ~9,000 |
-   | C | ~2,100 |
-
-   With unlimited users, an enterprise client with 50 normal users would ask ~6,600 questions a month. The pool must be a hard limit.
+2. **Current top-up prices lose money on stack C.** Stack C costs ~USD 0.09 (~IDR 1,500) per question; the top-ups in [5_saas_pricing_model.md](5_saas_pricing_model.md) sell for less. Even on stack A the margin is thin once you take the server into account.
+3. **Retail with 100 questions per user:** AI cost is USD 2.11 (stack A) to USD 9.02 (stack C) per user per month (table above). Compare it with the retail price per user in [5_saas_pricing_model.md](5_saas_pricing_model.md). On stack C, AI takes too large a share of the price to leave room for server, support and partner commission.
+4. **Enterprise uses BYOK** (see [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md)), so AI cost is the client's, not ours. Use the "Cost per user per month" table as the client's budget estimate: cost per user for their usage level × number of users. Example: an enterprise client with 50 normal users asks ~6,600 questions a month.
 5. **Complex questions cost 3–4x a simple one**, because tool results pile up in the context on every step. Capping tool steps and trimming tool results are the cheapest optimizations.
 
 ## Recommendations
@@ -112,4 +98,4 @@ Our prices are in IDR. For comparison, USD 1 ≈ IDR 16,500.
 - [ ] Log per question: model, number of calls, input / cached / output tokens, and intent. Gemini returns these in `usage_metadata`.
 - [ ] Run 50 realistic questions on the demo data and replace the assumptions with measured averages.
 - [ ] Test answer quality on 2.5 Flash versus 3.8 Flash for the execution step.
-- [ ] Choose the stack, then update AI allowances and top-up prices in [pricing_model.md](pricing_model.md).
+- [ ] Choose the stack, then update AI allowances and top-up prices in [5_saas_pricing_model.md](5_saas_pricing_model.md).

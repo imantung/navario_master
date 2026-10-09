@@ -1,16 +1,18 @@
 # Legal
 
-Internal. Legal entity, tax registration, contracts, data protection and trademark. Other docs link here and do not repeat these rules.
+Internal. Legal entity, tax registration, contracts, data protection, trademark and code ownership (IP). Other docs link here and do not repeat these rules.
 
 ## 1. Rules
 
 | # | Rule | What it forces | Applied in |
 | :-- | :-- | :-- | :-- |
-| L1 | **No legal entity yet.** | No quotation or agreement until the entity is registered. | [process_flow.md](process_flow.md#stage-3-fixed-price-quote--contract), [website/requirement.md](website/requirement.md) |
+| L1 | **No legal entity yet.** The name *PT Upaya Teknologi Sejahtera* is reserved, not registered. | No quotation or agreement until the entity is registered. Until then, no document uses the company name as if it exists. | [process_flow.md](process_flow.md#stage-3-fixed-price-quote--contract), [website/requirement.md](website/requirement.md) |
 | L2 | **Agreements with Indonesian parties must be in Bahasa Indonesia** (Law No. 24/2009, Art. 31). | Quotations, service and partner agreements, Terms and Privacy Policy in Bahasa Indonesia (bilingual is fine). | Section 2 below |
-| L3 | **Client data protection (UU PDP No. 27/2022).** The client owns its data. | Partners get system access only with the client's approval. Client data inside the product, including AI processing, is covered by the service agreement. | [partnership_model.md](partnership_model.md#rules) (rule 5) |
+| L3 | **Client data protection (UU PDP No. 27/2022).** The client owns its data. | Partners get system access only with the client's approval. Client data inside the product, including AI processing, is covered by the service agreement. | [10_partnership_model.md](10_partnership_model.md#rules) (rule 5) |
 | L4 | **"ERPNext" is a Frappe trademark.** | Don't use it in brand-like phrases. Name it only when asked. | [3_brand_identity.md](3_brand_identity.md#3-words) |
-| L5 | **Partners sign before they are taught.** | Partner agreement includes confidentiality and non-solicitation clauses. Their enforceability must be checked. | [partnership_model.md](partnership_model.md#rules) (rule 0) |
+| L5 | **Partners sign before they are taught.** | Partner agreement includes confidentiality and non-solicitation clauses. Their enforceability must be checked. | [10_partnership_model.md](10_partnership_model.md#rules) (rule 0) |
+| L6 | **Closed source only while Navario hosts it.** ERPNext is GPL v3. Platform Core and Nava AI run on top of it. | Platform Core and Nava AI are never handed over as code: no on-premise install, no copy to partners or clients. Hosting as a service keeps them closed; handing over the code may oblige Navario to release it under GPL v3. | Section 3 below, [10_partnership_model.md](10_partnership_model.md#rules) (rule 3) |
+| L7 | **Client data is hosted outside Indonesia** (DigitalOcean, Singapore), and AI questions are processed by Google. UU PDP has rules on transferring personal data abroad. | State the server location and the AI processing in the service agreement and the Privacy Policy, and get the client's agreement. If an enterprise client requires data in Indonesia, quote a different hosting setup. | [techstack.md](techstack.md#3-hosting) |
 
 ## 2. Documents needed
 
@@ -20,18 +22,43 @@ All in Bahasa Indonesia (L2), checked by a notary or lawyer before first use.
 | :-- | :-- | :-- |
 | Quotation template | [process_flow.md](process_flow.md#stage-3-fixed-price-quote--contract), stage 3 | Not drafted |
 | Service agreement (including client data and AI processing) | [process_flow.md](process_flow.md#stage-3-fixed-price-quote--contract), stage 3 | Not drafted |
-| Partner agreement | [partnership_model.md](partnership_model.md) | Not drafted |
+| Partner agreement: model A (client contracts with the partner; Navario supplies the partner, as principal or subcon; no source code to the partner; client gets 30 days' notice and a data export if the partner stops paying) and model B (client contracts with Navario; Navario pays the partner share) | [10_partnership_model.md](10_partnership_model.md#2-enterprise-partner-share) | Not drafted |
 | Terms of Service and Privacy Policy (website) | [website/requirement.md](website/requirement.md) (P-10) | Boffon version exists; needs Navario update |
+
+## 3. Code ownership (IP)
+
+```
+Frappe (open source, MIT)
+└── ERPNext (open source, GPL v3)
+    └── Platform Core (closed source)
+        ├── Nava AI (closed source)
+        └── Company_Custom (client proprietary)
+```
+
+| Layer | What it is | Owner | Licence | Who gets the source |
+| :-- | :-- | :-- | :-- | :-- |
+| Frappe | Web framework | Frappe Technologies | MIT | Public |
+| ERPNext | ERP | Frappe Technologies | GPL v3 | Public |
+| Platform Core | UI/UX improvements, Indonesian localization, etc. | PT Upaya Teknologi Sejahtera | Closed source | Nobody outside Navario |
+| Nava AI | The AI Business Assistant | PT Upaya Teknologi Sejahtera | Closed source | Nobody outside Navario |
+| Company_Custom | One client's customization | The client | Client proprietary | The client, on request |
+
+Licences checked on GitHub: [Frappe](https://github.com/frappe/frappe/blob/develop/LICENSE) (MIT) and [ERPNext](https://github.com/frappe/erpnext/blob/develop/license.txt) (GPL v3, not AGPL) (checked 9 Oct 2026). GPL v3 is triggered by handing over copies, not by running the software as a hosted service.
+
+**If a client leaves**, they keep their data, ERPNext and their Company_Custom code, so there is no vendor lock-in. They lose Platform Core and Nava AI. Details and the design rules that keep this true: [techstack.md](techstack.md#5-if-a-client-leaves).
 
 ## Tasks
 
-- [ ] **Legal entity.** Done when: the PT Perorangan is registered and has a business bank account.
+- [ ] **Legal entity.** Done when: *PT Upaya Teknologi Sejahtera* is registered and has a business bank account.
+- [ ] **IP assignment.** Depends on: legal entity. Done when: a signed deed transfers Platform Core and Nava AI, written by the founder before registration, to *PT Upaya Teknologi Sejahtera*.
+- [ ] **Cross-border data check.** Done when: a lawyer has confirmed what UU PDP requires for client data hosted in Singapore and AI processing by Google (L7), and the service agreement and Privacy Policy include it.
+- [ ] **GPL check.** Done when: a lawyer has confirmed that Platform Core and Nava AI can stay closed source while hosted by Navario (L6), and what changes if a client asks for on-premise.
 - [ ] **Sales documents.** Depends on: legal entity and final retail pricing. Done when: the quotation template, service agreement, and Terms/Privacy exist in Bahasa Indonesia and have been checked by a notary or lawyer.
-- [ ] **Partner agreement draft.** Depends on: the commission decision in [partnership_model.md](partnership_model.md#open-decisions). Done when: a Bahasa Indonesia draft with confidentiality and non-solicitation clauses exists, checked by a notary or lawyer.
+- [ ] **Partner agreement draft.** Depends on: the commission decision in [10_partnership_model.md](10_partnership_model.md#open-decisions). Done when: a Bahasa Indonesia draft with confidentiality and non-solicitation clauses exists, checked by a notary or lawyer.
 
 ## Open decisions
 
-- [ ] **Legal entity.** Register a *PT Perorangan* (a new entity, not PT Inovasi Teknologi Terintegrasi)? Recommendation: yes, before sending the first quotation.
-- [ ] **PKP (PPN registration).** Mandatory only above IDR 4.8 billion turnover per year **[unverified]**. Recommendation: stay non-PKP at first. Revisit when an enterprise client needs a *faktur pajak*. Decides whether prices in [pricing_model.md](pricing_model.md#principles) include PPN.
+- [ ] **Legal entity type.** Register *PT Upaya Teknologi Sejahtera* as a *PT Perorangan* or a regular PT (a new entity, not PT Inovasi Teknologi Terintegrasi)? Recommendation: PT Perorangan first, before the first quotation; convert to a regular PT when an investor or co-founder joins.
+- [ ] **PKP (PPN registration).** Mandatory only above IDR 4.8 billion turnover per year **[unverified]**. Recommendation: stay non-PKP at first. Revisit when an enterprise client needs a *faktur pajak*. Decides whether prices in [5_saas_pricing_model.md](5_saas_pricing_model.md#principles) and [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#principles) include PPN.
 
 *Note: This must be validated with a certified Indonesian tax consultant or notary.*

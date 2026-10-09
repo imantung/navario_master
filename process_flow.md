@@ -2,7 +2,7 @@
 
 Internal. From first contact to ongoing support. The stages follow the "Let's Talk" section of the [proposal](proposal/draft_oct_2026/draft_proposal.md): **live demo → needs discussion → fixed-price quote**.
 
-For partner deals the stages are the same; who does what is defined in [partnership_model.md](partnership_model.md). Prices are in [pricing_model.md](pricing_model.md).
+For partner deals the stages are the same; who does what is defined in [10_partnership_model.md](10_partnership_model.md). Prices are in [5_saas_pricing_model.md](5_saas_pricing_model.md) (retail) and [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md) (enterprise).
 
 ```
 1 Live demo → 2 Needs discussion → 3 Quote & contract → 4 Setup & import → 5 Training & UAT → 6 Go-live → 7 Support
