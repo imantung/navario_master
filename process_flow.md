@@ -42,7 +42,7 @@ The demo is the main sales tool, so it is scripted and rehearsed.
   * A service agreement in Bahasa Indonesia.
   * An invoice for 100% of the setup fee + the first month (or year), minus any trial extension fee already paid.
 * **You receive:** The signed agreement and payment.
-* **Rule:** No quotation before the legal entity exists ([L1](3_legal.md#1-rules)). Work starts after payment clears. Anything outside the quote is a change request with its own fixed quote.
+* **Rule:** No quotation before the legal entity exists ([L1](2_legal.md#1-rules)). Work starts after payment clears. Anything outside the quote is a change request with its own fixed quote.
 
 ## Stage 4: Setup & Data Import
 
@@ -83,7 +83,7 @@ The SLA is a **first response** time (24 hours retail, 6 hours enterprise), not 
 
 ## Tasks
 
-Legal entity and sales documents (quotation, service agreement): see [3_legal.md](3_legal.md#tasks).
+Legal entity and sales documents (quotation, service agreement): see [2_legal.md](2_legal.md#tasks).
 
 - [ ] **Backup developer.** Done when: a freelance ERPNext developer has server access and a runbook, before the first go-live.
 - [ ] **First delivery.** Done when: the first client is live (stages 4–6) and has signed the go-live sign-off.

@@ -3,7 +3,7 @@
 | | |
 | :-- | :-- |
 | **Product** | Navario.id marketing website (previously boffon.com) |
-| **Owner** | Navario *(new legal entity, PT Perorangan, to be registered; see [3_legal.md](../3_legal.md#open-decisions))* |
+| **Owner** | Navario *(new legal entity, PT Perorangan, to be registered; see [2_legal.md](../2_legal.md#open-decisions))* |
 | **Production URL** | https://navario.id |
 | **Status** | Target spec for the rebrand, October 2026. Based on the boffon.com implementation; section 0 lists what has to change. |
 
@@ -48,7 +48,7 @@ Navario sells an AI Business Assistant bundled with a complete ERP to Indonesian
 7. **Win organic and AI-engine discovery** through bilingual SEO, structured data, and blog content that AI crawlers can read and cite.
 
 ### Key value propositions shown on the site
-From the proposal:
+From the proposal. Tagline, positioning and wording follow [3_brand_identity.md](../3_brand_identity.md).
 - Ask in plain Bahasa Indonesia or English, answered from the company's own live data.
 - One system for accounting, buying, selling, stock and assets.
 - Safe by design: same access rights as the ERP, never changes data on its own, every request logged, data not used to train AI.
@@ -232,7 +232,7 @@ Workflows should only show steps the trading template actually uses (Lead/Opport
 ### P-7 About
 - Breadcrumb, then H1 "About Us".
 - Rows, each with an icon or statistic on the left and copy on the right:
-  1. **Mission:** "Your team should spend its time running the business, not searching for information."
+  1. **Mission:** "Help companies navigate their business with AI." Below it, the name story and philosophy from [3_brand_identity.md](../3_brand_identity.md#philosophy-navigate-dont-steer).
   2. **15+** "15+ years building software", the founder's background and why Navario exists.
   3. **Built on open source:** a mature open-source ERP platform, improved for Indonesian companies; no vendor lock-in.
   4. **Clients:** hidden until there are Navario client case studies. Do not reuse the boffon.com "Trusted By" logos unless each company is a Navario client and has given permission.

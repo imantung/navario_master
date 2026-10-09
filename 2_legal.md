@@ -9,7 +9,7 @@ Internal. Legal entity, tax registration, contracts, data protection and tradema
 | L1 | **No legal entity yet.** | No quotation or agreement until the entity is registered. | [process_flow.md](process_flow.md#stage-3-fixed-price-quote--contract), [website/requirement.md](website/requirement.md) |
 | L2 | **Agreements with Indonesian parties must be in Bahasa Indonesia** (Law No. 24/2009, Art. 31). | Quotations, service and partner agreements, Terms and Privacy Policy in Bahasa Indonesia (bilingual is fine). | Section 2 below |
 | L3 | **Client data protection (UU PDP No. 27/2022).** The client owns its data. | Partners get system access only with the client's approval. Client data inside the product, including AI processing, is covered by the service agreement. | [partnership_model.md](partnership_model.md#rules) (rule 5) |
-| L4 | **"ERPNext" is a Frappe trademark.** | Don't use it in brand-like phrases. Name it only when asked. | [marketing_strategy.md](marketing_strategy.md#1-positioning) |
+| L4 | **"ERPNext" is a Frappe trademark.** | Don't use it in brand-like phrases. Name it only when asked. | [3_brand_identity.md](3_brand_identity.md#3-words) |
 | L5 | **Partners sign before they are taught.** | Partner agreement includes confidentiality and non-solicitation clauses. Their enforceability must be checked. | [partnership_model.md](partnership_model.md#rules) (rule 0) |
 
 ## 2. Documents needed

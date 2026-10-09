@@ -10,7 +10,7 @@ Internal. **Retail** means direct sales to SMEs at list price, per user. **Enter
 - **No ERP-only deals.** Every package includes the AI Business Assistant ([C3](0_business_constraint.md#2-offer)).
 - **One AI unit: "AI question".** One message a user sends to the assistant, however many tool steps it takes to answer. Use this term everywhere (not "token" or "query"), because it is what users see in their usage tracking.
 - **Scope matches the proposal.** Only list what the demo can show: Accounting, Buying, Selling, Stock, Asset Management, Indonesian chart of accounts, PPN and PPh setup, Bahasa Indonesia, local document formats, company branding.
-- **PPN:** Depends on whether the new entity is PKP (see [3_legal.md](3_legal.md#open-decisions)). If it is, prices exclude PPN.
+- **PPN:** Depends on whether the new entity is PKP (see [2_legal.md](2_legal.md#open-decisions)). If it is, prices exclude PPN.
 
 ## 1. Retail (direct)
 

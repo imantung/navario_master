@@ -75,7 +75,7 @@ Once Navario has direct clients (around 10 or more), refer clients who need book
 - [ ] **Partner summary.** Done when: a one-page partner summary exists, with BYOK explained for enterprise.
 - [ ] **Partner outreach.** Depends on: partner summary. Done when: 15 accountants, tax consultants or IT consultants in Jabodetabek have been contacted. Follow rule 0: sign before you teach.
 
-Partner agreement draft: see [3_legal.md](3_legal.md#tasks).
+Partner agreement draft: see [2_legal.md](2_legal.md#tasks).
 
 ## Open decisions
 
