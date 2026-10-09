@@ -24,7 +24,7 @@ Internal. How the system is built, who owns each part, and the design rules that
 | Layer | What it does | Owner |
 | :-- | :-- | :-- |
 | **Frappe** (v16) | Web framework: database, users, roles and permissions, REST API, document engine | Open source |
-| **ERPNext** (v16) | The ERP modules Navario sells ([C5](0_business_constraint.md#2-offer)) | Open source |
+| **ERPNext** (v16) | The ERP modules: five for retail, any for enterprise ([C5](0_business_constraint.md#2-offer)) | Open source |
 | **Platform Core** | Simplified screens and menus, Bahasa Indonesia translation, Indonesian localization (chart of accounts, PPN/PPh setup, print formats), company branding | Navario |
 | **Nava AI** | The AI Business Assistant: chat app (Vue frontend, served inside Frappe, same login), agentic workflow, business tools, request log, usage tracking | Navario |
 | **Company_Custom** | Fields, workflows, print formats and integrations built for one client | The client |
@@ -52,7 +52,7 @@ Answer: summary, table, or link to a document, report or pre-filled form
 - **The model never touches the database.** It can only ask for a tool. The system checks the user's permissions (the same Frappe roles and permissions as the ERP), runs the tool, and returns the result.
 - **No write without the user.** New documents open as pre-filled forms the user saves. Actions and setup changes show a preview and need Apply.
 - **Request log:** who asked what and whether it was allowed. Field values are never logged.
-- **AI provider:** Google Gemini only ([C7](0_business_constraint.md#2-offer)), the fastest route for now. A move to a cheaper provider of the same quality is planned, so all model calls go through one internal interface ([X16](1_challenges.md#6-product-and-technology)). Model stack and cost: [ai_cost_simulation.md](ai_cost_simulation.md).
+- **AI provider:** any model is allowed, but the product stays on one, Google Gemini, until a client opportunity needs another. A move to a cheaper provider of the same quality is planned, so all model calls go through one internal interface ([X16](1_challenges.md#6-product-and-technology)). Model stack and cost: [ai_cost_simulation.md](ai_cost_simulation.md).
 - **AI key:** retail uses Navario's key with a question pool per company. Enterprise and AI projects use the client's own key (BYOK).
 
 ## 3. Hosting

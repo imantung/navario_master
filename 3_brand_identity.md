@@ -43,7 +43,7 @@ The name **Navario** comes from *navigate* (*navigasi*). The AI is the navigator
 | **Benchmark competitor** | Odoo. Prospects who already looked at ERP compare us with it. Compare first-year total cost, never licence price; Odoo's licence is cheaper per user. See [5_saas_pricing_model.md](5_saas_pricing_model.md#4-benchmark-odoo). |
 | **Lead with** | The AI assistant. It is what local competitors don't have, and what the demo shows best. |
 | **Supporting proof** | Bahasa Indonesia first, Indonesian tax and documents, access rules built in, simpler screens, fixed public prices, no vendor lock-in, a local person who answers. |
-| **Market in messaging** | Trading companies only ([C4](0_business_constraint.md#2-offer)). No manufacturing, retail chain or services examples. AI projects are the only place other industries appear. |
+| **Market in messaging** | Public marketing and retail: trading companies only ([C4](0_business_constraint.md#2-offer)). No manufacturing, retail chain or services examples. Other industries appear only in enterprise talks (usually with a partner) and AI projects. |
 | **Never** | ERP-only offers ([C3](0_business_constraint.md#2-offer)). Decline politely. |
 
 ## 3. Words
@@ -54,7 +54,7 @@ The name **Navario** comes from *navigate* (*navigasi*). The AI is the navigator
 | AI questions | tokens, requests, queries | What users see in their usage tracking |
 | A mature open-source business platform | ERPNext (in public copy, ads, brand-like phrases) | Frappe trademark ([L4](2_legal.md#1-rules)). Name ERPNext only when asked. |
 | Fixed price, one quote | estimate, hourly | [C8](0_business_constraint.md#3-commercial-rules) |
-| Trading company / *perusahaan dagang* | SME in general, other industries | Focus |
+| Trading company / *perusahaan dagang* | SME in general, other industries | Focus. Enterprise talks may name the prospect's own industry. |
 
 **Tone:** plain, direct, local. Short sentences. Show, don't promise: a demo clip beats an adjective.
 
@@ -77,7 +77,7 @@ Use these as written, then adapt to the person. Every claim below must be **Work
 - **EN:** "I'm [name], founder of Navario. I've spent 15+ years building software at startups. I started Navario because growing companies still lose hours finding numbers that their systems already have. The name comes from *navigate*: the AI helps you navigate the business, and you stay at the helm."
 - **ID:** "Saya [nama], pendiri Navario. Saya sudah lebih dari 15 tahun membangun software di startup. Saya memulai Navario karena perusahaan yang sedang tumbuh masih menghabiskan berjam-jam mencari angka yang sebenarnya sudah ada di sistem mereka. Nama Navario berasal dari kata navigasi: AI membantu Anda menavigasi bisnis, dan keputusan tetap di tangan Anda."
 
-Rules: claim software and AI experience only. Don't claim ERP, accounting or implementation experience ([C2](0_business_constraint.md#1-founder-and-capacity)). Show no company logos as clients until they are Navario clients.
+Rules: claim software and AI experience only. Don't claim ERP, accounting or implementation experience ([X18](1_challenges.md#2-founder-capacity)). Show no company logos as clients until they are Navario clients.
 
 ### AI projects (startup network, LinkedIn)
 

@@ -1,6 +1,6 @@
 # Product Scope
 
-What the product must do, and when. Sales material may only claim features marked **Works** here. Claims come from the [proposal](proposal/draft_oct_2026/draft_proposal.md) and the demo script in [9_saas_process_flow.md](9_saas_process_flow.md).
+What the product must do, and when. Sales material may describe as working only features marked **Works** here. Features not built yet may be sold as planned, with a delivery date in the quote ([X19](1_challenges.md#2-founder-capacity)). Claims come from the [proposal](proposal/draft_oct_2026/draft_proposal.md) and the demo script in [9_saas_process_flow.md](9_saas_process_flow.md).
 
 **Status** values: **Works** (shown in a demo today), **Partly**, **Not built**, **?** (not confirmed yet).
 
@@ -44,9 +44,9 @@ Confirm each one. If it is not built, every client who reads the proposal gets a
 | 3.2 | Learn: answers from user guides and the client's own procedures | Needs written content, not only code | ? |
 | 3.3 | Autocomplete and role-based suggested questions | — | ? |
 | 3.4 | Access limits such as "only my branch" inside the assistant | — | ? |
-| 3.5 | "Other modules (manufacturing, projects, customer support) can be switched on as you grow" | Conflicts with "Not offered now" in CLAUDE.md. If a client switches one on, you must support it. | Open decision |
+| 3.5 | "Other modules (manufacturing, projects, customer support) can be switched on as you grow" | True for enterprise, where the partner configures them ([C5](0_business_constraint.md#2-offer)). Not offered for retail. | Open decision |
 
-## 4. Long-term (do not sell yet)
+## 4. Long-term (sell only as planned, with a delivery date)
 
 | # | Feature | Why it serves the strategy |
 | :-- | :-- | :-- |
@@ -56,7 +56,7 @@ Confirm each one. If it is not built, every client who reads the proposal gets a
 
 ## Build rule
 
-Build only section 1, then stop and start demos. Build section 2 between demos. Build section 3 only when a real prospect asks for it. Section 4 waits for paying clients.
+Build and sell in parallel ([C1](0_business_constraint.md#1-founder-and-capacity)). Start demos as soon as section 1 works; keep building section 2 between demos. Build section 3 when a real prospect asks for it. Section 4 can be sold as planned, with a delivery date, once a paying client wants it.
 
 Why ([X4](1_challenges.md#2-founder-capacity)): an engineer-founder's natural pull is to keep building instead of selling. The product will not fail for lack of features; it will fail for lack of demos.
 
@@ -74,5 +74,5 @@ Why ([X4](1_challenges.md#2-founder-capacity)): an engineer-founder's natural pu
 ## Open decisions
 
 - [ ] **Section 3 claims that are not built.** Recommendation: list them as "on request" in the Bahasa Indonesia proposal version, and do not show them in demos.
-- [ ] **"Switch on other modules" claim (3.5).** Recommendation: answer "not offered now" if asked, and log it as a proposal change for later.
+- [ ] **"Switch on other modules" claim (3.5).** Recommendation: for retail, answer "not offered now"; for enterprise, "yes, configured by our implementation partner". Log it as a proposal change for later.
 - [ ] **Which long-term feature first (section 4).** AI projects no longer have to reuse the assistant, so 4.1 is less urgent. Recommendation: 4.2 proactive alerts, the strongest demo for trading company owners.

@@ -112,7 +112,7 @@ A limited offer for the first retail clients: **3 slots**, open for 90 days. Pil
 | | Navario gives | Client gives |
 | :-- | :-- | :-- |
 | **Price** | Pilot discount (open decision below), on top of the list offer | Pays upfront, like any client ([C8](0_business_constraint.md#3-commercial-rules)). No free pilots. |
-| **Scope** | List offer: modules, AI questions, hosting, support | Uses only what the demo showed ([C6](0_business_constraint.md#2-offer)) |
+| **Scope** | List offer: modules, AI questions, hosting, support | Uses only what the demo showed, plus any planned feature with a delivery date in the quote |
 | **Attention** | Direct founder access and a fortnightly check-in | 30 minutes every 2 weeks for feedback |
 | **Data** | Data export anytime | Permission to log AI usage per question (for cost, not content) |
 | **Proof** | — | Logo, testimonial, short case study and one reference call, one month after go-live |

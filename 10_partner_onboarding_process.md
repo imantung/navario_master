@@ -1,10 +1,10 @@
 # Partner Onboarding Process
 
-Internal. A partner from first contact to active partner. The model, split and rules are in [8_partnership_model.md](8_partnership_model.md). The key rule: **sign before you teach** ([C9](0_business_constraint.md#3-commercial-rules)).
+Internal. A partner from first contact to active partner. The model, split and rules are in [8_partnership_model.md](8_partnership_model.md). The key rule: **functional yes, technical never** ([C9](0_business_constraint.md#3-commercial-rules)). Partners do sales and ERP functional work only.
 
 ```
 1 Outreach → 2 Intro & demo → 3 Fit check → 4 Agreement → 5 Onboarding → 6 First deal → 7 Active partner
-             └──────── no system access, no training ────────┘
+   └──────────── functional access and training allowed at any stage, technical details never ────────────┘
 ```
 
 | Stage | Referral Partner | Implementation Partner | Exit document |
@@ -27,15 +27,17 @@ Internal. A partner from first contact to active partner. The model, split and r
 
 * **You give:** The live demo run by Navario ([9_saas_process_flow.md](9_saas_process_flow.md#stage-1-live-demo-3045-min-online-or-onsite)), the proposal and the one-page partner summary.
 * **You receive:** Their client base (industries, company sizes, how many trading companies), their services, and what they want: referral income or implementation work.
-* **Do not give:** System access, architecture or AI walkthroughs, hands-on training, or the enterprise split details beyond the partner summary ([8_partnership_model.md](8_partnership_model.md#rules), rule 0).
+* **Can give:** A demo instance and a first functional walkthrough, if the partner is serious.
+* **Do not give:** Source code, server access, architecture or AI design, or the enterprise split details beyond the partner summary ([8_partnership_model.md](8_partnership_model.md#rules), rule 0).
 
 ## Stage 3: Fit Check
 
 | Check | Referral | Implementation |
 | :-- | :-- | :-- |
-| Has trading companies among its clients or network | ✓ | ✓ |
+| Has trading companies among its clients or network | ✓ | — |
+| Has larger clients (any industry) | — | ✓ |
 | No competing ERP they push by default (or willing to offer Navario next to it) | ✓ | ✓ |
-| Has staff who can configure, train and do first-line support | — | ✓ |
+| Has functional staff who can configure, train and do first-line support | — | ✓ |
 | Has a legal entity that can sign and invoice (needed for model A) | — | ✓ |
 | Has a real prospect in mind | Nice to have | ✓ |
 
@@ -46,7 +48,7 @@ Internal. A partner from first contact to active partner. The model, split and r
 
 * **You give:** The partner agreement in Bahasa Indonesia ([L2](2_legal.md#1-rules)) with: partner type, commission or partner share, model A or B, lead registration, confidentiality and non-solicitation, no source code ([L6](2_legal.md#1-rules)), client data rules (30-day notice and data export for model A), and reference rights.
 * **You receive:** The signed agreement, company documents (NIB, NPWP) and bank details for commission payments.
-* **Rule:** Nothing in stage 5 starts before the signature. No agreement before Navario's legal entity exists ([L1](2_legal.md#1-rules)).
+* **Rule:** Functional training can start before the signature; the enterprise split and lead commissions start only after it. No agreement before Navario's legal entity exists ([L1](2_legal.md#1-rules)).
 
 ## Stage 5: Onboarding
 
@@ -55,11 +57,11 @@ Internal. A partner from first contact to active partner. The model, split and r
 | **Materials** | Partner summary, retail price list, pilot offers ([5 §5](5_saas_pricing_model.md#5-pilot), [6 §5](6_enterprise_pricing_model.md#5-pilot)), the brand wording ([3_brand_identity.md](3_brand_identity.md)) | Same, plus the enterprise split |
 | **Lead registration** | How to register a lead by WhatsApp or web form | Same |
 | **Demo** | None; Navario runs demos | Own demo instance with the trading dataset, and the demo script |
-| **Training** | 30-min product overview | Product training: configuration, user training, first-line support. Enough to run stages 2, 5 and 7 of the client process. |
+| **Training** | 30-min product overview | Functional training: configuration, user training, first-line support. Enough to run stages 2, 5 and 7 of the client process. |
 | **Support channel** | WhatsApp with Navario | Second-line channel: how to raise bugs, server and AI issues |
 
 * **You receive:** A completed training (Implementation) and the partner's contact list for leads.
-* **Never given:** Source code, server access or architecture details for Platform Core and Nava AI ([techstack.md](techstack.md#4-design-rules), rule 5).
+* **Never given:** Source code, server access, architecture or AI design for Platform Core and Nava AI ([techstack.md](techstack.md#4-design-rules), rule 5).
 
 ## Stage 6: First Deal
 
@@ -78,7 +80,7 @@ Internal. A partner from first contact to active partner. The model, split and r
 - [ ] **Partner summary.** Done when: a one-page partner summary exists ([8_partnership_model.md](8_partnership_model.md#tasks)).
 - [ ] **Fit check form.** Done when: the stage 3 checklist exists as a one-page form.
 - [ ] **Partner agreement.** Done when: the draft in [2_legal.md](2_legal.md#tasks) is checked by a notary or lawyer.
-- [ ] **Implementation training kit.** Depends on: a signed Implementation Partner. Done when: a training agenda, a configuration guide and a first-line support guide exist. Don't build it before the first partner signs.
+- [ ] **Implementation training kit.** Depends on: a serious Implementation Partner candidate. Done when: a functional training agenda, a configuration guide and a first-line support guide exist, with no technical content.
 - [ ] **Partner demo instance.** Done when: a demo instance can be created per partner from the trading dataset in under an hour.
 
 ## Open decisions

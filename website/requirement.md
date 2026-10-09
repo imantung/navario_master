@@ -390,5 +390,5 @@ These were found while reverse-engineering the old site. Fix them as part of the
 
 - [ ] **Scope for launch.** Recommendation: rebrand plus home, pricing and contact first. The rest of this spec waits. If the retail price is not final at launch, launch home and contact only, and add pricing once [5_saas_pricing_model.md](../5_saas_pricing_model.md) is final.
 - [ ] **Commission rates on the Partners page.** The commission option is not decided ([8_partnership_model.md](../8_partnership_model.md#open-decisions)). Recommendation: no rates on the page until the first partner signs.
-- [ ] **Enterprise price on the pricing page, or "Talk to us" only?** Recommendation: "Talk to us" only. Enterprise is sold through partners, who need room to add their consultancy.
+- [ ] **Enterprise price on the pricing page, or "Talk to us" only?** Recommendation: "Talk to us" only. Enterprise deals often involve a partner, who needs room to add their consultancy.
 - [ ] **Logo.** Recommendation: later. Use a text logo for now.

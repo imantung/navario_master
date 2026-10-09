@@ -52,6 +52,6 @@ Standard custom software delivery.
 
 - [ ] **Final scope catalogue.** Recommendation: start with MCP server and automation only. Add a type after a real prospect asks for it twice.
 - [ ] **Payment schedule.** C8 says work starts after payment clears. Recommendation: 50% at signing, 50% at UAT acceptance. Larger projects: per milestone.
-- [ ] **AI provider.** The product is Gemini only ([C7](0_business_constraint.md#2-offer)), but AI projects run on the client's key. Recommendation: the client's choice of provider. Navario recommends one in the written scope.
+- [ ] **AI provider.** Any model is allowed, and AI projects run on the client's key. Recommendation: the client's choice of provider. Navario recommends one in the written scope.
 - [ ] **Code ownership.** See [2_legal.md](2_legal.md#open-decisions).
 - [ ] **Reusing Nava AI code.** May a project reuse parts of Nava AI? Recommendation: yes, but only while Navario hosts the project. Never hand the code over ([L6](2_legal.md#1-rules)).

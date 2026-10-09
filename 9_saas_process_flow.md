@@ -40,7 +40,7 @@ The demo is the main sales tool, so it is scripted and rehearsed.
 * **You give:** A discovery checklist covering:
   * Flow: buy → receive stock → sell → deliver → invoice → collect payment
   * Number of branches and warehouses
-  * Tax status (PKP or not), e-Faktur volume. e-Faktur export is not included ([C6](0_business_constraint.md#2-offer)); say so plainly.
+  * Tax status (PKP or not), e-Faktur volume. e-Faktur export is not built; say so plainly ([4_product_scope.md](4_product_scope.md), 4.3).
   * Documents they print (invoice, PO, delivery note) and the reports they rely on
   * Users and roles, approval rules
   * Data to bring in: customers, suppliers, items, opening balances

@@ -6,7 +6,7 @@ Internal. This is the basis for the partner agreement, which will be written in 
 
 - **Retail (SaaS):** Commission on a low list price is small, so retail referrals are a bonus for partners, not a business ([X14](1_challenges.md#5-partners)).
 - **Enterprise:** This is where partners earn. **Navario builds and runs the platform (ERP, AI assistant, hosting, technical customization) for a fixed monthly share. The partner owns the client relationship, keeps the rest of the subscription, and charges the client for consultancy.**
-- For Navario, partners provide what a solo founder lacks ([C1, C2](0_business_constraint.md#1-founder-and-capacity)): sales reach, business process know-how, and capacity for training and first-line support.
+- For Navario, partners provide what a solo founder lacks ([C1](0_business_constraint.md#1-founder-and-capacity), [X18](1_challenges.md#2-founder-capacity)): sales reach, business process know-how, and capacity for training and first-line support. Partners do sales and ERP functional work only; all technical work stays with Navario ([C9](0_business_constraint.md#3-commercial-rules)).
 
 ## Partner types
 
@@ -14,7 +14,7 @@ Internal. This is the basis for the partner agreement, which will be written in 
 | :-- | :-- | :-- |
 | **Deals** | SaaS and enterprise | Enterprise (SaaS allowed) |
 | **Typical profile** | Accountants, tax consultants (*konsultan pajak*), bookkeepers, business consultants, IT freelancers | IT/ERP consulting firms, KAP/KKP firms with a consulting arm, system integrators, ERPNext implementers |
-| **Partner does** | Introduces the client | Sells, runs discovery, designs processes, configures, trains, first-line support |
+| **Partner does** | Introduces the client | Sells, runs discovery, designs processes, configures modules (functional settings, no code), trains, first-line support |
 | **Navario does** | Demo, quote, setup, training, support | Platform, hosting, AI assistant, upgrades, custom code, second-line support, demo support for the first deals |
 | **Partner earns** | SaaS commission (section 1) | Enterprise partner share (section 2) + **100% of their own consultancy fees** |
 
@@ -49,7 +49,7 @@ The model depends on **which company signs the agreement with the client**:
 | **If the partner leaves** | Navario has no obligation to the client. The partner's contract with the client is the partner's responsibility. Only exception: client data (rule 5). | Navario keeps serving the client and keeps the full client price. |
 
 - **Referral Partner on an enterprise deal:** always model B. Navario does the implementation, so the referral partner gets the SaaS commission rate on the client price, not the partner share.
-- **Direct deals with no partner:** Navario keeps the full client price.
+- **Direct deals with no partner:** allowed, in any industry. Navario keeps the full client price, and looks for a partner to help with functional work where needed ([X18](1_challenges.md#2-founder-capacity)).
 
 ### Principal or subcon (model A)
 
@@ -83,12 +83,12 @@ Step by step, from first contact to active partner: [10_partner_onboarding_proce
 
 - The proposal (English, plus Bahasa Indonesia when ready) and a one-page partner summary
 - A demo instance with the trading company dataset and the demo script from [9_saas_process_flow.md](9_saas_process_flow.md)
-- A product training session (Implementation Partners: enough to configure and train clients), **only after the partner agreement is signed**
+- Functional training (Implementation Partners: enough to configure and train clients). Can start before signing; never covers technical details (rule 0)
 - The retail price list, and for Implementation Partners, the enterprise split
 
 ## Rules
 
-0. **Sign before you teach** ([C9](0_business_constraint.md#3-commercial-rules)). Before signing, a prospective partner gets only the proposal, a live demo run by Navario, and the partner summary. No system access, no architecture or AI walkthroughs, no hands-on ERPNext training. Training starts after the agreement (with confidentiality and non-solicitation clauses) is signed. Lesson from Sep 2026: a prospective partner with ERP implementation experience learned ERPNext and the AI approach from the founder, then left without an agreement. *Note: The enforceability of confidentiality and non-solicitation clauses must be validated with a certified Indonesian tax consultant or notary.*
+0. **Functional yes, technical never** ([C9](0_business_constraint.md#3-commercial-rules)). Partners can get demos, a demo instance and functional training (how to use and configure the ERP for a client), before or after signing. They never get source code, server access, architecture, or AI design (prompts, tools, model stack). Lesson from Sep 2026: a prospective partner with ERP implementation experience learned ERPNext and the AI approach from the founder, then left without an agreement. What they took was the technical part. The agreement still has confidentiality and non-solicitation clauses. *Note: The enforceability of confidentiality and non-solicitation clauses must be validated with a certified Indonesian tax consultant or notary.*
 1. **Lead registration.** Partners register a lead (company name and contact) by WhatsApp or the web form. Attribution is locked for **60 days** and extended while a deal is active. The first registration wins.
 2. **Cash first.** Commissions and partner shares are paid only after the client's money clears.
 3. **Technical ownership.** Navario owns Platform Core and Nava AI, and never shares their source code ([2_legal.md](2_legal.md#3-code-ownership-ip)). Partners don't modify core code; custom code goes through Navario. The client owns its Company_Custom code and gets it on request.
@@ -103,7 +103,7 @@ Once Navario has direct clients (around 10 or more), refer clients who need book
 ## Tasks
 
 - [ ] **Partner summary.** Done when: a one-page partner summary exists, with the enterprise split and BYOK explained.
-- [ ] **Partner outreach.** Depends on: partner summary. Done when: 15 accountants, tax consultants or IT consultants in Jabodetabek have been contacted. Follow rule 0: sign before you teach.
+- [ ] **Partner outreach.** Depends on: partner summary. Done when: 15 accountants, tax consultants or IT consultants in Jabodetabek have been contacted. Follow rule 0: functional yes, technical never.
 
 Partner agreement draft: see [2_legal.md](2_legal.md#tasks).
 

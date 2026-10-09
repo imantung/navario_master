@@ -19,6 +19,8 @@ Internal. An enterprise client from first contact to ongoing support. Retail is 
 | 7. Go-live | Navario | Partner, Navario reviews | Partner, Navario reviews | Go-live sign-off |
 | 8. Support | Navario | Partner first line, Navario second | Partner first line, Navario second | — |
 
+Direct deals are allowed in any industry. Navario looks for a partner to help, mainly with functional work outside trading ([8_partnership_model.md](8_partnership_model.md#2-enterprise-partner-share)).
+
 Stage durations: unknown. Measure them on the first enterprise pilot.
 
 ## Stage 1: Live Demo
@@ -47,7 +49,7 @@ Same script as retail ([9_saas_process_flow.md](9_saas_process_flow.md#stage-1-l
 
 ## Stage 4: Server & AI Key
 
-* **You give:** A dedicated server, and a guide for the client to create a Gemini API key on its own paid Google Cloud billing account.
+* **You give:** A dedicated server, and a guide for the client to create a Gemini API key (the one model for now) on its own paid Google Cloud billing account.
 * **You receive:** The client's AI key, connected to its instance ([4_product_scope.md](4_product_scope.md#2-first-paid-client), 2.2).
 
 ## Stages 5–7: Setup, Training, Go-Live
