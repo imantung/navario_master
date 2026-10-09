@@ -75,7 +75,7 @@ Same in both:
 
 ## 3. Pilots
 
-Pilots referred by a partner ([8_pilot_saas_model.md](8_pilot_saas_model.md), [9_pilot_enterprise_model.md](9_pilot_enterprise_model.md)) follow the same split. Pilot discounts are on setup only, so the subscription split does not change.
+Pilots referred by a partner ([8_pilot_saas_model.md](8_pilot_saas_model.md), [9_pilot_enterprise_model.md](9_pilot_enterprise_model.md)) follow the same split. If the pilot discounts stay on setup only (open decisions in 8 and 9), the subscription split does not change.
 
 ## 4. What Navario gives partners
 
@@ -107,9 +107,17 @@ Once Navario has direct clients (around 10 or more), refer clients who need book
 
 Partner agreement draft: see [2_legal.md](2_legal.md#tasks).
 
+## Assumptions
+
+- Accountants refer clients even with a small commission.
+- Implementation Partners accept a fixed Navario share and no source code.
+
 ## Open decisions
 
 Decide before signing the first partner.
+
+- [ ] **Which Implementation Partners to target first.** An ERPNext implementer can run plain ERPNext without paying Navario, and is the X13 risk. Recommendation: target accountants and IT consultancies with no ERP of their own first.
+- [ ] **Model A undercutting retail.** In model A the partner sets the price, and could sell below retail to small clients. Recommendation: model A only for clients above the retail user range.
 
 - [ ] **SaaS commission option** (A, B or C above), lifetime or capped (for example 24 months). Recommendation: option A. It is simple, and AI top-ups stay outside the base.
 - [ ] **Commission on AI projects** a partner refers. Recommendation: a one-time share of the development fee only.

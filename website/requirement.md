@@ -218,7 +218,7 @@ Workflows should only show steps the trading template actually uses (Lead/Opport
 - A **Retail** card: price per user per month (minimum 3 users), annual discount, AI questions per user, and the two setup options (Fast-Track, Standard) with what each includes. The numbers come from [5_saas_pricing_model.md](../5_saas_pricing_model.md) and are stored in `siteContent.json`, not hardcoded.
 - An **Enterprise** card: "Unlimited users, dedicated server, delivered with our implementation partners." Show the starting price from [6_enterprise_pricing_model.md](../6_enterprise_pricing_model.md) or no price (decide). Button: *Talk to us*.
 - Add-ons summary (AI top-ups, data migration, training). Customization is shown as "quoted at a fixed price after review".
-- A note that prices exclude PPN.
+- A PPN note that follows the PKP decision in [2_legal.md](../2_legal.md#open-decisions). If Navario is non-PKP, no PPN is charged and there is no note.
 - FAQ with `FAQPage` JSON-LD: What is an AI question? What happens when we run out? Can we add users later? How do we compare with Odoo? Can we export our data?
 - Each package button opens the contact modal with the topic "Ask about pricing" preselected.
 
@@ -388,6 +388,7 @@ These were found while reverse-engineering the old site. Fix them as part of the
 
 ## Open decisions
 
-- [ ] **Scope for launch.** Recommendation: rebrand plus home, pricing and contact first. The rest of this spec waits.
+- [ ] **Scope for launch.** Recommendation: rebrand plus home, pricing and contact first. The rest of this spec waits. If the retail price is not final at launch, launch home and contact only, and add pricing once [5_saas_pricing_model.md](../5_saas_pricing_model.md) is final.
+- [ ] **Commission rates on the Partners page.** The commission option is not decided ([10_partnership_model.md](../10_partnership_model.md#open-decisions)). Recommendation: no rates on the page until the first partner signs.
 - [ ] **Enterprise price on the pricing page, or "Talk to us" only?** Recommendation: "Talk to us" only. Enterprise is sold through partners, who need room to add their consultancy.
 - [ ] **Logo.** Recommendation: later. Use a text logo for now.

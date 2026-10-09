@@ -38,7 +38,7 @@ At 30+ users, Odoo Custom costs over Rp 7.6M per month in licences alone, before
 
 ## 4. AI projects
 
-Custom AI work for any industry, built on the Navario assistant ([C4](0_business_constraint.md#2-offer)).
+Custom AI work for any industry, on any system ([C4](0_business_constraint.md#2-offer)). Scope and process: [13_ai_project.md](13_ai_project.md).
 
 | | |
 | :-- | :-- |
@@ -51,8 +51,16 @@ Custom AI work for any industry, built on the Navario assistant ([C4](0_business
 - [ ] **Enterprise BYOK package.** Done when: the server spec is set and the per-company AI key setting works in a demo.
 - [ ] **AI project pricing.** Done when: section 4 has a development price guide and a monthly server maintenance fee.
 
+## Assumptions
+
+- Navario's share covers the dedicated server, maintenance and second-line support.
+- Partners can add a markup that clients will pay.
+
 ## Open decisions
 
+- [ ] **Minimum term.** A dedicated server and a large setup on a monthly plan is risky. Recommendation: 12-month minimum term for enterprise. Retail stays monthly.
+- [ ] **BYOK on a free Gemini tier.** Google may use free-tier data for training, which breaks the proposal's "your data isn't used to train AI". Recommendation: the agreement requires a paid Google Cloud billing account.
+- [ ] **Who picks the model stack under BYOK?** Recommendation: Navario sets it and gives the client the cost estimate.
 - [ ] **Enterprise server spec** (vCPU / RAM / storage) for the enterprise fee. Recommendation: set it from the load of a 30-user demo.
 - [ ] **AI project price guide** for development and monthly server maintenance. Recommendation: fixed price per project after a scoping call. Charge for scoping only if it includes a written design.
 - [ ] **BYOK providers, and does the product support a per-company key today?** Recommendation: Gemini only for now; the cost model and product are built on it. Do not quote BYOK until the key setting works in a demo.

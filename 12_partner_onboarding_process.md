@@ -71,7 +71,7 @@ Internal. A partner from first contact to active partner. The model, split and r
 
 * **Every month:** Pay commission or partner share after the client's payment clears (model B), or invoice Navario's share in advance (model A).
 * **Every quarter:** 30-min review: leads registered, deals closed, support issues, product feedback.
-* **Status:** A partner with no registered lead in 6 months goes back to informal referrer ([open decision](10_partnership_model.md#open-decisions) on minimum commitment).
+* **Status (proposed, not decided):** A partner with no registered lead in 6 months goes back to informal referrer ([open decision](10_partnership_model.md#open-decisions) on minimum commitment).
 
 ## Tasks
 

@@ -98,7 +98,14 @@ Odoo Indonesia list prices, from [odoo.com/id_ID/pricing](https://www.odoo.com/i
 - [ ] **Odoo AI test.** Done when: you have tried Odoo's AI on a trial database and noted what our assistant does better in Bahasa Indonesia.
 - [ ] **Validate the allowance.** After the first clients go live. Done when: real AI questions per user are measured (is 100 per user enough?), and the allowance is confirmed or changed.
 
+## Assumptions
+
+- SMEs accept a per-user price above Odoo because the setup is "done for you".
+- A 3-user minimum fits small traders.
+
 ## Open decisions
 
+- [ ] **Full margin check.** The price is checked against AI cost only. Recommendation: check price − AI − server − partner commission − support in the [financial model](financial_model.md) before fixing the price.
+- [ ] **Price changes for existing clients.** Recommendation: the service agreement allows one price review a year, with 30 days' notice.
 - [ ] **Price per user vs Odoo** (section 4), Accurate Online and Jurnal (Mekari). Recommendation: decide after the cost data. Compete on first-year total cost, not licence price.
 - [ ] **AI model stack.** Recommendation: price on stack C until quality tests prove a cheaper stack.

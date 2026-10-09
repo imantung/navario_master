@@ -2,7 +2,7 @@
 
 Internal. A retail (SaaS) client from first contact to ongoing support. The stages follow the "Let's Talk" section of the [proposal](proposal/draft_oct_2026/draft_proposal.md): **live demo → needs discussion → fixed-price quote**.
 
-Prices are in [5_saas_pricing_model.md](5_saas_pricing_model.md). Pilot clients follow the same stages with the terms in [8_pilot_saas_model.md](8_pilot_saas_model.md). If a Referral Partner brought the lead, register it ([10_partnership_model.md](10_partnership_model.md#rules), rule 1); the commission is paid after the client's payment clears.
+Enterprise is in [14_enterprise_process_flow.md](14_enterprise_process_flow.md). Prices are in [5_saas_pricing_model.md](5_saas_pricing_model.md). Pilot clients follow the same stages with the terms in [8_pilot_saas_model.md](8_pilot_saas_model.md). If a Referral Partner brought the lead, register it ([10_partnership_model.md](10_partnership_model.md#rules), rule 1); the commission is paid after the client's payment clears.
 
 ```
 1 Live demo → 2 Needs discussion → 3 Quote & contract → 4 Setup & import → 5 Training & UAT → 6 Go-live → 7 Support
@@ -30,6 +30,7 @@ The demo is the main sales tool, so it is scripted and rehearsed.
   3. "Create a sales order for PT Maju Jaya": a pre-filled form, checked and saved by the user.
   4. Log in as a sales staff member and ask for bank balances: the assistant declines.
   5. A purchase request going from request to approval.
+  6. "Open the asset register."
 * **You give:** The demo, and the proposal PDF afterwards.
 * **You receive:** Company name, decision maker, number of staff who would use the system, current tools (spreadsheets, Accurate, Jurnal, etc.), and their main pain.
 * **Qualify:** SaaS fits roughly 3–30 users. Larger or multi-company prospects go to enterprise ([6_enterprise_pricing_model.md](6_enterprise_pricing_model.md)). During the pilot phase, check the pilot criteria ([8_pilot_saas_model.md](8_pilot_saas_model.md#2-who-qualifies)).
@@ -107,4 +108,5 @@ Legal entity and sales documents (quotation, service agreement): see [2_legal.md
 
 - [ ] **"Estimation" in the proposal vs fixed-price quote.** The proposal's "Let's Talk" ends with a "cost estimate"; the process sends one fixed total. Recommendation: keep the fixed-price quote, and change the proposal wording to "fixed-price quote" when it is next revised.
 - [ ] **Stage durations** (stages 4–5 are estimates). Recommendation: measure them on the first pilot and replace the estimates.
-- [ ] **Enterprise process flow.** Enterprise has a dedicated server, the client's own AI key, a partner and model A or B. Recommendation: write it as a separate doc after the first enterprise opportunity, not before.
+- [ ] **Parallel setups.** Recommendation: at most 2 setups at the same time while solo.
+- [ ] **Non-payment and cancellation.** Recommendation: 14 days' grace, then read-only, then a data export is offered, then deletion. Write it into the service agreement.

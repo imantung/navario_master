@@ -52,7 +52,7 @@ Answer: summary, table, or link to a document, report or pre-filled form
 - **The model never touches the database.** It can only ask for a tool. The system checks the user's permissions (the same Frappe roles and permissions as the ERP), runs the tool, and returns the result.
 - **No write without the user.** New documents open as pre-filled forms the user saves. Actions and setup changes show a preview and need Apply.
 - **Request log:** who asked what and whether it was allowed. Field values are never logged.
-- **AI provider:** Google Gemini only ([C7](0_business_constraint.md#2-offer)). Model stack and cost: [ai_cost_simulation.md](ai_cost_simulation.md).
+- **AI provider:** Google Gemini only ([C7](0_business_constraint.md#2-offer)), the fastest route for now. A move to a cheaper provider of the same quality is planned, so all model calls go through one internal interface ([X16](1_challenges.md#6-product-and-technology)). Model stack and cost: [ai_cost_simulation.md](ai_cost_simulation.md).
 - **AI key:** retail uses Navario's key with a question pool per company. Enterprise and AI projects use the client's own key (BYOK).
 
 ## 3. Hosting
@@ -65,7 +65,9 @@ Answer: summary, table, or link to a document, report or pre-filled form
 | **Provider and region** | DigitalOcean, Singapore | DigitalOcean, Singapore |
 | **Who hosts** | Navario | Navario. No on-premise ([L6](2_legal.md#1-rules)). |
 
-Client data is stored outside Indonesia, and AI questions are processed by Google. Both must be disclosed to clients ([L7](2_legal.md#1-rules)).
+DigitalOcean is the fastest route for now. A move to a cheaper host of the same quality is planned ([X16](1_challenges.md#6-product-and-technology)).
+
+Client data is stored outside Indonesia, and AI questions are processed by Google. Both must be disclosed in the service agreement and Privacy Policy ([L7](2_legal.md#1-rules)), not in marketing.
 
 ## 4. Design rules
 
@@ -87,3 +89,15 @@ These keep the client free to leave, and keep Platform Core and Nava AI closed. 
 | Their own customization (Company_Custom) | |
 
 The client can run its business on plain ERPNext with any other provider. That is what "no vendor lock-in" means in sales material.
+
+## Assumptions
+
+- One shared server holds many retail clients (one Frappe site per client).
+- Moving to another host or AI provider later is possible without client-facing changes.
+
+## Open decisions
+
+- [ ] **Server cost per retail client.** Unknown, but needed for the [financial model](financial_model.md). Recommendation: measure it on the demo server.
+- [ ] **Backup restore drill.** Backups are promised; a restore has never been tested. Recommendation: run one before the first go-live and write the steps in the runbook.
+- [ ] **What a "full data export" contains** ([4_product_scope.md](4_product_scope.md#2-first-paid-client), 2.9). Recommendation: a database backup plus files, tested once by restoring it on plain ERPNext.
+- [ ] **When to move host and AI provider.** Recommendation: after the first paying clients, when real usage data shows the saving. Re-run the cost simulation for the new provider first.

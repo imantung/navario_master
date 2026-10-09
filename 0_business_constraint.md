@@ -16,7 +16,7 @@ When a constraint changes, update this file first, then the docs in the "Handled
 | # | Constraint | What it forces | Handled in |
 | :-- | :-- | :-- | :-- |
 | C3 | **AI first. No ERP-only deals.** | Every package includes the AI Business Assistant. Decline ERP-only prospects politely. | [5_saas_pricing_model.md](5_saas_pricing_model.md#principles), [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#principles), [3_brand_identity.md](3_brand_identity.md#2-positioning) |
-| C4 | **Product market: trading companies only.** AI projects: any industry, but they must reuse the Navario assistant. | No manufacturing, retail chain or services examples in product messaging. | [3_brand_identity.md](3_brand_identity.md#2-positioning), [4_product_scope.md](4_product_scope.md#4-long-term-do-not-sell-yet) (4.1) |
+| C4 | **Product market: trading companies only.** AI projects: any industry, any system, inside or outside Frappe/ERPNext, within the scope catalogue. | No manufacturing, retail chain or services examples in product messaging. AI projects are quoted only for types in the catalogue. | [3_brand_identity.md](3_brand_identity.md#2-positioning), [13_ai_project.md](13_ai_project.md#1-scope-catalogue) |
 | C5 | **Five modules only:** Accounting, Buying, Selling, Stock, Asset Management. Not offered: Manufacturing, Projects, HR/Payroll, Finance/budgeting. | If asked for another module, answer "not offered now". | [4_product_scope.md](4_product_scope.md#3-claimed-in-the-proposal-likely-weak) (3.5) |
 | C6 | **Claim only what works in a demo today.** | Unbuilt features (e.g., e-Faktur export) are stated as not included. | [4_product_scope.md](4_product_scope.md) |
 | C7 | **Gemini only.** The product and the cost model are built on it. | BYOK means a Gemini key for now. | [6_enterprise_pricing_model.md](6_enterprise_pricing_model.md#open-decisions) |
@@ -28,3 +28,15 @@ When a constraint changes, update this file first, then the docs in the "Handled
 | C8 | **Fixed price, cash first.** | One fixed total per quote. Work starts after payment clears. Anything extra is a change request with its own fixed quote. Commissions are paid only after the client pays. | [11_saas_process_flow.md](11_saas_process_flow.md#stage-3-fixed-price-quote--contract), [10_partnership_model.md](10_partnership_model.md#rules) |
 | C9 | **Sign before you teach.** | Before signing, a prospective partner gets only the proposal, a live demo and the partner summary. No system access or training. | [10_partnership_model.md](10_partnership_model.md#rules) (rule 0) |
 | C10 | **Navario owns Platform Core and Nava AI, keeps them closed source, and hosts them itself** ([L6](2_legal.md#1-rules)). No services that compete with partners (bookkeeping, tax filing, audit, consultancy). | Partners never modify core code. Billing depends on who signs with the client: the partner (partner sets the price, pays Navario's share) or Navario (Navario bills, pays the partner share). | [10_partnership_model.md](10_partnership_model.md#2-enterprise-partner-share) |
+
+## Not constraints
+
+Checked with the founder on 9 Oct 2026. Don't add them as constraints unless this changes.
+
+- **Cash and runway.** No limit for now.
+- **Geography.** No limit. Sell anywhere in Indonesia.
+
+## Assumptions
+
+- The founder can spend ~50% of the week on AI projects and still finish the demo and sell (C1).
+- Partners will supply ERP and accounting know-how (C2). No partner has committed yet.

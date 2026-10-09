@@ -9,11 +9,11 @@ Internal. Who Navario is, how it is positioned, and how to introduce it. Website
 | **Name** | Navario |
 | **Domain** | [navario.id](https://navario.id) |
 | **Company** | *PT Upaya Teknologi Sejahtera* (name reserved, not registered yet, [L1](2_legal.md#1-rules)). Don't use it in client material until registered. |
-| **In the product** | No Navario brand inside the ERP, so partners can white-label it ([10_partnership_model.md](10_partnership_model.md#principal-or-subcon-model-a)). Navario is the company and marketing brand. |
+| **In the product** | No Navario brand inside the ERP, for retail and partner clients alike. One codebase for everyone, and partners can white-label it ([10_partnership_model.md](10_partnership_model.md#principal-or-subcon-model-a)). Navario is the company and marketing brand. |
 | **Assistant component** | Nava AI (internal name). Client-facing name: "AI Business Assistant". |
 | **Tagline** | *"Ask, don't search."* / *"Tanya, jangan cari."* |
 | **What we sell** | An AI Business Assistant for Indonesian trading companies, with a complete ERP included. |
-| **Second offer** | AI projects: custom AI on a company's own business data, any industry, built on the Navario assistant. |
+| **Second offer** | AI projects: custom AI work for any industry, on any system ([13_ai_project.md](13_ai_project.md)). |
 | **Mission** | Help companies navigate their business with AI. |
 | **Why it matters** | Your team should spend its time running the business, not searching for information. |
 
@@ -86,8 +86,15 @@ Rules: claim software and AI experience only. Don't claim ERP, accounting or imp
 
 ### Partners
 
-- **EN:** "Navario runs the platform: ERP, AI assistant, hosting and custom code. You own the client relationship and keep 100% of your consultancy fees, plus a commission on the subscription."
-- **ID:** "Navario menjalankan platformnya: ERP, asisten AI, hosting, dan kustomisasi. Anda memegang hubungan dengan klien dan mendapatkan 100% fee konsultasi Anda, ditambah komisi dari langganan."
+Two pitches, one per partner type ([10_partnership_model.md](10_partnership_model.md#partner-types)).
+
+**Referral Partner** (accountants, tax consultants, bookkeepers):
+- **EN:** "Introduce trading companies that struggle with spreadsheets. Navario runs the demo, setup and support. You earn a commission on the subscription for as long as the client pays."
+- **ID:** "Perkenalkan perusahaan dagang yang kewalahan dengan spreadsheet. Navario yang menjalankan demo, setup, dan dukungan. Anda mendapat komisi dari langganan selama klien membayar."
+
+**Implementation Partner** (IT/ERP consulting firms):
+- **EN:** "Navario runs the platform: ERP, AI assistant, hosting and custom code. You own the client relationship, keep 100% of your consultancy fees, and earn a share of the monthly subscription."
+- **ID:** "Navario menjalankan platformnya: ERP, asisten AI, hosting, dan kustomisasi. Anda memegang hubungan dengan klien, mendapatkan 100% fee konsultasi Anda, dan bagian dari langganan bulanan."
 
 ### Hard questions
 
@@ -96,7 +103,13 @@ Rules: claim software and AI experience only. Don't claim ERP, accounting or imp
 | "Who are your clients?" | "We are new. That's why we're working closely with our first clients, and I'll show you everything live in the demo." Do not name companies that are not clients. |
 | "How big is your team?" | "Founder-led, with implementation partners for larger clients." Don't imply a bigger team. |
 | "Is this just Odoo / ERPNext?" | "It is built on a mature open-source platform, so there is no vendor lock-in. What we add is the AI assistant, Indonesian setup and simpler screens, at a fixed price." Name ERPNext if they ask directly. |
+| "Where is our data stored?" | Don't raise it yourself; answer only when asked. "Your data is stored with a major cloud provider in Singapore, and AI questions are processed by a business-grade AI service that doesn't use your data for training. The details are in the service agreement." Name the providers if asked directly. Providers may change later ([X16](1_challenges.md#6-product-and-technology)), so don't name them in marketing. The agreement must still state them ([L7](2_legal.md#1-rules)). |
 | "What if you disappear?" | "Your data and your customization are yours. The ERP is open source, so it keeps running with another provider. You would lose only our improved screens, translation and the AI assistant." See [techstack.md](techstack.md#5-if-a-client-leaves). |
+
+## Assumptions
+
+- Trading company owners respond to "AI first" more than to "a cheaper, easier ERP". Not tested with a prospect yet.
+- With no Navario brand in the product, the brand grows only through marketing, the website and the founder.
 
 ## Open decisions
 

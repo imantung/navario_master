@@ -43,8 +43,14 @@ All terms go into the Bahasa Indonesia service agreement ([L2](2_legal.md#1-rule
 - [ ] **Pilot offer page.** Depends on: the open decisions below. Done when: a one-page Bahasa Indonesia offer exists with the 3-slot limit and the deadline.
 - [ ] **Pilot clause in the service agreement.** Depends on: [2_legal.md](2_legal.md#tasks) sales documents. Done when: the commitments in section 3 are in the agreement.
 
+## Assumptions
+
+- Pilot clients pay the full subscription, use the system daily, and give a case study.
+
 ## Open decisions
 
+- [ ] **Trial and pilot together?** Recommendation: pilots skip the 7-day trial. The pilot is the trial.
+- [ ] **AI limit during the pilot.** A hard limit hides the real usage you want to measure. Recommendation: a higher limit during the pilot, with full logging.
 - [ ] **Pilot discount.** Recommendation: 50% off setup, list subscription. Don't discount the subscription: it sets the price clients expect after the pilot, and the retail price may still rise after cost data.
 - [ ] **Pilot period.** Recommendation: 3 months from go-live. Long enough for one month-end closing and the case study.
 - [ ] **What if a pilot doesn't give the testimonial or case study.** Recommendation: the setup discount is paid back, written in the agreement.

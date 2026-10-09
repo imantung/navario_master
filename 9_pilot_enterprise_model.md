@@ -48,8 +48,13 @@ All terms go into the Bahasa Indonesia service agreement ([L2](2_legal.md#1-rule
 - [ ] **Pilot offer page.** Depends on: the open decisions below. Done when: a one-page Bahasa Indonesia offer exists with the slot limit and the deadline.
 - [ ] **Pilot scope template.** Done when: a one-page template lists what is in and out of the pilot scope, to attach to the quotation.
 
+## Assumptions
+
+- A direct enterprise pilot (no partner) can be run solo.
+
 ## Open decisions
 
+- [ ] **Slots before a partner is signed.** With no partner, the founder also does first-line support. Recommendation: only 1 enterprise pilot until a partner is signed.
 - [ ] **Pilot discount.** Recommendation: 50% off Navario's setup part, full monthly fee. The monthly fee is the recurring revenue and sets the price after the pilot.
 - [ ] **Direct or through a partner.** Recommendation: take the first enterprise pilot direct if it comes from the warm network, and bring in a signed partner only for consultancy and training. Before any partner is signed, there is no one to share it with ([C9](0_business_constraint.md#3-commercial-rules)).
 - [ ] **Pilot period.** Recommendation: 3 months from go-live, the same as the SaaS pilot.

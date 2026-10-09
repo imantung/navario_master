@@ -99,3 +99,8 @@ Our prices are in IDR. For comparison, USD 1 ≈ IDR 16,500.
 - [ ] Run 50 realistic questions on the demo data and replace the assumptions with measured averages.
 - [ ] Test answer quality on 2.5 Flash versus 3.8 Flash for the execution step.
 - [ ] Choose the stack, then update AI allowances and top-up prices in [5_saas_pricing_model.md](5_saas_pricing_model.md).
+
+## Open decisions
+
+- [ ] **Allowance vs normal usage.** The "normal" usage level is above the retail allowance. Is that intended, to drive top-ups? Recommendation: confirm it, and make the 80% warning and the top-up flow smooth.
+- [ ] **Exchange rate.** AI costs are in USD, prices in IDR. Recommendation: price with a buffer rate and review quarterly.

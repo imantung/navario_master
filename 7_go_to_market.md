@@ -76,11 +76,20 @@ In week order. Spend at most ~50% of each week on AI projects, so the product st
 - [ ] **Week 1 — Lead sheet.** Done when: one sheet tracks source, date, offer (SaaS, enterprise or AI project), pilot or list, demo, quote, and won/lost with the reason.
 - [ ] **Week 2 — Warm network.** Depends on: demo ready. Done when: 30 contacts have been messaged and ≥ 5 demos are booked. Pitch AI projects to your startup network, and the product to trading companies.
 - [ ] **Week 2 — Pilot offers.** Depends on: pilot terms in [8_pilot_saas_model.md](8_pilot_saas_model.md#open-decisions) and [9_pilot_enterprise_model.md](9_pilot_enterprise_model.md#open-decisions). Done when: a one-page offer for each exists in Bahasa Indonesia, with the slot limit and the deadline.
-- [ ] **Week 2 — AI project offer.** Depends on: AI project pricing. Done when: a one-page offer exists: what we build, how scoping works, BYOK, and 2–3 example projects that reuse the Navario assistant.
+- [ ] **Week 2 — AI project offer.** Depends on: AI project pricing. Done when: a one-page offer exists: the project types from [13_ai_project.md](13_ai_project.md#1-scope-catalogue), how scoping works, BYOK, and one example per type.
 - [ ] **Week 4 — Content.** Done when: 4 short demo videos are published (section 5).
 - [ ] **Every Friday — Review.** Update the lead sheet and these tasks.
 
+## Assumptions
+
+- The warm network has 30 contacts at or near trading companies.
+- 30 messages give at least 5 demos.
+
 ## Open decisions
 
+- [ ] **Week plan start date.** "Week 1 — Demo ready" assumes the demo works, but every status in [4_product_scope.md](4_product_scope.md) is still **?**. Recommendation: date week 1 from the day the section 1 statuses are filled in.
+- [ ] **"2 active partners in 90 days."** It needs the legal entity and a lawyer-checked agreement. Recommendation: make the goal 5 partner conversations, with 2 signed as a stretch.
+- [ ] **90-day revenue target.** Recommendation: set it from the [financial model](financial_model.md).
+- [ ] **When to write the Bahasa Indonesia proposal.** Recommendation: after section 1 of [4_product_scope.md](4_product_scope.md) is confirmed, so it claims only what works.
 - [ ] **Mixing pilot types.** If one enterprise and one SaaS opportunity come up at the same time. Recommendation: allow at most 1 enterprise + 1 SaaS pilot. More than that breaks the support promise.
 - [ ] **Retail per-user pricing vs the proposal.** The proposal says "no per-user licence fees", which is true for enterprise only. Recommendation: soften those lines in the retail (Bahasa Indonesia) version before showing it to retail prospects.
