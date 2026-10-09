@@ -87,7 +87,20 @@ Odoo Indonesia list prices, from [odoo.com/id_ID/pricing](https://www.odoo.com/i
 **What this means for us:**
 - **Don't compete on licence price.** Odoo Standard is about a third of our draft retail price per user. At IDR 400k we are above even Odoo Custom.
 - **Compete on total cost and "done for you".** An Odoo licence comes without implementation; Indonesian SMEs usually hire an Odoo partner separately, at variable cost. Our price includes hosting, the Indonesian setup, the AI assistant and a fixed-price setup. Compare **first-year total cost**, not monthly licence.
-- **The AI is no longer unique against Odoo** (Odoo Custom includes agentic AI). Our edge has to be: Bahasa Indonesia first, ERP data and access rules built in, simpler screens, and a local person who answers.
+- **The AI is no longer unique against Odoo** (Odoo Custom includes agentic AI). Our edge is listed in [3 §2 Competitive advantage](3_brand_identity.md#competitive-advantage).
+
+### Local accounting software
+
+The low-price competitor for small traders ([market_analysis.md](market_analysis.md#3-competitors)).
+
+| Product | Price | Notes |
+| :-- | :-- | :-- |
+| Accurate Online, base plan | Rp 333,000 / month, incl. PPN | 1 user, 1 company, all features. Extra user Rp 22,200 / month; extra branch Rp 99,900 / month. Monthly billing, 30-day free trial. From [accurate.id/harga](https://accurate.id/harga/) (checked 9 Oct 2026). |
+| Jurnal Essentials | Rp 399,000 / month list; Rp 359,100 first contract, paid yearly | 3 users. Accounting "supported by AI", inventory, multiple warehouses, approvals. From [jurnal.id/id/harga](https://www.jurnal.id/id/harga/) (checked 9 Oct 2026). |
+| Jurnal Plus | Rp 899,000 / month list; Rp 629,300 first contract, paid yearly | 5 users. Adds BOM, multi-currency. Free implementation help and training in all plans. |
+| Jurnal 360 | By quote | 10 users. Batch/serial, bin locations. |
+
+**What this means for us:** a 3-user company pays several times more for Navario than for Accurate or Jurnal. Don't compete for the smallest traders. Target companies that have outgrown these tools.
 
 ## 5. Pilot
 
@@ -163,6 +176,21 @@ Potential profit per retail client, from [financial_model.py](script/financial_m
 - **On stack C, AI takes 37% of the price** before server and support. Plan prices on stack C until a cheaper stack passes quality tests.
 - **A 3-user referred client on stack C leaves about 0.57M a month** to cover its share of the server, support and fixed costs. Small referred clients are the thinnest margin.
 - **Annual prepaid costs a lot of year-1 profit** (the 15% discount comes out of the profit, not the AI cost). Offer it for cash flow, not by default.
+
+### Market potential
+
+Market size from [market_analysis.md](market_analysis.md#1-market-size): about 42,600 trading small and medium firms (estimate). Assumes 10 users per client at list price, stack C, direct sales.
+
+| Paying clients | Share of trading firms | Subscription revenue / year (IDR) | Profit / year, before server, support, fixed (IDR) |
+| --: | --: | --: | --: |
+| 10 | 0.02% | 0.5B | 0.3B |
+| 30 | 0.07% | 1.4B | 0.9B |
+| 100 | 0.23% | 4.8B | 3.0B |
+| 300 | 0.70% | 14.4B | 9.0B |
+
+If every trading small and medium firm were a client: about IDR 2,045B subscription revenue a year. This is a ceiling, not a target.
+
+**What this means:** 100 clients is a 3B-a-year business and needs under a quarter of one percent of the market. Growth is limited by sales and support capacity, not by market size.
 
 ### Company costs and break-even
 

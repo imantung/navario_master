@@ -39,7 +39,7 @@ Hard limits live in [0_business_constraint.md](0_business_constraint.md); challe
 
 ## Content guardrails
 
-- **Scope:** stay inside "Business scope" above. Retail and public marketing stay focused on trading companies. Other industries appear only in enterprise and AI project conversations.
+- **Scope:** stay inside "Business scope" above. Retail sales target trading companies first; public messaging says "growing companies" ([3_brand_identity.md](3_brand_identity.md#2-positioning)). Other industries appear only in enterprise and AI project conversations.
 - **Language:** internal docs in English. Proposal: English master, plus a Bahasa Indonesia version for owner-led SMEs. Quotations, service agreements, partner agreements, Terms and Privacy Policy: Bahasa Indonesia (bilingual is fine), because Law No. 24/2009 (Art. 31) requires it for agreements involving Indonesian parties.
 - **Client-facing AI usage:** say **"AI questions"**. Never "tokens", "requests", or "queries".
 - **Brand:** **Navario** (`navario.id`). Never mention Boffon (an earlier brand with a previous partner that never went live). Positioning, wording and introductions follow [3_brand_identity.md](3_brand_identity.md).

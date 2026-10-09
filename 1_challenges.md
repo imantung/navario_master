@@ -45,7 +45,7 @@ Proposal conflicts (X3):
 | # | Challenge | Why it matters | Mitigation | Handled in |
 | :-- | :-- | :-- | :-- | :-- |
 | X11 | **Odoo's licence is cheaper per user, and Odoo Custom includes agentic AI.** | Prospects who compare licence prices pick Odoo. AI alone is not unique. | Compete on first-year total cost and "done for you". Edge: Bahasa Indonesia first, access rules built in, simpler screens, a local person who answers. | [5_saas_pricing_model.md](5_saas_pricing_model.md#4-benchmark-odoo) |
-| X12 | **Local products (Accurate Online, Jurnal) are what many SMEs already know.** | Comparison is not done yet. | Include them in the retail price decision. | [5_saas_pricing_model.md](5_saas_pricing_model.md#open-decisions) |
+| X12 | **Local products (Accurate Online, Jurnal) are what many SMEs already know.** They are much cheaper for small teams, and Jurnal already claims AI. | Small traders pick them over Navario on price. | Don't target the smallest traders. Target firms that have outgrown them (segment A). Include them in the retail price decision. | [5_saas_pricing_model.md](5_saas_pricing_model.md#local-accounting-software), [market_analysis.md](market_analysis.md#4-target-segments) |
 
 ## 5. Partners
 

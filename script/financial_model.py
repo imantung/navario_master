@@ -24,6 +24,12 @@ ENTERPRISE_CLIENT_PRICE = 12_500_000  # IDR / month
 NAVARIO_SHARE = 7_500_000  # IDR / month
 ENTERPRISE_SETUP = 25_000_000  # Navario's technical part, "from"
 
+# Market potential, from market_analysis.md (Kadin, 31 Dec 2025, non-agricultural)
+SMALL_MEDIUM_FIRMS = 73_828 + 15_313
+TRADE_SHARE = 14.44 / 30.21  # trade share of all MSMEs; assumed to hold for small + medium
+USERS_PER_CLIENT = 10  # assumption: typical segment A client, matches the 10+ user pilot rule
+CLIENT_SCENARIOS = [10, 30, 100, 300]  # paying retail clients
+
 # Unknown: server cost per client and per dedicated server, support, fixed costs.
 # Results are before these costs.
 
@@ -72,6 +78,24 @@ def enterprise():
     print(f"| Direct, no partner | {idr(ENTERPRISE_CLIENT_PRICE)} | {idr(ENTERPRISE_CLIENT_PRICE * 12 + ENTERPRISE_SETUP)} |")
 
 
+def idr_b(x):
+    return f"{x / 1e9:,.1f}B"
+
+
+def market():
+    firms = SMALL_MEDIUM_FIRMS * TRADE_SHARE
+    revenue_client = PRICE_PER_USER * USERS_PER_CLIENT * 12
+    ai_client = ai_cost_per_question_idr(STACKS[list(STACKS)[-1]]) * ALLOWANCE * USERS_PER_CLIENT * 12
+    print(f"\nRetail market potential, {USERS_PER_CLIENT} users per client, list price, stack C, direct\n")
+    print(f"Trading small + medium firms (estimate): {firms:,.0f}")
+    print(f"If every one were a client: {idr_b(firms * revenue_client)} subscription revenue / year\n")
+    print("| Paying clients | Share of trading firms | Subscription revenue / year | Profit / year, before server, support, fixed |")
+    print("| --: | --: | --: | --: |")
+    for n in CLIENT_SCENARIOS:
+        print(f"| {n} | {n / firms:.2%} | {idr_b(n * revenue_client)} | {idr_b(n * (revenue_client - ai_client))} |")
+
+
 if __name__ == "__main__":
     retail()
     enterprise()
+    market()

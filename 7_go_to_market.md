@@ -44,9 +44,9 @@ First qualified opportunity sets the track. Close the pilot window after 90 days
 | 2 | **Partners** | Now | Referral: accountants and tax consultants, whose SME clients hand them messy spreadsheets. Enterprise: IT/ERP consulting firms. See [8_partnership_model.md](8_partnership_model.md). |
 | 3 | **Short demo videos** | Now | 30–90 seconds, in Bahasa Indonesia, each showing one question to the assistant on realistic trading data. Post on LinkedIn, Instagram, TikTok and YouTube, and embed them on the website. |
 | 4 | **Founder LinkedIn** | Ongoing | 2 posts a week: demo clips, building in public, lessons from client work. |
-| 5 | **Website + blog SEO** | Ongoing, slow | Bilingual articles for trading SMEs (stock, receivables, month-end closing, AI for business). See [website/requirement.md](website/requirement.md). |
-| 6 | **Google Search Ads** | Phase 2, after the website converts organic visitors | Small budget (IDR 1–2M/month). Keywords such as `software akuntansi perusahaan dagang`, `aplikasi stok barang`, `software ERP UKM`. |
-| 7 | **Business associations** | Phase 2, after 2–3 case studies | HIPMI, APINDO, local chambers. Workshop: *"AI untuk Perusahaan Dagang: Tanya Data Bisnis Tanpa Excel."* |
+| 5 | **Website + blog SEO** | Ongoing, slow | Bilingual articles for owners of growing companies (stock, receivables, month-end closing, AI for business). See [website/requirement.md](website/requirement.md). |
+| 6 | **Google Search Ads** | Phase 2, after the website converts organic visitors | Small budget (IDR 1–2M/month). Keywords owners use, such as `software akuntansi perusahaan`, `aplikasi stok barang`, `aplikasi pembukuan`. Not "ERP": SME owners don't search for it ([3 §3](3_brand_identity.md#3-words)). |
+| 7 | **Business associations** | Phase 2, after 2–3 case studies | HIPMI, APINDO, local chambers. Workshop: *"AI untuk Bisnis yang Sedang Berkembang: Tanya Data Bisnis Tanpa Excel."* |
 
 ## 6. Funnel
 

@@ -7,7 +7,7 @@
 | **Production URL** | https://navario.id |
 | **Status** | Target spec for the rebrand, October 2026. Based on the boffon.com implementation; section 0 lists what has to change. |
 
-This document describes what the site must do: its scope, pages, behavior, content model and quality rules. The technical foundations (sections 5, 8–11) are unchanged from the boffon.com site. Content and pages are rewritten for the new positioning: an **AI Business Assistant bundled with an ERP, for Indonesian trading companies**. The [proposal](../proposal/draft_oct_2026/draft_proposal.md) is the source for all product claims and copy.
+This document describes what the site must do: its scope, pages, behavior, content model and quality rules. The technical foundations (sections 5, 8–11) are unchanged from the boffon.com site. Content and pages are rewritten for the new positioning: an **AI Business Assistant bundled with a complete business system, for growing Indonesian companies** ([3_brand_identity.md](../3_brand_identity.md#2-positioning)). The [proposal](../proposal/draft_oct_2026/draft_proposal.md) is the source for all product claims and copy.
 
 Requirement IDs use these prefixes: **G** (global), **P** (page), **C** (content), **I** (i18n), **S** (SEO/GEO), **N** (non-functional), **D** (deployment).
 
@@ -28,7 +28,7 @@ Requirement IDs use these prefixes: **G** (global), **P** (page), **C** (content
 - [ ] Add pages: AI Assistant (P-3), Pricing (P-5), Partners (P-6).
 - [ ] Keep 5 module pages: Accounting, Buying, Selling, Stock, **Asset Management (new)**.
 - [ ] Remove module pages: Finance, Project, Manufacturing.
-- [ ] Remove all 4 industry pages and the Industries menu. Home speaks to trading companies directly.
+- [ ] Remove all 4 industry pages and the Industries menu. Home speaks to owners of growing companies directly.
 - [ ] Rewrite About (P-7): founder story, no "Trusted By" logos of non-Navario clients.
 - [ ] Update the contact form (G-18) and the CTA banner copy (G-13).
 - [ ] Update Terms and Privacy for Navario; make the Indonesian version authoritative.
@@ -37,10 +37,10 @@ Requirement IDs use these prefixes: **G** (global), **P** (page), **C** (content
 
 ## 1. Purpose & Goals
 
-Navario sells an AI Business Assistant bundled with a complete ERP to Indonesian SMEs, starting with trading companies. The website exists to:
+Navario sells an AI Business Assistant bundled with a complete business system to growing Indonesian companies. Sales target trading companies first, but the site speaks to growing companies ([C4](../0_business_constraint.md#2-offer)). The website exists to:
 
 1. **Show the AI assistant working** through demo videos and examples, because the live demo is the main sales tool.
-2. **Explain what's included:** the ERP modules (Accounting, Buying, Selling, Stock, Asset Management) and the Indonesian localization.
+2. **Explain what's included:** bookkeeping, buying, selling, stock and asset management in one business system, plus the Indonesian localization. Retail pages don't say "ERP"; enterprise and partner pages may ([3_brand_identity.md](../3_brand_identity.md#3-words)).
 3. **Show fixed, public prices** for retail packages.
 4. **Build trust** for a new company: founder background, safety and access rules, data ownership and, once available, client case studies.
 5. **Generate leads** by moving visitors into a WhatsApp conversation, mainly to book a live demo.
@@ -59,7 +59,7 @@ From the proposal. Tagline, positioning and wording follow [3_brand_identity.md]
 
 | Audience | Needs |
 | :-- | :-- |
-| Owners and directors of Indonesian trading SMEs | Understand what the assistant does, see prices, book a demo |
+| Owners and directors of growing Indonesian companies | Understand what the assistant does, see prices, book a demo |
 | Finance, purchasing and sales managers | Check that the modules cover their daily work and reports |
 | Partners (accountants, tax consultants, IT/ERP consultants) | Understand the partner model and get in touch |
 | Indonesian-speaking visitors (primary) | Full Bahasa Indonesia experience; this is the default locale |
@@ -177,7 +177,7 @@ Sections, in order (copy adapted from the proposal):
 1. **Hero:** H1 "Ask, Don't Search: An AI Business Assistant, Business System Included." Subheadline: "Your team asks in plain Bahasa Indonesia or English and gets answers from your own business data." Buttons: *Book a live demo* and *Watch the 3-min demo*.
 2. **Demo video:** the 3-minute demo in Bahasa Indonesia (English subtitles), loaded lazily on click (poster image first). A text transcript sits below it for crawlers and accessibility.
 3. **"Your team asks / The assistant answers":** the 6-row example table from proposal section 2.
-4. **The problem:** the two problem lists from proposal section 1 (spreadsheets / hard-to-use software), framed for trading companies.
+4. **The problem:** the two problem lists from proposal section 1 (spreadsheets / hard-to-use software), framed for growing companies that buy and sell.
 5. **Safe by design:** the 5 safety points from the proposal.
 6. **One system for the whole business:** cards linking to the 5 module pages, plus the Indonesian localization points.
 7. **Pricing teaser:** starting monthly price and a link to Pricing.
@@ -293,8 +293,8 @@ Workflows should only show steps the trading template actually uses (Lead/Opport
 
   The URL slug is the part of the filename after the `YYYYMMDD-SS-` prefix.
 - **C-6 Blog translations.** Translation pairs share the same `YYYYMMDD-SS` prefix and must have different `lang` values. A filename that breaks the pattern, or a duplicate language in a pair, **fails the build**.
-- **C-7 Blog writing style.** Blog posts should favor content that is easy to extract (direct definitions, bulleted lists, comparison tables) and link to related posts. Topics should serve trading SMEs and the AI assistant. Existing posts (*What is ERP?*, *The Benefits of ERP Across Business Aspects*, *ERP for SMEs*) stay; add a closing link to the AI Assistant page. Suggested next posts:
-  - *AI for trading companies: what it can and can't do*
+- **C-7 Blog writing style.** Blog posts should favor content that is easy to extract (direct definitions, bulleted lists, comparison tables) and link to related posts. Topics should serve owners of growing companies and the AI assistant. Existing posts (*What is ERP?*, *The Benefits of ERP Across Business Aspects*, *ERP for SMEs*) stay; add a closing link to the AI Assistant page. Suggested next posts:
+  - *AI for growing companies: what it can and can't do*
   - *How to track overdue receivables without spreadsheets*
   - *Is business data safe with an AI assistant?*
 
